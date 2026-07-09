@@ -10,7 +10,7 @@
     --space-2xl: 5rem;
   }
   .hero { min-height: 88vh; }
-  .hero-content { padding-top: 5.5rem; }
+  .hero-content { padding-top: 7.5rem; padding-bottom: 3.5rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; }
 
@@ -43,6 +43,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .section { padding: 4rem 0; }
   .container { padding: 0 1.75rem; }
+  .hero-content { padding-top: 8.5rem; padding-bottom: 4.5rem; }
   
   /* Center odd number of items in 2-column grid layouts */
   .grid-2 > *:last-child:nth-child(odd),
@@ -96,3 +97,54 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   outline: 2px solid var(--color-primary);
   outline-offset: 3px;
 }
+
+/* ---- Responsive updates for new sections ---- */
+@media (max-width: 767px) {
+  .swatches-studio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .swatch-studio-card {
+    padding: 0.85rem;
+  }
+  .swatch-img-wrapper {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.5rem;
+  }
+  .swatch-info h4 {
+    font-size: 0.8rem;
+  }
+  .swatch-info span {
+    font-size: 0.6rem;
+  }
+  .material-preview-panel {
+    min-height: auto;
+  }
+  .preview-details {
+    padding: 1.5rem;
+  }
+  .preview-details h3 {
+    font-size: 1.3rem;
+  }
+  .preview-details p {
+    font-size: 0.85rem;
+  }
+  .hotspot-card {
+    width: 210px;
+  }
+  .hotspot-card img {
+    height: 100px;
+  }
+  .hotspot-card-info {
+    padding: 0.85rem;
+  }
+  .hotspot-card-info h4 {
+    font-size: 0.85rem;
+  }
+  .hotspot-card-info p {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
+

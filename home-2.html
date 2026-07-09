@@ -47,8 +47,10 @@
         <a href="contact.html" class="btn btn-ghost" data-magnetic>Book Consultation</a>
       </div>
     </div>
-    <div class="hero-split-img">
-      <img src="assets/images/home2/hero_split.webp" alt="Designer furniture vignette with layered textures and warm lighting">
+    <div class="hero-split-bg">
+      <video autoplay loop muted playsinline>
+        <source src="assets/3147268-hd_1920_1080_30fps.mp4" type="video/mp4">
+      </video>
     </div>
   </section>
 
@@ -103,33 +105,220 @@
     </div>
   </section>
 
-  <!-- MATERIAL SHOWCASE -->
-  <section class="section section-dark">
+  <!-- MATERIAL ATELIER -->
+  <section class="section section-dark" id="material-atelier">
     <div class="container">
       <div class="section-head center" data-reveal="fade">
-        <span class="eyebrow" style="justify-content:center; color:var(--color-secondary);">Material Showcase</span>
+        <span class="eyebrow" style="justify-content:center; color:var(--color-secondary);">Material Atelier</span>
         <h2>Texture Tells the Story</h2>
-        <p>A closer look at the raw materials behind every VerdantWood collection.</p>
+        <p>A closer look at the organic, premium materials built into every VerdantWood piece. Click a swatch below to explore details.</p>
       </div>
-      <div class="grid grid-4 stagger">
-        <div style="text-align:center;" data-reveal>
-          <div class="img-zoom" style="margin-bottom:1rem;"><img src="assets/images/shared/swatch_oak.webp" alt="Textured close-up of oak wood surface" style="border-radius:var(--radius-md);"></div>
-          <h4 style="color:#fff;">Oak</h4>
+      
+      <div class="grid grid-2" style="align-items: center; gap: 3.5rem; margin-top: 3.5rem;">
+        <!-- Swatch Selection Grid -->
+        <div class="swatches-studio-grid" data-reveal="left">
+          <div class="swatch-studio-card active" data-material="walnut" tabindex="0">
+            <div class="swatch-img-wrapper">
+              <img src="assets/images/shared/swatch_walnut.webp" alt="Charred Walnut Swatch">
+            </div>
+            <div class="swatch-info">
+              <h4>Charred Walnut</h4>
+              <span>Hardwood Finishes</span>
+            </div>
+          </div>
+          
+          <div class="swatch-studio-card" data-material="oak" tabindex="0">
+            <div class="swatch-img-wrapper">
+              <img src="assets/images/shared/swatch_oak.webp" alt="Natural Oak Swatch">
+            </div>
+            <div class="swatch-info">
+              <h4>Natural White Oak</h4>
+              <span>Hardwood Finishes</span>
+            </div>
+          </div>
+          
+          <div class="swatch-studio-card" data-material="teak" tabindex="0">
+            <div class="swatch-img-wrapper">
+              <img src="assets/images/shared/swatch_teak.webp" alt="Golden Teak Swatch">
+            </div>
+            <div class="swatch-info">
+              <h4>Golden Teak</h4>
+              <span>Outdoor &amp; Accents</span>
+            </div>
+          </div>
+
+          <div class="swatch-studio-card" data-material="marble" tabindex="0">
+            <div class="swatch-img-wrapper">
+              <img src="assets/images/shared/swatch_marble.webp" alt="Carrara Marble Swatch">
+            </div>
+            <div class="swatch-info">
+              <h4>Carrara Marble</h4>
+              <span>Tabletop Surfaces</span>
+            </div>
+          </div>
+
+          <div class="swatch-studio-card" data-material="metal" tabindex="0">
+            <div class="swatch-img-wrapper">
+              <img src="assets/images/shared/swatch_metal.webp" alt="Brushed Brass Swatch">
+            </div>
+            <div class="swatch-info">
+              <h4>Brushed Brass</h4>
+              <span>Details &amp; Hardware</span>
+            </div>
+          </div>
+
+          <div class="swatch-studio-card" data-material="glass" tabindex="0">
+            <div class="swatch-img-wrapper">
+              <img src="assets/images/shared/swatch_glass.webp" alt="Fluted Glass Swatch">
+            </div>
+            <div class="swatch-info">
+              <h4>Fluted Glass</h4>
+              <span>Structural Accents</span>
+            </div>
+          </div>
         </div>
-        <div style="text-align:center;" data-reveal>
-          <div class="img-zoom" style="margin-bottom:1rem;"><img src="assets/images/shared/swatch_walnut.webp" alt="Textured close-up of walnut wood surface" style="border-radius:var(--radius-md);"></div>
-          <h4 style="color:#fff;">Walnut</h4>
-        </div>
-        <div style="text-align:center;" data-reveal>
-          <div class="img-zoom" style="margin-bottom:1rem;"><img src="assets/images/shared/swatch_marble.webp" alt="Textured close-up of veined marble surface" style="border-radius:var(--radius-md);"></div>
-          <h4 style="color:#fff;">Marble</h4>
-        </div>
-        <div style="text-align:center;" data-reveal>
-          <div class="img-zoom" style="margin-bottom:1rem;"><img src="assets/images/shared/swatch_metal.webp" alt="Textured close-up of brushed metal surface" style="border-radius:var(--radius-md);"></div>
-          <h4 style="color:#fff;">Metal</h4>
+        
+        <!-- Interactive Preview Panel -->
+        <div class="material-preview-panel" data-reveal="right">
+          <!-- Walnut -->
+          <div class="material-preview-content active" id="preview-walnut">
+            <div class="preview-hero-img">
+              <img src="assets/images/home2/comfort_living.webp" alt="Walnut Furniture Application">
+            </div>
+            <div class="preview-details">
+              <h3>Charred Walnut</h3>
+              <span class="preview-badge">Signature Hardwood</span>
+              <p>Our premium American walnut is sustainably sourced and hand-finished with zero-VOC natural oils. Known for its rich, chocolate tones and organic grain flow, it brings an immediate warmth and sense of luxury to any space.</p>
+              <ul class="preview-specs">
+                <li><strong>Source:</strong> Midwest United States (FSC Certified)</li>
+                <li><strong>Finish:</strong> Zero-VOC Satin Matte Oil</li>
+                <li><strong>Best For:</strong> Dining Tables, Media Consoles, Accent Shelving</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Oak -->
+          <div class="material-preview-content" id="preview-oak">
+            <div class="preview-hero-img">
+              <img src="assets/images/home2/gathering_dining.webp" alt="Natural Oak Application">
+            </div>
+            <div class="preview-details">
+              <h3>Natural White Oak</h3>
+              <span class="preview-badge">Hardwood Finish</span>
+              <p>Selected for its straight grain pattern and exceptional strength. Our white oak is lightly white-washed and finished in a low-sheen protective seal, preserving its light, airy, and organic Scandinavian aesthetic.</p>
+              <ul class="preview-specs">
+                <li><strong>Source:</strong> Appalachian Forests, USA (Sustainably Farmed)</li>
+                <li><strong>Finish:</strong> Low-Sheen Polyurethane Protectant</li>
+                <li><strong>Best For:</strong> Bed Frames, Dining Benches, Sideboards</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Teak -->
+          <div class="material-preview-content" id="preview-teak">
+            <div class="preview-hero-img">
+              <img src="assets/images/home2/showroom_living_set.webp" alt="Golden Teak Application">
+            </div>
+            <div class="preview-details">
+              <h3>Golden Teak</h3>
+              <span class="preview-badge">Outdoor &amp; Accent</span>
+              <p>Grown in certified plantation forests, our teak wood is naturally high in protective oils, making it resistant to moisture and pests. Left natural, it matures to a silvery-grey, or oiled to keep its warm gold luster.</p>
+              <ul class="preview-specs">
+                <li><strong>Source:</strong> Southeast Asian Plantations (FSC Certified)</li>
+                <li><strong>Finish:</strong> Organic Teak Sealer Coating</li>
+                <li><strong>Best For:</strong> Patio Dining Sets, Lounge Frames, Entry Benches</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Marble -->
+          <div class="material-preview-content" id="preview-marble">
+            <div class="preview-hero-img">
+              <img src="assets/images/home2/showroom_lounge.webp" alt="Carrara Marble Application">
+            </div>
+            <div class="preview-details">
+              <h3>Carrara Marble</h3>
+              <span class="preview-badge">Tabletop Surface</span>
+              <p>Sourced directly from Italian quarries. Each slab is selected for its unique, delicate grey veining against a pure white background. Ground and polished by hand, then sealed with a stain-resistant coating.</p>
+              <ul class="preview-specs">
+                <li><strong>Source:</strong> Tuscany, Italy (Premium Quarried)</li>
+                <li><strong>Finish:</strong> Stain-Resistant Matte Sealant</li>
+                <li><strong>Best For:</strong> Coffee Table Tops, Dining Table Inserts, Console Tops</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Metal -->
+          <div class="material-preview-content" id="preview-metal">
+            <div class="preview-hero-img">
+              <img src="assets/images/home2/showroom_material_wall.webp" alt="Brushed Brass Application">
+            </div>
+            <div class="preview-details">
+              <h3>Brushed Brass</h3>
+              <span class="preview-badge">Details &amp; Hardware</span>
+              <p>Crafted from solid brass and brushed to a warm, soft sheen. Unlacquered to develop a gentle, organic patina over time, or sealed to retain its original golden luster.</p>
+              <ul class="preview-specs">
+                <li><strong>Source:</strong> Recycled Brass, Europe</li>
+                <li><strong>Finish:</strong> Hand-brushed Satin Lacquer</li>
+                <li><strong>Best For:</strong> Cabinet Hardware, Table Leg Frameworks, Light Details</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Glass -->
+          <div class="material-preview-content" id="preview-glass">
+            <div class="preview-hero-img">
+              <img src="assets/images/home2/rest_bedroom.webp" alt="Fluted Glass Application">
+            </div>
+            <div class="preview-details">
+              <h3>Fluted Glass</h3>
+              <span class="preview-badge">Structural Accent</span>
+              <p>Architectural-grade tempered glass featuring a beautifully textured, ribbed design. It diffuses light softly to create privacy while allowing a clean, modern play of shadows and reflections.</p>
+              <ul class="preview-specs">
+                <li><strong>Source:</strong> Local Architectural Glassworks</li>
+                <li><strong>Finish:</strong> Textured 8mm Tempered Safety Glass</li>
+                <li><strong>Best For:</strong> Cabinet Door Fronts, Room Dividers, Light Panels</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Toggle Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.swatch-studio-card');
+        const previews = document.querySelectorAll('.material-preview-content');
+        if (!cards.length || !previews.length) return;
+
+        cards.forEach(card => {
+          card.addEventListener('click', () => {
+            const material = card.dataset.material;
+            
+            // Set active card
+            cards.forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+            
+            // Set active preview panel
+            previews.forEach(p => {
+              p.classList.remove('active');
+              if (p.id === `preview-${material}`) {
+                p.classList.add('active');
+              }
+            });
+          });
+
+          // Accessibility: allow trigger on Enter/Space
+          card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              card.click();
+            }
+          });
+        });
+      });
+    </script>
   </section>
 
   <!-- STYLING PROCESS -->
