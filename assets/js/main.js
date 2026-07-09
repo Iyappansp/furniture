@@ -17,6 +17,7 @@
     pinterest: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.64 19.32c-.05-.82-.09-2.08.02-2.98.1-.8.66-5.1.66-5.1s-.17-.34-.17-.83c0-.78.45-1.36 1.02-1.36.48 0 .71.36.71.79 0 .48-.31 1.2-.47 1.87-.13.56.28 1.02.83 1.02.99 0 1.76-1.05 1.76-2.56 0-1.34-.96-2.27-2.34-2.27-1.6 0-2.53 1.2-2.53 2.44 0 .48.18.99.42 1.27a.17.17 0 0 1 .04.16c-.04.19-.15.6-.17.68-.03.11-.09.14-.2.08-.75-.35-1.22-1.44-1.22-2.32 0-1.89 1.37-3.63 3.96-3.63 2.08 0 3.7 1.48 3.7 3.46 0 2.06-1.3 3.72-3.1 3.72-.61 0-1.18-.32-1.38-.69l-.37 1.43c-.14.52-.51 1.18-.76 1.58A10 10 0 1 0 12 2z"></path></svg>`,
     twitter: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.68.3-1.4.5-2.16.6a3.8 3.8 0 0 0 1.66-2.1c-.73.44-1.53.75-2.39.92A3.75 3.75 0 0 0 12.9 8.9c0 .3.03.58.1.85A10.66 10.66 0 0 1 5.1 6.14a3.75 3.75 0 0 0 1.16 5c-.6-.02-1.18-.19-1.68-.46v.05a3.76 3.76 0 0 0 3 3.68 3.8 3.8 0 0 1-1.69.06 3.76 3.76 0 0 0 3.51 2.6 7.53 7.53 0 0 1-4.66 1.6c-.3 0-.6-.02-.9-.05A10.63 10.63 0 0 0 9.6 20.5c6.9 0 10.68-5.72 10.68-10.68l-.01-.49A7.6 7.6 0 0 0 22 5.9z"></path></svg>`,
     arrow: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>`,
+    subscribe: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>`,
     calendar: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>`,
     up: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>`
   };
@@ -27,7 +28,6 @@
     { href: "about.html", label: "About" },
     { href: "blog.html", label: "Blog" },
     { href: "shop.html", label: "Shop" },
-    { href: "product-detail.html", label: "Product Detail" },
     { href: "services.html", label: "Services" },
     { href: "gallery.html", label: "Gallery" },
     { href: "contact.html", label: "Contact" }
@@ -64,7 +64,7 @@
 
     return `
     <div class="container header-inner">
-      <a href="index.html" class="logo">Verdant<span>Wood</span> &amp; Co.</a>
+      <a href="index.html" class="logo"><img src="assets/logo1.png" alt="VerdantWood &amp; Co. Logo"></a>
       <nav class="main-nav" aria-label="Primary navigation">${navHTML}</nav>
       <div class="header-actions">
         <button class="icon-btn" id="rtlToggle" aria-label="Toggle language direction" style="font-size: 0.78rem; font-weight: 700; font-family: var(--font-button); letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center;">RTL</button>
@@ -96,7 +96,7 @@
     }).join("");
     return `
     <div class="mobile-nav-head">
-      <a href="index.html" class="logo">Verdant<span>Wood</span></a>
+      <a href="index.html" class="logo"><img src="assets/logo1.png" alt="VerdantWood &amp; Co. Logo"></a>
       <button class="icon-btn" id="mobileClose" aria-label="Close menu">${ICONS.close}</button>
     </div>
     <nav aria-label="Mobile navigation">${navHTML}</nav>
@@ -112,7 +112,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <a href="index.html" class="logo">Verdant<span>Wood</span> &amp; Co.</a>
+          <a href="index.html" class="logo"><img src="assets/logo1.png" alt="VerdantWood &amp; Co. Logo"></a>
           <p>Crafting beautiful spaces, one room at a time. A premium showroom for furniture and home decor built around timeless craftsmanship.</p>
           <div class="footer-social">
             <a href="#" aria-label="Facebook">${ICONS.facebook}</a>
@@ -147,7 +147,7 @@
           <p>Subscribe for interior tips, new collections, and showroom events.</p>
           <form id="newsletterForm">
             <input type="email" placeholder="Your email address" required aria-label="Email address">
-            <button type="submit" aria-label="Subscribe">${ICONS.arrow}</button>
+            <button type="submit" aria-label="Subscribe">${ICONS.subscribe}</button>
           </form>
         </div>
       </div>
