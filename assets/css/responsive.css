@@ -1,0 +1,76 @@
+/* ============================================
+   RESPONSIVE FINE-TUNING
+============================================ */
+
+/* ---- Mobile (up to 767px) ---- */
+@media (max-width: 767px) {
+  :root {
+    --space-lg: 2.75rem;
+    --space-xl: 4rem;
+    --space-2xl: 5rem;
+  }
+  .hero { min-height: 88vh; }
+  .hero-content { padding-top: 5.5rem; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { width: 100%; }
+
+  .stats-grid { gap: 1.5rem 1rem; }
+
+  .cta-band { padding: var(--space-lg) 1.25rem; }
+  .cta-band-actions { flex-direction: column; }
+  .cta-band-actions .btn { width: 100%; }
+
+  .footer-bottom-links { flex-direction: column; gap: 0.6rem; }
+
+  .before-after { aspect-ratio: 4/5; }
+
+  .section { padding: var(--space-lg) 0; }
+}
+
+/* ---- Shop layout responsive stacking ---- */
+.shop-layout { display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
+@media (min-width: 1024px) {
+  .shop-layout { grid-template-columns: 280px 1fr; }
+}
+.filter-sidebar { position: static; }
+@media (min-width: 1024px) { .filter-sidebar { position: sticky; } }
+
+.product-gallery-thumbs { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 480px) { .product-gallery-thumbs { grid-template-columns: repeat(4, 1fr); gap: 0.5rem; } }
+
+/* ---- Tablet (768–1023px) ---- */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* hero-split layout rules removed to support full background hero */
+}
+
+/* ---- Desktop (1024–1439px) ---- */
+@media (min-width: 1024px) {
+  .section { padding: var(--space-xl) 0; }
+}
+
+/* ---- Large Desktop (1440px+) ---- */
+@media (min-width: 1440px) {
+  :root { --space-xl: 7.5rem; }
+  .container { max-width: 1400px; }
+}
+
+/* Prevent overflow everywhere */
+html, body { max-width: 100%; overflow-x: hidden; }
+img, svg, video { max-width: 100%; height: auto; }
+.card-img img { height: 100%; }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visibility (accessibility) */
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}

@@ -1,0 +1,43 @@
+/* ============================================
+   HOVER / CURSOR / MICRO-INTERACTIONS
+============================================ */
+
+@media (min-width: 1024px) and (hover: hover) {
+  .custom-cursor {
+    position: fixed;
+    top: 0; left: 0;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: width 0.25s var(--ease), height 0.25s var(--ease), background 0.25s var(--ease);
+    mix-blend-mode: difference;
+  }
+  .custom-cursor-ring {
+    position: fixed;
+    top: 0; left: 0;
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-primary);
+    pointer-events: none;
+    z-index: 9997;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s var(--ease), height 0.3s var(--ease), opacity 0.3s var(--ease), border-color 0.3s var(--ease);
+  }
+  .custom-cursor.hovering { width: 16px; height: 16px; }
+  .custom-cursor-ring.hovering { width: 56px; height: 56px; opacity: 0.6; }
+}
+
+@media (max-width: 1023px), (hover: none) {
+  .custom-cursor, .custom-cursor-ring { display: none; }
+}
+
+/* Magnetic buttons (JS adds transform via inline style) */
+.magnetic { will-change: transform; transition: transform 0.2s var(--ease); }
+
+/* Image zoom container helper */
+.img-zoom { overflow: hidden; border-radius: var(--radius-md); }
+.img-zoom img { transition: transform var(--t-slow) var(--ease); }
+.img-zoom:hover img { transform: scale(1.07); }

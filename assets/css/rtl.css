@@ -1,0 +1,55 @@
+/* ============================================
+   RTL SUPPORT
+============================================ */
+
+[dir="rtl"] body { text-align: right; }
+
+[dir="rtl"] .eyebrow::before { order: 2; }
+[dir="rtl"] .eyebrow { flex-direction: row-reverse; justify-content: flex-end; }
+
+[dir="rtl"] .section-head.center { text-align: center; }
+
+[dir="rtl"] .main-nav a::after { left: auto; right: 0; }
+
+[dir="rtl"] .mobile-nav { right: auto; left: -100%; }
+[dir="rtl"] .mobile-nav.open { left: 0; right: auto; }
+
+[dir="rtl"] .card-img::after { background: linear-gradient(to top, rgba(31,41,55,0.55), transparent 55%); }
+
+[dir="rtl"] .hero-content { margin-right: 0; margin-left: auto; }
+
+[dir="rtl"] .timeline { padding-left: 0; padding-right: 2.2rem; }
+[dir="rtl"] .timeline::before { left: auto; right: 6px; }
+[dir="rtl"] .timeline-item::before { left: auto; right: -2.2rem; }
+
+[dir="rtl"] .accordion-header { text-align: right; }
+[dir="rtl"] .accordion-body-inner { padding-right: 0; padding-left: 3rem; }
+
+[dir="rtl"] .back-to-top { right: auto; left: 2rem; }
+
+[dir="rtl"] .ba-label.before-label { left: auto; right: 1rem; }
+[dir="rtl"] .ba-label.after-label { right: auto; left: 1rem; }
+
+[dir="rtl"] .footer-social { flex-direction: row-reverse; justify-content: flex-end; }
+
+[dir="rtl"] .hero-scroll-cue { left: 50%; }
+
+[dir="rtl"] .stat-num, [dir="rtl"] .stat-label { direction: ltr; }
+
+[dir="rtl"] .logo span { margin-right: 0.25rem; }
+
+/* Flip icons that imply direction */
+[dir="rtl"] .icon-flip { transform: scaleX(-1); }
+
+[dir="rtl"] .or-divider { direction: rtl; }
+
+[dir="rtl"] .testimonial-author { flex-direction: row-reverse; }
+
+[dir="rtl"] .product-badge { left: auto; right: 0.9rem; }
+[dir="rtl"] .product-wishlist { right: auto; left: 0.9rem; }
+[dir="rtl"] .compare-table th, [dir="rtl"] .compare-table td { text-align: right; }
+[dir="rtl"] .mobile-sublink { padding: 0.75rem 1.2rem 0.75rem 0; }
+[dir="rtl"] .process-step { flex-direction: row-reverse; }
+[dir="rtl"] .blog-meta { flex-direction: row-reverse; }
+[dir="rtl"] .filter-checkbox { flex-direction: row-reverse; }
+[dir="rtl"] .qty-stepper { flex-direction: row-reverse; }
