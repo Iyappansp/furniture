@@ -38,8 +38,19 @@
     return path === "" ? "index.html" : path;
   }
 
+  function isActivePage(linkHref, activePage) {
+    if (linkHref === activePage) return true;
+    if (linkHref === "shop.html" && (activePage === "product-detail.html" || activePage === "room-collections.html")) {
+      return true;
+    }
+    if (linkHref === "blog.html" && activePage === "blog-post.html") {
+      return true;
+    }
+    return false;
+  }
+
   function isChildActive(children, active) {
-    return children.some((c) => c.href === active);
+    return children.some((c) => isActivePage(c.href, active));
   }
 
   function buildHeader() {
@@ -48,7 +59,7 @@
       if (l.children) {
         const childActive = isChildActive(l.children, active);
         const childHTML = l.children
-          .map((c) => `<a href="${c.href}" class="dropdown-link ${c.href === active ? "active" : ""}">${c.label}</a>`)
+          .map((c) => `<a href="${c.href}" class="dropdown-link ${isActivePage(c.href, active) ? "active" : ""}">${c.label}</a>`)
           .join("");
         return `
         <div class="nav-dropdown">
@@ -59,7 +70,7 @@
           <div class="nav-dropdown-menu">${childHTML}</div>
         </div>`;
       }
-      return `<a href="${l.href}" class="${l.href === active ? "active" : ""}">${l.label}</a>`;
+      return `<a href="${l.href}" class="${isActivePage(l.href, active) ? "active" : ""}">${l.label}</a>`;
     }).join("");
 
     return `
@@ -81,7 +92,7 @@
       if (l.children) {
         const childActive = isChildActive(l.children, active);
         const childHTML = l.children
-          .map((c) => `<a href="${c.href}" class="mobile-sublink ${c.href === active ? "active" : ""}">${c.label}</a>`)
+          .map((c) => `<a href="${c.href}" class="mobile-sublink ${isActivePage(c.href, active) ? "active" : ""}">${c.label}</a>`)
           .join("");
         return `
         <div class="mobile-nav-group ${childActive ? "open" : ""}">
@@ -92,7 +103,7 @@
           <div class="mobile-nav-submenu">${childHTML}</div>
         </div>`;
       }
-      return `<a href="${l.href}" class="${l.href === active ? "active" : ""}">${l.label}</a>`;
+      return `<a href="${l.href}" class="${isActivePage(l.href, active) ? "active" : ""}">${l.label}</a>`;
     }).join("");
     return `
     <div class="mobile-nav-head">
@@ -102,7 +113,6 @@
     <nav aria-label="Mobile navigation">${navHTML}</nav>
     <div class="mobile-nav-cta">
       <a href="login.html" class="btn btn-primary btn-block">Login</a>
-      <a href="contact.html" class="btn btn-secondary btn-block">Product Enquiry</a>
     </div>`;
   }
 

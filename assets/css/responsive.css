@@ -24,6 +24,7 @@
 
   .before-after { aspect-ratio: 4/5; }
 
+  .container { padding: 0 1.25rem; }
   .section { padding: var(--space-lg) 0; }
 }
 
@@ -40,18 +41,39 @@
 
 /* ---- Tablet (768–1023px) ---- */
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* hero-split layout rules removed to support full background hero */
+  .section { padding: 4rem 0; }
+  .container { padding: 0 1.75rem; }
+  
+  /* Center odd number of items in 2-column grid layouts */
+  .grid-2 > *:last-child:nth-child(odd),
+  .grid-3 > *:last-child:nth-child(odd),
+  .grid-4 > *:last-child:nth-child(odd) {
+    grid-column: span 2;
+    justify-self: center;
+    width: 100%;
+    max-width: calc(50% - 0.875rem);
+  }
 }
 
 /* ---- Desktop (1024–1439px) ---- */
 @media (min-width: 1024px) {
   .section { padding: var(--space-xl) 0; }
+  .container { padding: 0 3rem; }
+}
+
+/* ---- Desktop Small (1024px–1200px) Refinements ---- */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .container { padding: 0 2rem; }
+  .logo img { width: 150px; height: 60px; }
+  .main-nav { gap: 0.8rem; }
+  .main-nav a { font-size: 0.85rem; }
+  .header-actions { gap: 0.6rem; }
 }
 
 /* ---- Large Desktop (1440px+) ---- */
 @media (min-width: 1440px) {
   :root { --space-xl: 7.5rem; }
-  .container { max-width: 1400px; }
+  .container { max-width: 1400px; padding: 0 3rem; }
 }
 
 /* Prevent overflow everywhere */
