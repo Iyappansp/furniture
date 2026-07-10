@@ -50,7 +50,7 @@
   </section>
 
   <!-- FEATURED POST -->
-  <section class="section">
+  <section class="section featured-post-section">
     <div class="container">
       <div class="grid grid-2" style="align-items:center; gap:3rem;">
         <div class="img-zoom" data-reveal="left">
@@ -75,16 +75,16 @@
     <div class="container">
       <div class="sort-bar" data-reveal="fade">
         <div class="flex gap-sm flex-wrap">
-          <button class="filter-tab active">All Articles</button>
-          <button class="filter-tab">Styling</button>
-          <button class="filter-tab">Materials</button>
-          <button class="filter-tab">Care Guides</button>
-          <button class="filter-tab">Trends</button>
+          <button class="filter-tab active" data-filter="all">All Articles</button>
+          <button class="filter-tab" data-filter="styling">Styling</button>
+          <button class="filter-tab" data-filter="materials">Materials</button>
+          <button class="filter-tab" data-filter="care-guides">Care Guides</button>
+          <button class="filter-tab" data-filter="trends">Trends</button>
         </div>
       </div>
 
       <div class="grid grid-3 stagger">
-        <div class="card card-hover blog-card" data-reveal>
+        <div class="card card-hover blog-card" data-category="care-guides" data-reveal>
           <a href="blog-post.html" class="card-img"><img src="assets/images/blog/blog_thumbnail_01.png" alt="Article thumbnail: caring for solid wood furniture"></a>
           <div class="card-body">
             <span class="blog-tag">Care Guide</span>
@@ -92,7 +92,7 @@
             <div class="blog-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 5 min</span><span>May 28, 2026</span></div>
           </div>
         </div>
-        <div class="card card-hover blog-card" data-reveal>
+        <div class="card card-hover blog-card" data-category="materials" data-reveal>
           <a href="blog-post.html" class="card-img"><img src="assets/images/blog/blog_thumbnail_02.png" alt="Article thumbnail: choosing between oak and walnut"></a>
           <div class="card-body">
             <span class="blog-tag">Materials</span>
@@ -100,7 +100,7 @@
             <div class="blog-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 6 min</span><span>May 19, 2026</span></div>
           </div>
         </div>
-        <div class="card card-hover blog-card" data-reveal>
+        <div class="card card-hover blog-card" data-category="styling" data-reveal>
           <a href="blog-post.html" class="card-img"><img src="assets/images/blog/blog_thumbnail_03.png" alt="Article thumbnail: small space living room layouts"></a>
           <div class="card-body">
             <span class="blog-tag">Styling</span>
@@ -108,7 +108,7 @@
             <div class="blog-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 7 min</span><span>May 6, 2026</span></div>
           </div>
         </div>
-        <div class="card card-hover blog-card" data-reveal>
+        <div class="card card-hover blog-card" data-category="trends" data-reveal>
           <a href="blog-post.html" class="card-img"><img src="assets/images/blog/blog_thumbnail_04.png" alt="Article thumbnail: 2026 interior color trends"></a>
           <div class="card-body">
             <span class="blog-tag">Trends</span>
@@ -116,7 +116,7 @@
             <div class="blog-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 4 min</span><span>April 22, 2026</span></div>
           </div>
         </div>
-        <div class="card card-hover blog-card" data-reveal>
+        <div class="card card-hover blog-card" data-category="materials" data-reveal>
           <a href="blog-post.html" class="card-img"><img src="assets/images/blog/blog_thumbnail_05.png" alt="Article thumbnail: sustainable furniture sourcing"></a>
           <div class="card-body">
             <span class="blog-tag">Materials</span>
@@ -124,12 +124,36 @@
             <div class="blog-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 6 min</span><span>April 10, 2026</span></div>
           </div>
         </div>
-        <div class="card card-hover blog-card" data-reveal>
+        <div class="card card-hover blog-card" data-category="styling" data-reveal>
           <a href="blog-post.html" class="card-img"><img src="assets/images/blog/blog_thumbnail_06.png" alt="Article thumbnail: dining table sizing guide"></a>
           <div class="card-body">
             <span class="blog-tag">Styling</span>
             <a href="blog-post.html"><h4>The Complete Dining Table Sizing Guide</h4></a>
             <div class="blog-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 5 min</span><span>March 30, 2026</span></div>
+          </div>
+        </div>
+        <div class="card card-hover blog-card" data-category="care-guides" data-reveal>
+          <a href="blog-post.html" class="card-img"><img src="assets/images/blog/blog_thumbnail_07.png" alt="Article thumbnail: maintain and clean luxury leather furniture"></a>
+          <div class="card-body">
+            <span class="blog-tag">Care Guide</span>
+            <a href="blog-post.html"><h4>How to Maintain and Clean Luxury Leather Furniture</h4></a>
+            <div class="blog-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 5 min</span><span>March 15, 2026</span></div>
+          </div>
+        </div>
+        <div class="card card-hover blog-card" data-category="trends" data-reveal>
+          <a href="blog-post.html" class="card-img"><img src="assets/images/blog/blog_thumbnail_08.png" alt="Article thumbnail: the rise of biophilic design"></a>
+          <div class="card-body">
+            <span class="blog-tag">Trends</span>
+            <a href="blog-post.html"><h4>The Rise of Biophilic Design in Modern Showrooms</h4></a>
+            <div class="blog-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 6 min</span><span>February 28, 2026</span></div>
+          </div>
+        </div>
+        <div class="card card-hover blog-card" data-category="materials" data-reveal>
+          <a href="blog-post.html" class="card-img"><img src="assets/images/blog/blog_thumbnail_09.png" alt="Article thumbnail: sustainable rattan and bamboo"></a>
+          <div class="card-body">
+            <span class="blog-tag">Materials</span>
+            <a href="blog-post.html"><h4>Sustainable Rattan and Bamboo: The New Luxury Materials</h4></a>
+            <div class="blog-meta"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 7 min</span><span>February 12, 2026</span></div>
           </div>
         </div>
       </div>
@@ -167,7 +191,7 @@
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/animations.js"></script>
-<script src="assets/js/gallery.js"></script>
+<script src="assets/js/blog.js"></script>
 <script>
   document.getElementById('blogNewsletterForm').addEventListener('submit', function(e){
     e.preventDefault();
