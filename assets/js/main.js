@@ -112,21 +112,12 @@
     </div>
     <nav aria-label="Mobile navigation">${navHTML}</nav>
     <div class="mobile-nav-options">
-      <span class="mobile-nav-options-title">Preferences</span>
-      <div class="mobile-nav-options-group">
-        <div class="mobile-nav-option-item">
-          <span class="mobile-nav-option-label">Appearance</span>
-          <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">
-            ${ICONS.sun}${ICONS.moon}
-          </button>
-        </div>
-        <div class="mobile-nav-option-item">
-          <span class="mobile-nav-option-label">Layout Direction</span>
-          <button class="icon-btn rtl-toggle" aria-label="Toggle language direction" style="font-size: 0.78rem; font-weight: 700; font-family: var(--font-button); letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center;">
-            RTL
-          </button>
-        </div>
-      </div>
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">
+        ${ICONS.sun}${ICONS.moon}
+      </button>
+      <button class="icon-btn rtl-toggle" aria-label="Toggle language direction" style="font-size: 0.78rem; font-weight: 700; font-family: var(--font-button); letter-spacing: 0.05em; display: flex; align-items: center; justify-content: center;">
+        RTL
+      </button>
     </div>
     <div class="mobile-nav-cta">
       <a href="login.html" class="btn btn-primary btn-block">Login</a>
