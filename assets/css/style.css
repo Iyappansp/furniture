@@ -7,25 +7,25 @@
 
 :root {
   /* Brand Colors */
-  --color-primary: #8B5E3C;
-  --color-primary-dark: #6E4A2E;
-  --color-primary-light: #A67C52;
-  --color-secondary: #DCC8B2;
-  --color-secondary-light: #EDE3D6;
-  --color-accent: #B08968;
-  --color-success: #6B8E23;
+  --color-primary: #C5A059; /* Rich Gold/Brass */
+  --color-primary-dark: #91723B;
+  --color-primary-light: #DFCDA8;
+  --color-secondary: #1C1C1C; /* Onyx Black */
+  --color-secondary-light: #F7F5F0; /* Soft Ivory */
+  --color-accent: #A37E43;
+  --color-success: #708090;
 
-  --color-dark: #1F2937;
+  --color-dark: #111111;
   --color-light: #FFFFFF;
-  --color-bg: #FAF8F5;
+  --color-bg: #FAF9F6; /* Alabaster white */
 
-  --color-text: #2A241F;
-  --color-text-muted: #6B6259;
-  --color-border: #E5DDD2;
+  --color-text: #1C1A17;
+  --color-text-muted: #7E7870;
+  --color-border: #ECE8E0;
 
   /* Surface */
   --surface-card: #FFFFFF;
-  --surface-alt: #F3EDE5;
+  --surface-alt: #F4F1EA;
 
   /* Typography */
   --font-display: 'Playfair Display', serif;
