@@ -272,6 +272,35 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   .auth-subtitle {
     margin-bottom: 1.5rem !important;
   }
+
+  /* Filter Tabs 2x2 / 2-column grid on mobile */
+  .filter-tabs {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .filter-tab {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0.6rem 0.25rem !important;
+    font-size: 0.82rem !important;
+  }
+  /* Ensure the last element spans 2 columns if the total number of tabs is odd */
+  .filter-tabs > *:last-child:nth-child(odd) {
+    grid-column: span 2 !important;
+  }
+}
+
+/* Gallery Masonry Mobile Grid adjustments */
+@media (max-width: 639px) {
+  .masonry {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.75rem !important;
+  }
+  .masonry-item {
+    height: 220px !important;
+  }
 }
 
 
