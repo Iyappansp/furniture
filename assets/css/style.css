@@ -1113,6 +1113,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   font-family: var(--font-button);
   font-size: 0.9rem;
   font-weight: 500;
+  z-index: 5;
 }
 .masonry-item:hover .gallery-caption { opacity: 1; }
 
@@ -1300,12 +1301,14 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 .qty-stepper input { width: 44px; text-align: center; border: none; background: transparent; color: var(--color-text); font-size: 0.95rem; }
 
 /* ============ THUMBNAIL GALLERY (product detail) ============ */
-.product-gallery-main { border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 1/1; margin-bottom: 1rem; }
-.product-gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+.product-gallery-main { border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 1/1; margin-bottom: 1rem; position: relative; }
+.product-gallery-main img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--t-slow) var(--ease); }
+.product-gallery-main:hover img { transform: scale(1.06); }
 .product-gallery-thumbs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
 .thumb-item { border-radius: var(--radius-sm); overflow: hidden; aspect-ratio: 1/1; cursor: pointer; border: 2px solid transparent; transition: border-color var(--t-fast); }
 .thumb-item.active { border-color: var(--color-primary); }
-.thumb-item img { width: 100%; height: 100%; object-fit: cover; }
+.thumb-item img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--t-slow) var(--ease); }
+.thumb-item:hover img { transform: scale(1.08); }
 
 /* ============ SERVICE PROCESS NUMBERED ============ */
 .process-step { display: flex; gap: 1.5rem; }
@@ -1720,5 +1723,121 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 }
 [data-theme="dark"] .hotspot-card-info p {
   color: var(--color-text-muted);
+}
+
+/* ============ CONTACT RESPONSIVE FIXES ============ */
+.contact-grid {
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+@media (min-width: 1024px) {
+  .contact-grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+.contact-form-card {
+  padding: 1.5rem;
+}
+@media (min-width: 640px) {
+  .contact-form-card {
+    padding: 2.5rem;
+  }
+}
+
+/* ============ BLOG HOVER OVERLAY ============ */
+@media (hover: hover) and (min-width: 1024px) {
+  .blog-card {
+    position: relative;
+  }
+  .blog-card .card-body {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(31, 25, 20, 0.95) 0%, rgba(31, 25, 20, 0.45) 60%, transparent 100%);
+    opacity: 0;
+    transition: opacity var(--t-med) var(--ease);
+    z-index: 5;
+  }
+  .blog-card:hover .card-body {
+    opacity: 1;
+  }
+  
+  /* Micro-interactions: slide items up on hover */
+  .blog-card .card-body > * {
+    transform: translateY(16px);
+    transition: transform var(--t-med) var(--ease);
+  }
+  .blog-card:hover .card-body > * {
+    transform: translateY(0);
+  }
+  .blog-card .card-body .blog-tag { transition-delay: 0.02s; }
+  .blog-card .card-body h4 { transition-delay: 0.06s; }
+  .blog-card .card-body .blog-meta { transition-delay: 0.1s; }
+
+  /* High contrast colors for hover text */
+  .blog-card .card-body h4 {
+    color: #ffffff !important;
+  }
+  .blog-card .card-body .blog-meta {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .blog-card .card-body .blog-meta svg {
+    stroke: rgba(255, 255, 255, 0.8) !important;
+  }
+  .blog-card .card-body .blog-tag {
+    background: var(--color-primary);
+    color: #ffffff;
+    align-self: flex-start;
+  }
+}
+
+/* For mobile/tablet/no-hover devices, position the card-body as an overlay as well, but always visible */
+@media (max-width: 1023px), (hover: none) {
+  .blog-card {
+    position: relative;
+  }
+  .blog-card .card-body {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1.25rem;
+    background: linear-gradient(to top, rgba(31, 25, 20, 0.95) 0%, rgba(31, 25, 20, 0.45) 60%, transparent 100%);
+    z-index: 5;
+    opacity: 1;
+  }
+  .blog-card .card-body h4 {
+    color: #ffffff !important;
+    font-size: 1.05rem;
+    line-height: 1.35;
+    margin-bottom: 0.4rem;
+  }
+  .blog-card .card-body .blog-meta {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .blog-card .card-body .blog-meta svg {
+    stroke: rgba(255, 255, 255, 0.8) !important;
+  }
+  .blog-card .card-body .blog-tag {
+    background: var(--color-primary);
+    color: #ffffff;
+    align-self: flex-start;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.65rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Make entire blog card clickable via a pseudo-element on the article link */
+.blog-card .card-body a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 

@@ -55,7 +55,7 @@
 .img-zoom:hover img { transform: scale(1.07); }
 
 /* Premium Shining Hover Effect for Images */
-.img-zoom::before, .card-img::before {
+.img-zoom::before, .card-img::before, .masonry-item::before, .product-gallery-main::before {
   content: '';
   position: absolute;
   top: 0;
@@ -75,7 +75,7 @@
   z-index: 3;
 }
 
-.img-zoom:hover::before, .card-hover:hover .card-img::before {
+.img-zoom:hover::before, .card-hover:hover .card-img::before, .masonry-item:hover::before, .product-gallery-main:hover::before {
   animation: imgShine 1s var(--ease) forwards;
 }
 

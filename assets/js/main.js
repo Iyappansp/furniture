@@ -342,13 +342,13 @@
     loop();
 
     document.addEventListener("mouseover", (e) => {
-      if (e.target.closest("a, button, .card-hover, [data-magnetic]")) {
+      if (e.target.closest("a, button, .card-hover, [data-magnetic], .masonry-item, .img-zoom, .swatch-studio-card, .thumb-item, .hotspot-trigger")) {
         dot.classList.add("hovering");
         ring.classList.add("hovering");
       }
     });
     document.addEventListener("mouseout", (e) => {
-      if (e.target.closest("a, button, .card-hover, [data-magnetic]")) {
+      if (e.target.closest("a, button, .card-hover, [data-magnetic], .masonry-item, .img-zoom, .swatch-studio-card, .thumb-item, .hotspot-trigger")) {
         dot.classList.remove("hovering");
         ring.classList.remove("hovering");
       }
