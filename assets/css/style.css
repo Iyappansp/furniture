@@ -17,7 +17,7 @@
 
   --color-dark: #111111;
   --color-light: #FFFFFF;
-  --color-bg: #FAF9F6; /* Alabaster white */
+  --color-bg: #F4F1EA; /* Warm Sand Ivory */
 
   --color-text: #1C1A17;
   --color-text-muted: #7E7870;
@@ -637,7 +637,7 @@ p {
   align-items: center;
 }
 .hero .eyebrow {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   background: rgba(220, 200, 178, 0.12);
   border: 1px solid rgba(220, 200, 178, 0.25);
   padding: 0.35rem 0.95rem;
@@ -855,7 +855,7 @@ p {
   margin-bottom: 1.5rem;
 }
 .hero-split-content .eyebrow {
-  color: var(--color-secondary) !important;
+  color: var(--color-primary) !important;
   background: rgba(220, 200, 178, 0.12);
   border: 1px solid rgba(220, 200, 178, 0.25);
   padding: 0.35rem 0.95rem;
@@ -1219,7 +1219,7 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   width: 38px; height: 38px; border-radius: 50%;
   background: rgba(255,255,255,0.9);
   display: flex; align-items: center; justify-content: center;
-  color: var(--color-dark);
+  color: #111111; /* Visible black color against light circle button */
   transition: all var(--t-fast) var(--ease);
 }
 .product-wishlist:hover { background: var(--color-primary); color: #fff; }
