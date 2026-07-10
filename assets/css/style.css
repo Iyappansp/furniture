@@ -492,6 +492,49 @@ p {
   transition: color var(--t-fast) var(--ease);
 }
 .mobile-nav > nav > a:hover, .mobile-nav > nav > a.active { color: var(--color-primary); }
+
+/* Mobile Nav Preferences Panel */
+.mobile-nav-options {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+.mobile-nav-options-title {
+  display: block;
+  font-family: var(--font-button);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 0.85rem;
+}
+.mobile-nav-options-group {
+  background: var(--surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.mobile-nav-option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 1.25rem;
+  background: transparent;
+}
+.mobile-nav-option-item:not(:last-child) {
+  border-bottom: 1px solid var(--color-border);
+}
+.mobile-nav-option-label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+}
+[data-theme="dark"] .mobile-nav-options-group {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: var(--color-border);
+}
+
 .mobile-nav-cta { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
 
 .nav-overlay {

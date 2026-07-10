@@ -155,3 +155,123 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   }
 }
 
+/* ---- Tablet & Mobile Header Clean-up ---- */
+@media (max-width: 1023px) {
+  #main-header #rtlToggle,
+  #main-header #themeToggle {
+    display: none !important;
+  }
+}
+
+/* ---- Narrow Mobile (up to 480px, including 360px & 465px) ---- */
+@media (max-width: 480px) {
+  :root {
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4.5rem;
+  }
+  .container {
+    padding: 0 1rem !important; /* Save horizontal space */
+  }
+
+  /* Typography scale down to prevent line wraps / overlap */
+  h1 { font-size: clamp(1.8rem, 4vw + 1rem, 2.3rem) !important; }
+  h2 { font-size: clamp(1.4rem, 3vw + 1rem, 1.8rem) !important; }
+  h3 { font-size: clamp(1.15rem, 2vw + 0.8rem, 1.4rem) !important; }
+  h4 { font-size: clamp(1rem, 1vw + 0.8rem, 1.15rem) !important; }
+
+  /* Header / Logo refinements */
+  .logo img {
+    width: 130px !important;
+    height: 48px !important;
+  }
+  .mobile-toggle {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  .header-actions {
+    gap: 0.5rem !important;
+  }
+
+  /* Hero split content */
+  .hero-split-content {
+    padding: 8rem 1rem 4rem !important;
+  }
+  .hero-split-content .lead {
+    font-size: 0.98rem !important;
+    margin-bottom: 1.75rem !important;
+  }
+  .hero-split-content .eyebrow {
+    font-size: 0.7rem !important;
+    padding: 0.25rem 0.75rem !important;
+  }
+
+  /* Material Swatches Grid */
+  .swatches-studio-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+  .swatch-studio-card {
+    padding: 0.65rem 0.5rem !important;
+  }
+  .swatch-img-wrapper {
+    width: 40px !important;
+    height: 40px !important;
+    margin-bottom: 0.35rem !important;
+  }
+  .swatch-info h4 {
+    font-size: 0.75rem !important;
+  }
+  .swatch-info span {
+    font-size: 0.55rem !important;
+  }
+
+  /* Material preview panel details */
+  .preview-details {
+    padding: 1.25rem !important;
+  }
+  .preview-details h3 {
+    font-size: 1.25rem !important;
+  }
+  .preview-details p {
+    font-size: 0.85rem !important;
+  }
+  .preview-specs {
+    font-size: 0.8rem !important;
+  }
+
+  /* Cards in process/blog */
+  .grid-4.stagger {
+    gap: 1.25rem !important;
+  }
+  .grid-4.stagger .card {
+    border-radius: var(--radius-md) !important;
+  }
+
+  /* Testimonials styling */
+  .testimonial-card {
+    padding: 1.25rem !important;
+  }
+  
+  /* Buttons spacing and sizes */
+  .btn {
+    padding: 0.8rem 1.5rem !important;
+    font-size: 0.88rem !important;
+  }
+  .hero-split-content .hero-actions .btn {
+    padding: 0.85rem 1.75rem !important;
+  }
+  
+  /* Auth pages optimization for narrow screens */
+  .auth-card {
+    padding: 2rem 1.25rem !important;
+  }
+  .auth-title {
+    font-size: 1.5rem !important;
+  }
+  .auth-subtitle {
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+
