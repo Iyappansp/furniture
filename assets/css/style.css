@@ -282,7 +282,7 @@ p {
   z-index: 1000;
   padding: 0.75rem 0;
   transition: background var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease), padding var(--t-med) var(--ease);
-  background: rgba(250, 248, 245, 0.95);
+  background: rgba(229, 224, 216, 0.95);
   backdrop-filter: blur(12px);
   box-shadow: var(--shadow-soft);
 }
@@ -292,7 +292,7 @@ p {
 
 .site-header.scrolled {
   padding: 0.45rem 0;
-  background: rgba(250, 248, 245, 0.98);
+  background: rgba(229, 224, 216, 0.98);
   box-shadow: 0 4px 20px rgba(31, 41, 55, 0.08);
 }
 [data-theme="dark"] .site-header.scrolled {
