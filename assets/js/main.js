@@ -14,7 +14,7 @@
     close: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"></path></svg>`,
     facebook: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"></path></svg>`,
     instagram: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>`,
-    pinterest: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.64 19.32c-.05-.82-.09-2.08.02-2.98.1-.8.66-5.1.66-5.1s-.17-.34-.17-.83c0-.78.45-1.36 1.02-1.36.48 0 .71.36.71.79 0 .48-.31 1.2-.47 1.87-.13.56.28 1.02.83 1.02.99 0 1.76-1.05 1.76-2.56 0-1.34-.96-2.27-2.34-2.27-1.6 0-2.53 1.2-2.53 2.44 0 .48.18.99.42 1.27a.17.17 0 0 1 .04.16c-.04.19-.15.6-.17.68-.03.11-.09.14-.2.08-.75-.35-1.22-1.44-1.22-2.32 0-1.89 1.37-3.63 3.96-3.63 2.08 0 3.7 1.48 3.7 3.46 0 2.06-1.3 3.72-3.1 3.72-.61 0-1.18-.32-1.38-.69l-.37 1.43c-.14.52-.51 1.18-.76 1.58A10 10 0 1 0 12 2z"></path></svg>`,
+    pinterest: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 21.5c-.14-.82-.09-2.08.02-2.98.1-.8.66-5.1.66-5.1s-.17-.34-.17-.83c0-.78.45-1.36 1.02-1.36.48 0 .71.36.71.79 0 .48-.31 1.2-.47 1.87-.13.56.28 1.02.83 1.02.99 0 1.76-1.05 1.76-2.56 0-1.34-.96-2.27-2.34-2.27-1.6 0-2.53 1.2-2.53 2.44 0 .48.18.99.42 1.27a.17.17 0 0 1 .04.16c-.04.19-.15.6-.17.68-.03.11-.09.14-.2.08-.75-.35-1.22-1.44-1.22-2.32 0-1.89 1.37-3.63 3.96-3.63 2.08 0 3.7 1.48 3.7 3.46 0 2.06-1.3 3.72-3.1 3.72-.61 0-1.18-.32-1.38-.69l-.37 1.43c-.14.52-.51 1.18-.76 1.58-.22.35-.45.69-.67 1.02z"></path></svg>`,
     twitter: `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 5.9c-.68.3-1.4.5-2.16.6a3.8 3.8 0 0 0 1.66-2.1c-.73.44-1.53.75-2.39.92A3.75 3.75 0 0 0 12.9 8.9c0 .3.03.58.1.85A10.66 10.66 0 0 1 5.1 6.14a3.75 3.75 0 0 0 1.16 5c-.6-.02-1.18-.19-1.68-.46v.05a3.76 3.76 0 0 0 3 3.68 3.8 3.8 0 0 1-1.69.06 3.76 3.76 0 0 0 3.51 2.6 7.53 7.53 0 0 1-4.66 1.6c-.3 0-.6-.02-.9-.05A10.63 10.63 0 0 0 9.6 20.5c6.9 0 10.68-5.72 10.68-10.68l-.01-.49A7.6 7.6 0 0 0 22 5.9z"></path></svg>`,
     arrow: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>`,
     subscribe: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>`,
@@ -26,10 +26,11 @@
     { href: "index.html", label: "Home" },
     { href: "home-2.html", label: "Home 2" },
     { href: "about.html", label: "About" },
-    { href: "blog.html", label: "Blog" },
     { href: "shop.html", label: "Shop" },
     { href: "services.html", label: "Services" },
     { href: "gallery.html", label: "Gallery" },
+        { href: "blog.html", label: "Blog" },
+
     { href: "contact.html", label: "Contact" }
   ];
 
@@ -156,7 +157,6 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="blog.html">Journal</a></li>
-            <li><a href="faq.html">FAQ</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>

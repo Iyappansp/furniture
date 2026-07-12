@@ -5,9 +5,9 @@
 /* ---- Mobile (up to 767px) ---- */
 @media (max-width: 767px) {
   :root {
-    --space-lg: 2.75rem;
-    --space-xl: 4rem;
-    --space-2xl: 5rem;
+    --space-lg: 3.25rem;
+    --space-xl: 4.5rem;
+    --space-2xl: 5.75rem;
   }
   .hero { min-height: 88vh; }
   .hero-content { padding: 7.5rem 1.25rem 9rem; }
@@ -48,7 +48,7 @@
 
 /* ---- Tablet (768–1023px) ---- */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .section { padding: 4rem 0; }
+  .section { padding: 4.75rem 0; }
   .container { padding: 0 1.75rem; }
   .hero-content { padding: 8.5rem 1.75rem 11rem; }
   
@@ -166,9 +166,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* ---- Narrow Mobile (up to 480px, including 360px & 465px) ---- */
 @media (max-width: 480px) {
   :root {
-    --space-lg: 2rem;
-    --space-xl: 3rem;
-    --space-2xl: 4.5rem;
+    --space-lg: 2.5rem;
+    --space-xl: 3.5rem;
+    --space-2xl: 5rem;
   }
   .container {
     padding: 0 1rem !important; /* Save horizontal space */

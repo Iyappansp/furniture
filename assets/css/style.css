@@ -36,9 +36,9 @@
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
-  --space-lg: 4rem;
-  --space-xl: 6rem;
-  --space-2xl: 9rem;
+  --space-lg: 4.5rem;
+  --space-xl: 7rem;
+  --space-2xl: 10.5rem;
 
   /* Radii */
   --radius-sm: 6px;
@@ -179,7 +179,6 @@ p {
 }
 .btn-primary:hover {
   background: var(--color-primary-dark);
-  transform: translateY(-2px);
   box-shadow: var(--shadow-lift);
 }
 
@@ -191,7 +190,6 @@ p {
 .btn-secondary:hover {
   background: var(--color-primary);
   color: #fff;
-  transform: translateY(-2px);
 }
 
 .btn-ghost {
@@ -203,7 +201,6 @@ p {
 .btn-ghost:hover {
   background: rgba(0, 0, 0, 0.65);
   border-color: rgba(255, 255, 255, 0.45);
-  transform: translateY(-2px);
 }
 
 .btn-sm { padding: 0.7rem 1.4rem; font-size: 0.85rem; }
@@ -1881,6 +1878,34 @@ textarea.form-control { resize: vertical; min-height: 130px; }
 }
 .room-hotspot.align-right:hover .hotspot-card,
 .room-hotspot.align-right .hotspot-trigger.active + .hotspot-card {
+  transform: translateX(20px) translateY(0);
+}
+
+/* Downward aligned hotspots to prevent clipping at the top boundary */
+.room-hotspot.align-bottom .hotspot-card {
+  bottom: auto;
+  top: 45px;
+  transform: translateX(-50%) translateY(-10px);
+}
+.room-hotspot.align-bottom:hover .hotspot-card,
+.room-hotspot.align-bottom .hotspot-trigger.active + .hotspot-card {
+  transform: translateX(-50%) translateY(0);
+}
+.room-hotspot.align-bottom.align-left .hotspot-card {
+  left: 0;
+  transform: translateX(-20px) translateY(-10px);
+}
+.room-hotspot.align-bottom.align-left:hover .hotspot-card,
+.room-hotspot.align-bottom.align-left .hotspot-trigger.active + .hotspot-card {
+  transform: translateX(-20px) translateY(0);
+}
+.room-hotspot.align-bottom.align-right .hotspot-card {
+  left: auto;
+  right: 0;
+  transform: translateX(20px) translateY(-10px);
+}
+.room-hotspot.align-bottom.align-right:hover .hotspot-card,
+.room-hotspot.align-bottom.align-right .hotspot-trigger.active + .hotspot-card {
   transform: translateX(20px) translateY(0);
 }
 
