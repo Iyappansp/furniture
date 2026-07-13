@@ -34,8 +34,7 @@
   .custom-cursor, .custom-cursor-ring { display: none; }
 }
 
-/* Magnetic buttons (JS adds transform via inline style) */
-.magnetic { will-change: transform; transition: transform 0.2s var(--ease); }
+/* Magnetic buttons removed */
 
 /* Image zoom container helper with shine effect */
 .img-zoom {

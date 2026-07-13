@@ -11,6 +11,14 @@
   --surface-alt: #211B15;
   --color-dark: #FFFFFF;
   --color-secondary-light: #2A2119;
+  --color-header-bg: rgba(18, 18, 18, 0.95);
+  --color-header-bg-scrolled: rgba(14, 14, 14, 0.98);
+}
+
+[data-theme="dark"] .mobile-nav .icon-btn {
+  color: var(--color-text);
+  border-color: var(--color-border);
+  background: var(--surface-card);
 }
 
 [data-theme="dark"] body { background: var(--color-bg); }
@@ -35,7 +43,7 @@
 
 [data-theme="dark"] .filter-tab { color: var(--color-text); }
 
-[data-theme="dark"] .badge { background: rgba(139,94,60,0.25); color: var(--color-secondary); }
+[data-theme="dark"] .badge { background: rgba(139,94,60,0.25); color: var(--color-primary-light); }
 
 [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 [data-theme="dark"] .theme-toggle .icon-moon { display: none; }

@@ -115,6 +115,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </button>
           <div class="hotspot-card">
+            <button class="hotspot-card-close" aria-label="Close details">&times;</button>
             <img src="assets/images/home2/comfort_living.png" alt="Amara Modular Sofa Preview">
             <div class="hotspot-card-info">
               <h4>Amara Modular Sofa</h4>
@@ -132,6 +133,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </button>
           <div class="hotspot-card">
+            <button class="hotspot-card-close" aria-label="Close details">&times;</button>
             <img src="assets/images/home2/showroom_material_wall.png" alt="Soren Oak Coffee Table Preview">
             <div class="hotspot-card-info">
               <h4>Soren Coffee Table</h4>
@@ -149,6 +151,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
           </button>
           <div class="hotspot-card">
+            <button class="hotspot-card-close" aria-label="Close details">&times;</button>
             <img src="assets/images/shared/swatch_metal.webp" alt="Aurelia Pendant Lamp Preview">
             <div class="hotspot-card-info">
               <h4>Aurelia Pendant Lamp</h4>
@@ -178,6 +181,14 @@
             if (!isActive) {
               trigger.classList.add('active');
             }
+          });
+        });
+
+        // Close button handlers inside cards
+        document.querySelectorAll('.hotspot-card-close').forEach(closeBtn => {
+          closeBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            triggers.forEach(t => t.classList.remove('active'));
           });
         });
         

@@ -365,18 +365,7 @@
 
   /* ---------- Magnetic buttons ---------- */
   function initMagnetic() {
-    if (window.matchMedia("(hover: none)").matches) return;
-    document.querySelectorAll("[data-magnetic]").forEach((el) => {
-      el.addEventListener("mousemove", (e) => {
-        const rect = el.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        el.style.transform = `translate(${x * 0.25}px, ${y * 0.25}px)`;
-      });
-      el.addEventListener("mouseleave", () => {
-        el.style.transform = "translate(0, 0)";
-      });
-    });
+    return;
   }
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -388,6 +377,6 @@
     initBackToTop();
     initPreloader();
     // initCursor();
-    initMagnetic();
+    // initMagnetic();
   });
 })();

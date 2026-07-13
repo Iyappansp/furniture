@@ -10,8 +10,8 @@
     --space-2xl: 5.75rem;
   }
   .hero { min-height: 88vh; }
-  .hero-content { padding: 7.5rem 1.25rem 9rem; }
-  .hero-split-content { padding: 6.5rem 1.25rem 5rem; }
+  .hero-content { padding: 9.5rem 1.25rem 9rem; }
+  .hero-split-content { padding: 9rem 1.25rem 5rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .btn { width: 100%; }
   .hero-marquee { padding: 0.85rem 0; }
@@ -50,7 +50,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .section { padding: 4.75rem 0; }
   .container { padding: 0 1.75rem; }
-  .hero-content { padding: 8.5rem 1.75rem 11rem; }
+  .hero-content { padding: 10rem 1.75rem 11rem; }
   
   /* Center odd number of items in 2-column grid layouts */
   .grid-2 > *:last-child:nth-child(odd),
@@ -195,7 +195,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 
   /* Hero split content */
   .hero-split-content {
-    padding: 8rem 1rem 4rem !important;
+    padding: 9.5rem 1rem 4rem !important;
   }
   .hero-split-content .lead {
     font-size: 0.98rem !important;
@@ -331,6 +331,54 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     justify-content: center !important;
   }
 }
+
+/* Gallery Hotspots Mobile & Tablet Card Display Outside Container */
+@media (max-width: 1023px) {
+  .interactive-room-wrapper {
+    overflow: visible !important;
+  }
+  .room-bg-image {
+    border-radius: var(--radius-lg) !important;
+  }
+  .hotspot-card,
+  .room-hotspot.align-left .hotspot-card,
+  .room-hotspot.align-right .hotspot-card,
+  .room-hotspot.align-bottom .hotspot-card,
+  .room-hotspot.align-bottom.align-left .hotspot-card {
+    position: fixed !important;
+    top: auto !important;
+    bottom: 24px !important;
+    left: 50% !important;
+    right: auto !important;
+    width: min(92vw, 360px) !important;
+    background: #1C1A17 !important;
+    color: #FFFFFF !important;
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65) !important;
+    transform: translateX(-50%) translateY(20px) !important;
+    z-index: 1200 !important;
+  }
+  .hotspot-card-info h4 {
+    color: #FFFFFF !important;
+  }
+  .hotspot-card-info p {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .room-hotspot:hover .hotspot-card,
+  .hotspot-trigger.active + .hotspot-card,
+  .room-hotspot.align-left:hover .hotspot-card,
+  .room-hotspot.align-left .hotspot-trigger.active + .hotspot-card,
+  .room-hotspot.align-right:hover .hotspot-card,
+  .room-hotspot.align-right .hotspot-trigger.active + .hotspot-card,
+  .room-hotspot.align-bottom:hover .hotspot-card,
+  .room-hotspot.align-bottom .hotspot-trigger.active + .hotspot-card {
+    transform: translateX(-50%) translateY(0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
 
 
 
