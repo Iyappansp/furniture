@@ -202,8 +202,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     margin-bottom: 1.75rem !important;
   }
   .hero-split-content .eyebrow {
-    font-size: 0.7rem !important;
-    padding: 0.25rem 0.75rem !important;
+    font-size: 0.78rem !important;
+    padding: 0.35rem 0.9rem !important;
+    font-weight: 700 !important;
   }
 
   /* Material Swatches Grid */

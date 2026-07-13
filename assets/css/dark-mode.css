@@ -23,6 +23,14 @@
 
 [data-theme="dark"] body { background: var(--color-bg); }
 
+[data-theme="dark"] .eyebrow {
+  color: var(--color-primary-light);
+  font-weight: 700;
+}
+[data-theme="dark"] .eyebrow::before {
+  background: var(--color-primary-light);
+}
+
 [data-theme="dark"] .card { border-color: var(--color-border); }
 
 [data-theme="dark"] .site-footer { background: #0E0C09; }

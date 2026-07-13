@@ -2308,7 +2308,8 @@ textarea.form-control { resize: vertical; min-height: 130px; }
   color: #ffffff !important;
 }
 .style-quiz-section .eyebrow {
-  color: var(--color-primary);
+  color: var(--color-primary-light) !important;
+  font-weight: 700 !important;
 }
 .quiz-container {
   max-width: 650px;
