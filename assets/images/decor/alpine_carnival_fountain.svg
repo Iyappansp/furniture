@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#19282F"/>
+      <stop offset="100%" stop-color="#070E12"/>
+    </radialGradient>
+    <linearGradient id="rock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#607D8B"/>
+      <stop offset="100%" stop-color="#263238"/>
+    </linearGradient>
+    <radialGradient id="ledLight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00E676" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#00B0FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bg)"/>
+  
+  <!-- LED Waterfall Glow -->
+  <circle cx="300" cy="380" r="160" fill="url(#ledLight)"/>
+  
+  <!-- Multi-Tiered Waterfall Rocks -->
+  <path d="M120,480 Q300,550 480,480 Q520,380 440,300 Q300,260 160,300 Q80,380 120,480 Z" fill="url(#rock)"/>
+  <path d="M180,340 Q300,290 420,340 Q440,240 360,200 Q300,180 240,200 Q160,240 180,340 Z" fill="#37474F"/>
+  
+  <!-- Central Meditating Buddha Niche -->
+  <path d="M230,300 C230,220 370,220 370,300 L370,370 L230,370 Z" fill="#1C2833"/>
+  <circle cx="300" cy="270" r="25" fill="#B0BEC5"/>
+  <path d="M260,340 Q300,310 340,340 Z" fill="#B0BEC5"/>
+  
+  <!-- Misting Water Streams -->
+  <path d="M220,320 L200,440 M380,320 L400,440 M300,370 L300,460" stroke="#80D8FF" stroke-width="4" stroke-dasharray="6 4" opacity="0.85"/>
+
+  <!-- Product Label Pill -->
+  <rect x="30" y="30" width="250" height="36" rx="18" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.2)"/>
+  <text x="155" y="53" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#80D8FF" text-anchor="middle" letter-spacing="1">CARNIVAL BUDDHA FOUNTAIN</text>
+</svg>

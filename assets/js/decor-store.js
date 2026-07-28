@@ -9,171 +9,273 @@
   const DECOR_PRODUCTS = [
     {
       id: "decor-1",
-      title: "Aura Brushed Brass Abstract Sculpture",
-      category: "Sculptures",
-      price: 340,
-      rating: 4.9,
-      reviews: 38,
-      material: "Brass",
-      badge: "Artisan Made",
-      badgeClass: "badge-artisan",
-      image: "assets/images/product/chair_lounge.png",
-      dimensions: "14\"W x 8\"D x 22\"H",
-      description: "Hand-sculpted liquid brass form resting on a solid black Nero Marquina marble block. Each piece is individually cast and polished to a satin luster."
+      title: "Riviera Dune Ceramic Table Lamp",
+      category: "Lighting",
+      price: 1999,
+      originalPrice: null,
+      rating: 4.8,
+      reviews: 42,
+      material: "Ceramic",
+      badge: "",
+      badgeClass: "",
+      image: "assets/images/decor/riviera_dune_lamp.png",
+      dimensions: "14\"W x 14\"D x 24\"H",
+      description: "Handcrafted ceramic dune-textured table lamp featuring a warm natural linen drum shade. Brings soothing earthy elegance to living room side tables and bedside consoles."
     },
     {
       id: "decor-2",
-      title: "Lumina Alabaster & Brass Table Lamp",
-      category: "Lighting",
-      price: 580,
-      rating: 5.0,
-      reviews: 42,
-      material: "Alabaster",
-      badge: "Bestseller",
-      badgeClass: "",
-      image: "assets/images/product/lamp_desk.webp",
-      dimensions: "12\"Dia x 18\"H",
-      description: "Solid Spanish alabaster stone cylinder emitting a warm translucent glow, finished with hand-brushed brass hardware and dimmable LED warm filament bulb."
+      title: "Gardenia Mirage Set of 2 Floor Planters",
+      category: "Planters",
+      price: 2999,
+      originalPrice: null,
+      rating: 4.9,
+      reviews: 58,
+      material: "Metal",
+      badge: "FRIENDSHIP DAY GIFT",
+      badgeClass: "badge-gift",
+      image: "assets/images/decor/gardenia_planters.png",
+      dimensions: "Planter 1: 12\"Dia x 28\"H | Planter 2: 10\"Dia x 22\"H",
+      description: "Set of 2 floor-standing planters with embossed geometric motif white pots supported on slender gold metal tripod bases."
     },
     {
       id: "decor-3",
-      title: "Serene Organic Ribbed Ceramic Vase",
+      title: "Splendid Senorita Shizue Ceramic Floral Vase",
       category: "Vases & Ceramics",
-      price: 195,
-      rating: 4.8,
-      reviews: 29,
+      price: 1999,
+      originalPrice: null,
+      rating: 4.9,
+      reviews: 35,
       material: "Ceramic",
-      badge: "New Arrival",
-      badgeClass: "badge-new",
-      image: "assets/images/product/coffee_table_halden.png",
-      dimensions: "10\"Dia x 16\"H",
-      description: "Coarsely textured stoneware vase with matte sand reactive glaze. Perfect for grand pampas grass arrangements or as an architectural solitary piece."
+      badge: "",
+      badgeClass: "",
+      image: "assets/images/decor/shizue_vase.png",
+      dimensions: "9\"Dia x 15\"H",
+      description: "Artisanal glazed white ceramic vase decorated with intricate hand-carved 3D cherry blossom floral accents."
     },
     {
       id: "decor-4",
-      title: "Solstice Arched Gold Framed Mirror",
-      category: "Mirrors",
-      price: 720,
-      rating: 4.9,
-      reviews: 54,
-      material: "Brass",
-      badge: "Signature",
-      badgeClass: "badge-artisan",
-      image: "assets/images/product/mirror_oak.webp",
-      dimensions: "32\"W x 2\"D x 48\"H",
-      description: "Hand-hammered gold leaf brass profile encasing distortion-free floating bevel glass. Designed to double light and add majestic depth."
+      title: "Tokyo Derby Metal Floor Lamp",
+      category: "Lighting",
+      price: 1799,
+      originalPrice: null,
+      rating: 4.7,
+      reviews: 29,
+      material: "Iron",
+      badge: "FREE SHIPPING",
+      badgeClass: "badge-shipping",
+      image: "assets/images/decor/tokyo_derby_lamp.png",
+      dimensions: "18\"W x 18\"D x 58\"H",
+      description: "Sleek industrial black metal tripod floor lamp with warm ambient diffused illumination for contemporary living spaces."
     },
     {
       id: "decor-5",
-      title: "Obsidian Travertine Sculpted Centerpiece Bowl",
-      category: "Travertine & Marble",
-      price: 280,
-      rating: 4.7,
-      reviews: 19,
-      material: "Marble",
-      badge: "Limited Edition",
-      badgeClass: "",
-      image: "assets/images/product/island_kitchen.webp",
-      dimensions: "15\"Dia x 5\"H",
-      description: "Carved from a solid block of Italian Silver Travertine featuring distinctive natural vein striations and hand-honed matte touch."
+      title: "Artistry Regalia Canvas Picture Frame ",
+      category: "Wall Art",
+      price: 3999,
+      originalPrice: null,
+      rating: 4.8,
+      reviews: 64,
+      material: "Canvas",
+      badge: "FREE SHIPPING",
+      badgeClass: "badge-shipping",
+      image: "assets/images/decor/artistry_canvas_frame.png",
+      dimensions: "100cm x 60cm x 4cm",
+      description: "Museum-quality gallery canvas painting featuring textured gold leaf and neutral sand palette in floating wood frame."
     },
     {
       id: "decor-6",
-      title: "Elysian Hand-Blown Fluted Glass Pendant",
-      category: "Lighting",
-      price: 440,
-      rating: 4.9,
-      reviews: 31,
-      material: "Glass",
-      badge: "Bestseller",
-      badgeClass: "",
-      image: "assets/images/product/light_pendant.png",
-      dimensions: "16\"Dia x 24\"H",
-      description: "Mouth-blown amber smoked glass canopy with delicate fluted detailing, suspended from braided silk cord and champagne gold ceiling rose."
+      title: "Cascade Beige Polyresin Buddha Fountain ",
+      category: "Fountains & Sculptures",
+      price: 25599,
+      originalPrice: 31999,
+      rating: 5.0,
+      reviews: 89,
+      material: "Polyresin",
+      badge: "20% OFF",
+      badgeClass: "badge-discount",
+      image: "assets/images/decor/cascade_buddha_fountain.png",
+      dimensions: "80cm x 55cm x 43cm",
+      description: "Majestic indoor/outdoor water fountain with serene meditating Buddha figure, soft LED backlight, and cascading water channels."
     },
     {
       id: "decor-7",
-      title: "Nordic Cashmere & Silk Woven Throw Blanket",
-      category: "Textiles",
-      price: 310,
-      rating: 5.0,
-      reviews: 67,
-      material: "Linen",
-      badge: "Eco Luxury",
-      badgeClass: "badge-new",
-      image: "assets/images/product/bed_linen.png",
-      dimensions: "50\"W x 70\"L",
-      description: "Ultra-soft Mongolian cashmere blended with Mulberry silk fringe. Woven in historic Italian mills with un-dyed organic cream tones."
+      title: "Dhayana Polyresin Cow and Calf Figurine",
+      category: "Figurines",
+      price: 1099,
+      originalPrice: null,
+      rating: 4.8,
+      reviews: 73,
+      material: "Polyresin",
+      badge: "",
+      badgeClass: "",
+      image: "assets/images/decor/dhayana_cow_figurine.png",
+      dimensions: "12\"W x 6\"D x 8\"H",
+      description: "Ornate traditional Kamadhenu mother cow and calf figurine with metallic gold detailing, perfect for home altars or mantel displays."
     },
     {
       id: "decor-8",
-      title: "Zenith Trio Travertine Candle Holders",
-      category: "Travertine & Marble",
-      price: 210,
-      rating: 4.8,
-      reviews: 23,
-      material: "Marble",
-      badge: "Set of 3",
+      title: "Tokyo Iron Floor Lamp with Movable Shade",
+      category: "Lighting",
+      price: 1299,
+      originalPrice: null,
+      rating: 4.6,
+      reviews: 21,
+      material: "Iron",
+      badge: "",
       badgeClass: "",
-      image: "assets/images/product/sofa_amara_detail1.png",
-      dimensions: "Heights: 6\", 9\", 12\"",
-      description: "Architectural geometric pillars crafted from honed beige travertine, accommodating standard taper candles for dramatic dining candlelight."
+      image: "assets/images/decor/tokyo_iron_lamp.png",
+      dimensions: "14\"W x 14\"D x 56\"H",
+      description: "Minimalist matte black iron reading floor lamp with 360-degree adjustable shade for targeted light directional control."
     },
     {
       id: "decor-9",
-      title: "Gilded Horizon Textured Canvas Wall Art",
-      category: "Sculptures",
-      price: 890,
-      rating: 4.9,
-      reviews: 16,
-      material: "Brass",
-      badge: "Original Art",
-      badgeClass: "badge-artisan",
-      image: "assets/images/product/sofa_amara_detail3.png",
-      dimensions: "40\"W x 2\"D x 50\"H",
-      description: "Multi-layered plaster texture on gallery-wrapped linen canvas, detailed with 24k gold leaf foil and framed in floating walnut wood casing."
+      title: "Alpine Polyresin Bird Water Fountain ",
+      category: "Fountains & Sculptures",
+      price: 799,
+      originalPrice: 999,
+      rating: 4.7,
+      reviews: 45,
+      material: "Polyresin",
+      badge: "20% OFF",
+      badgeClass: "badge-discount",
+      image: "assets/images/decor/alpine_bird_fountain.png",
+      dimensions: "13cm x 12.5cm x 18.5cm",
+      description: "Compact tabletop water fountain featuring hand-painted songbirds resting beside cascading river rocks with quiet pump."
     },
     {
       id: "decor-10",
-      title: "Minimalist Stoneware Matte Pitcher Vase",
-      category: "Vases & Ceramics",
-      price: 160,
-      rating: 4.6,
-      reviews: 14,
-      material: "Ceramic",
-      badge: "Artisan Made",
-      badgeClass: "badge-artisan",
-      image: "assets/images/product/cart_rolling.webp",
-      dimensions: "8\"Dia x 14\"H",
-      description: "Sculptural single-handle pitcher handcrafted by Danish master ceramicists with raw matte exterior and glazed waterproof interior."
+      title: "Noor Polyresin Buddha Figurine with T-Light",
+      category: "Figurines",
+      price: 4999,
+      originalPrice: null,
+      rating: 4.9,
+      reviews: 52,
+      material: "Polyresin",
+      badge: "FREE SHIPPING",
+      badgeClass: "badge-shipping",
+      image: "assets/images/decor/noor_buddha_tlight.png",
+      dimensions: "10\"W x 8\"D x 14\"H",
+      description: "Serene meditating Buddha statue with built-in lotus tea light candle holder crafted in aged bronze patinated polyresin."
     },
     {
       id: "decor-11",
-      title: "Bouclé & Velvet Geometric Accent Cushion",
-      category: "Textiles",
-      price: 135,
-      rating: 4.7,
-      reviews: 41,
-      material: "Linen",
-      badge: "Popular",
-      badgeClass: "",
-      image: "assets/images/product/armchair_amara.webp",
-      dimensions: "20\"W x 20\"H",
-      description: "Plush tactile bouclé pillow featuring contrasting mocha velvet inset panels and premium hypoallergenic goose down filler insert."
+      title: "Alpine Polyresin Buddha and Lotus Fountain",
+      category: "Fountains & Sculptures",
+      price: 1499,
+      originalPrice: 2999,
+      rating: 4.9,
+      reviews: 94,
+      material: "Polyresin",
+      badge: "50% OFF",
+      badgeClass: "badge-discount",
+      image: "assets/images/decor/alpine_buddha_lotus.png",
+      dimensions: "25cm x 19cm",
+      description: "Peaceful zen indoor water fountain with Buddha figure seated above glowing illuminated lotus bloom water basin."
     },
     {
       id: "decor-12",
-      title: "Verona Fluted Marble Vanity & Coffee Tray",
-      category: "Travertine & Marble",
-      price: 245,
+      title: "Brighton Stoneware Reindeer Figurine",
+      category: "Figurines",
+      price: 2499,
+      originalPrice: null,
+      rating: 4.8,
+      reviews: 18,
+      material: "Stoneware",
+      badge: "",
+      badgeClass: "",
+      image: "assets/images/decor/brighton_reindeer.png",
+      dimensions: "8\"W x 4\"D x 14\"H",
+      description: "Nordic styled stoneware reindeer figurine with metallic antler highlights, creating a festive luxury statement."
+    },
+    {
+      id: "decor-13",
+      title: "Corsica Meryl Polyresin Elephants On Ivory",
+      category: "Figurines",
+      price: 1799,
+      originalPrice: 1999,
       rating: 4.9,
-      reviews: 28,
-      material: "Marble",
-      badge: "New Arrival",
-      badgeClass: "badge-new",
-      image: "assets/images/product/media_console_amara.png",
-      dimensions: "16\"W x 10\"D x 2\"H",
-      description: "Hand-sculpted Carrara white marble catchall tray with fluted scalloped edges. Perfect for staging perfume bottles, keys, or crystal decanters."
+      reviews: 81,
+      material: "Polyresin",
+      badge: "FREE SHIPPING • 10% OFF",
+      badgeClass: "badge-shipping",
+      image: "assets/images/decor/corsica_elephants.png",
+      dimensions: "16\"W x 5\"D x 9\"H",
+      description: "Auspicious pair of royal elephants with raised trunks walking along ivory white pedestal, symbol of prosperity and harmony."
+    },
+    {
+      id: "decor-14",
+      title: "Alpine Polyresin Ganesha Fountain - 25x39cm",
+      category: "Fountains & Sculptures",
+      price: 2749,
+      originalPrice: 5499,
+      rating: 5.0,
+      reviews: 112,
+      material: "Polyresin",
+      badge: "50% OFF",
+      badgeClass: "badge-discount",
+      image: "assets/images/decor/alpine_ganesha_fountain.png",
+      dimensions: "25cm x 39cm",
+      description: "Divine Lord Ganesha tabletop water fountain with rolling crystal water ball and warm glowing LED backlight."
+    },
+    {
+      id: "decor-15",
+      title: "Enlighten Polyresin Sitting Buddha Figurine",
+      category: "Figurines",
+      price: 5999,
+      originalPrice: null,
+      rating: 4.9,
+      reviews: 40,
+      material: "Polyresin",
+      badge: "FREE SHIPPING",
+      badgeClass: "badge-shipping",
+      image: "assets/images/decor/enlighten_sitting_buddha.png",
+      dimensions: "14\"W x 10\"D x 20\"H",
+      description: "Large antique gold sitting Buddha sculpture displaying Dhyana Mudra gesture, designed to infuse tranquility into any home."
+    },
+    {
+      id: "decor-16",
+      title: "Alpine Carnival Polyresin Meditating Buddha",
+      category: "Fountains & Sculptures",
+      price: 3999,
+      originalPrice: 7999,
+      rating: 4.9,
+      reviews: 67,
+      material: "Polyresin",
+      badge: "50% OFF",
+      badgeClass: "badge-discount",
+      image: "assets/images/decor/alpine_carnival_fountain.png",
+      dimensions: "26cm x 18cm x 44cm",
+      description: "Tiered rock waterfall fountain featuring meditating Buddha in serene contemplation with color-changing water LED lights."
+    },
+    {
+      id: "decor-17",
+      title: "Jessica White Metal Contemporary Floor Lamp",
+      category: "Lighting",
+      price: 2999,
+      originalPrice: null,
+      rating: 4.7,
+      reviews: 31,
+      material: "Metal",
+      badge: "FREE SHIPPING",
+      badgeClass: "badge-shipping",
+      image: "assets/images/decor/jessica_white_lamp.png",
+      dimensions: "16\"Dia x 60\"H",
+      description: "Modern minimalist white metal floor lamp with clean geometric stand and softly diffused ambient light output."
+    },
+    {
+      id: "decor-18",
+      title: "Brighton Max Ceramic Sitting Rabbit",
+      category: "Figurines",
+      price: 1299,
+      originalPrice: null,
+      rating: 4.8,
+      reviews: 26,
+      material: "Ceramic",
+      badge: "",
+      badgeClass: "",
+      image: "assets/images/decor/brighton_rabbit.png",
+      dimensions: "7\"W x 5\"D x 12\"H",
+      description: "Smooth glazed ceramic sitting rabbit figurine in minimalist ivory white finish, adding playful sophistication to console tables."
     }
   ];
 
@@ -227,7 +329,7 @@
   let currentCategory = "All Decor";
   let searchQuery = "";
   let selectedMaterial = "All";
-  let maxPrice = 1000;
+  let maxPrice = 35000;
   let currentSort = "Featured";
   let currentViewMode = "grid"; // 'grid', 'editorial', 'vignette'
   let wishlist = new Set();
@@ -314,7 +416,7 @@
     if (priceSlider && priceDisplay) {
       priceSlider.addEventListener("input", (e) => {
         maxPrice = parseInt(e.target.value, 10);
-        priceDisplay.textContent = `$${maxPrice}`;
+        priceDisplay.textContent = `₹${maxPrice.toLocaleString('en-IN')}`;
         renderDecorShowcase();
       });
     }
@@ -324,12 +426,12 @@
       currentCategory = "All Decor";
       searchQuery = "";
       selectedMaterial = "All";
-      maxPrice = 1000;
+      maxPrice = 35000;
       currentSort = "Featured";
 
       swatches.forEach((s) => s.classList.remove("active"));
-      if (priceSlider) priceSlider.value = 1000;
-      if (priceDisplay) priceDisplay.textContent = "$1000";
+      if (priceSlider) priceSlider.value = 35000;
+      if (priceDisplay) priceDisplay.textContent = "₹35,000";
       const searchInput = document.getElementById("decorSearchInput");
       if (searchInput) searchInput.value = "";
 
@@ -486,7 +588,7 @@
       btn.addEventListener("click", () => openQuickView(btn.dataset.id));
     });
 
-    container.querySelectorAll(".btn-wishlist").forEach((btn) => {
+    container.querySelectorAll(".btn-wishlist, .wishlist-heart-btn").forEach((btn) => {
       btn.addEventListener("click", () => toggleWishlist(btn.dataset.id, btn));
     });
 
@@ -497,28 +599,31 @@
 
   function renderGridCard(item) {
     const isWished = wishlist.has(item.id);
+    const hasDiscount = item.originalPrice && item.originalPrice > item.price;
     return `
     <div class="decor-card revealed" data-reveal="fade" data-id="${item.id}">
       <div class="decor-card-img-wrap">
         <img src="${item.image}" alt="${item.title}" loading="lazy">
-        ${item.badge ? `<span class="decor-badge ${item.badgeClass}">${item.badge}</span>` : ""}
+        ${item.badge ? `<span class="decor-badge ${item.badgeClass || ''}">${item.badge}</span>` : ""}
+        <button class="wishlist-heart-btn ${isWished ? "active" : ""}" data-id="${item.id}" aria-label="Add to wishlist" title="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="${isWished ? "#E53E3E" : "none"}" stroke="${isWished ? "#E53E3E" : "currentColor"}" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </button>
         <div class="decor-actions-overlay">
           <button class="overlay-btn btn-quick-view" data-id="${item.id}" aria-label="Quick view item" title="Quick View">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </button>
-          <button class="overlay-btn btn-wishlist ${isWished ? "active" : ""}" data-id="${item.id}" aria-label="Add to wishlist" title="Wishlist">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="${isWished ? "var(--color-primary)" : "none"}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-          </button>
         </div>
       </div>
       <div class="decor-card-body">
-        <span class="decor-card-category">${item.category} • ${item.material}</span>
-        <h4 class="decor-card-title">${item.title}</h4>
-        <div class="decor-card-rating">
-          ★ ${item.rating.toFixed(1)} <span>(${item.reviews} reviews)</span>
+        <div>
+          <div class="decor-card-price-row">
+            <span class="decor-price">₹${item.price.toLocaleString('en-IN')}</span>
+            ${hasDiscount ? `<span class="decor-original-price">₹${item.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+          </div>
+          <h4 class="decor-card-title">${item.title}</h4>
         </div>
         <div class="decor-card-footer">
-          <span class="decor-price">$${item.price}</span>
+          <span class="decor-card-category">${item.category}</span>
           <button class="btn btn-primary btn-sm btn-add-bag" data-id="${item.id}">+ Add to Bag</button>
         </div>
       </div>
@@ -527,16 +632,20 @@
 
   function renderEditorialCard(item) {
     const isWished = wishlist.has(item.id);
+    const hasDiscount = item.originalPrice && item.originalPrice > item.price;
     return `
     <div class="editorial-card revealed" data-reveal="fade" data-id="${item.id}">
       <div class="editorial-img-wrap">
         <img src="${item.image}" alt="${item.title}" loading="lazy">
-        ${item.badge ? `<span class="decor-badge ${item.badgeClass}">${item.badge}</span>` : ""}
+        ${item.badge ? `<span class="decor-badge ${item.badgeClass || ''}">${item.badge}</span>` : ""}
       </div>
       <div class="editorial-body">
         <div style="display:flex; justify-content:space-between; align-items:flex-start;">
           <span class="decor-card-category">${item.category} • ${item.material}</span>
-          <span style="font-weight:700; font-size:1.25rem; color:var(--color-primary-dark);">$${item.price}</span>
+          <div>
+            <span style="font-weight:700; font-size:1.3rem; color:var(--color-dark);">₹${item.price.toLocaleString('en-IN')}</span>
+            ${hasDiscount ? `<span style="font-size:0.9rem; text-decoration:line-through; color:var(--color-text-muted); margin-left:0.4rem;">₹${item.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+          </div>
         </div>
         <h3 style="font-family:var(--font-display); font-size:1.35rem; margin:0.3rem 0 0.5rem 0;">${item.title}</h3>
         <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:1rem;">${item.description}</p>
@@ -556,7 +665,7 @@
 
     bundleBtn.addEventListener("click", () => {
       cartCount += 3;
-      showToast("Added complete 'Neoclassical Coffee Table Vignette' bundle (3 items) to your bag!");
+      showToast("Added complete Riviera Dune Ensemble bundle (3 items) to your bag!");
     });
   }
 
@@ -578,6 +687,8 @@
     const content = document.getElementById("quickViewContent");
     if (!item || !modal || !content) return;
 
+    const hasDiscount = item.originalPrice && item.originalPrice > item.price;
+
     content.innerHTML = `
       <div class="modal-quickview-grid">
         <div>
@@ -586,7 +697,10 @@
         <div>
           <span style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--color-primary-dark); font-weight:600;">${item.category}</span>
           <h2 style="font-family:var(--font-display); font-size:1.6rem; margin:0.4rem 0 0.75rem 0;">${item.title}</h2>
-          <div style="font-size:1.3rem; font-weight:700; color:var(--color-dark); margin-bottom:1rem;">$${item.price}</div>
+          <div style="font-size:1.3rem; font-weight:700; color:var(--color-dark); margin-bottom:1rem;">
+            ₹${item.price.toLocaleString('en-IN')}
+            ${hasDiscount ? `<span style="font-size:0.95rem; text-decoration:line-through; color:var(--color-text-muted); margin-left:0.5rem;">₹${item.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+          </div>
           <p style="font-size:0.92rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:1.25rem;">${item.description}</p>
           
           <div style="background:var(--surface-alt); padding:1rem; border-radius:var(--radius-sm); margin-bottom:1.5rem; font-size:0.85rem;">
@@ -627,12 +741,12 @@
     if (wishlist.has(id)) {
       wishlist.delete(id);
       btn.classList.remove("active");
-      btn.querySelector("svg").setAttribute("fill", "none");
+      if (btn.querySelector("svg")) btn.querySelector("svg").setAttribute("fill", "none");
       showToast(`Removed "${item ? item.title : "Item"}" from wishlist.`);
     } else {
       wishlist.add(id);
       btn.classList.add("active");
-      btn.querySelector("svg").setAttribute("fill", "var(--color-primary)");
+      if (btn.querySelector("svg")) btn.querySelector("svg").setAttribute("fill", "#E53E3E");
       showToast(`Saved "${item ? item.title : "Item"}" to your wishlist!`);
     }
   }
@@ -718,7 +832,7 @@
           <img src="${item.image}" alt="${item.title}" style="width:60px; height:60px; object-fit:cover; border-radius:var(--radius-sm);">
           <div style="flex:1">
             <h5 style="margin:0 0 0.2rem 0; font-family:var(--font-display);">${item.title}</h5>
-            <div style="color:var(--color-primary-dark); font-weight:700;">$${item.price}</div>
+            <div style="color:var(--color-primary-dark); font-weight:700;">₹${item.price.toLocaleString('en-IN')}</div>
           </div>
           <button class="btn btn-primary btn-sm btn-add-bag" data-id="${item.id}">+ Add</button>
         </div>`).join("");

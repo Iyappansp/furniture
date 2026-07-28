@@ -124,12 +124,12 @@
         <!-- AESTHETIC COLLECTION SHOWCASE TABS -->
         <div class="decor-collection-tabs" id="decorCollectionTabs" data-reveal="fade">
           <button class="tab-btn active" data-category="All Decor">All Masterpieces</button>
-          <button class="tab-btn" data-category="Sculptures">Sculptures &amp; Objects</button>
+          <button class="tab-btn" data-category="Lighting">Lighting</button>
+          <button class="tab-btn" data-category="Planters">Planters</button>
           <button class="tab-btn" data-category="Vases & Ceramics">Vases &amp; Ceramics</button>
-          <button class="tab-btn" data-category="Lighting">Designer Lighting</button>
-          <button class="tab-btn" data-category="Mirrors">Statement Mirrors</button>
-          <button class="tab-btn" data-category="Textiles">Textiles &amp; Throws</button>
-          <button class="tab-btn" data-category="Travertine & Marble">Travertine &amp; Marble</button>
+          <button class="tab-btn" data-category="Wall Art">Wall Art &amp; Frames</button>
+          <button class="tab-btn" data-category="Fountains & Sculptures">Fountains &amp; Waterfalls</button>
+          <button class="tab-btn" data-category="Figurines">Figurines &amp; Statues</button>
         </div>
 
         <!-- DYNAMIC FEATURED COLLECTION SPOTLIGHT BANNER -->
@@ -137,7 +137,7 @@
           <div class="spotlight-content">
             <span class="spotlight-badge">Curated Masterpieces</span>
             <h2 class="spotlight-title">Handcrafted Statement Decor</h2>
-            <p class="spotlight-desc">Architectural objects, alabaster lighting, and textured ceramics engineered to bring museum-grade elegance to everyday surfaces.</p>
+            <p class="spotlight-desc">Architectural objects, floor lamps, water fountains, and floral ceramic vessels engineered to bring museum-grade elegance to everyday surfaces.</p>
             <div class="spotlight-quote">“Decor is not filling space; it is sculpture interacting with light.” — VerdantWood Design Studio</div>
           </div>
           <div class="spotlight-action" style="z-index:2">
@@ -148,23 +148,23 @@
         <!-- SHOP THE COMPLETE VIGNETTE BUNDLE CARD -->
         <div class="vignette-bundle-card" data-reveal="fade">
           <div class="vignette-img-stack">
-            <img src="assets/images/home1/hero_living.png" alt="Neoclassical Coffee Table Vignette">
+            <img src="assets/images/decor/riviera_dune_lamp.png" alt="Neoclassical Table Vignette">
           </div>
           <div class="vignette-info">
             <span style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--color-primary-dark); font-weight:700;">Curated Vignette Bundle</span>
-            <h3>The Neoclassical Coffee Table Ensemble</h3>
+            <h3>The Riviera Dune Ensemble</h3>
             <p style="color:var(--color-text-muted); font-size:0.92rem; line-height:1.5;">
-              Save 15% when ordering this ready-styled 3-piece vignette for your living room coffee table or mantel.
+              Save 20% when ordering this ready-styled 3-piece vignette for your living room console or table.
             </p>
             <div class="vignette-items-list">
-              <span class="vignette-item-chip">✨ Aura Brass Sculpture ($340)</span>
-              <span class="vignette-item-chip">💡 Lumina Alabaster Lamp ($580)</span>
-              <span class="vignette-item-chip">🏺 Verona Marble Tray ($245)</span>
+              <span class="vignette-item-chip">💡 Riviera Dune Lamp (₹1,999)</span>
+              <span class="vignette-item-chip">🪴 Gardenia Planters (₹2,999)</span>
+              <span class="vignette-item-chip">🏺 Shizue Floral Vase (₹1,999)</span>
             </div>
             <div class="flex align-center gap-md" style="flex-wrap:wrap;">
               <div>
-                <span style="text-decoration:line-through; color:var(--color-text-muted); font-size:0.9rem; margin-right:0.4rem;">$1,165</span>
-                <span style="font-size:1.35rem; font-weight:700; color:var(--color-dark);">$990</span>
+                <span style="text-decoration:line-through; color:var(--color-text-muted); font-size:0.9rem; margin-right:0.4rem;">₹6,997</span>
+                <span style="font-size:1.35rem; font-weight:700; color:var(--color-dark);">₹5,499</span>
               </div>
               <button class="btn btn-primary" id="addVignetteBundleBtn">+ Add Complete Bundle to Bag</button>
             </div>
@@ -175,7 +175,7 @@
         <div class="decor-control-bar" data-reveal="fade">
           <div class="decor-search-box">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
-            <input type="text" id="decorSearchInput" placeholder="Search decor by title, material, or texture..." aria-label="Search decor items">
+            <input type="text" id="decorSearchInput" placeholder="Search decor by title, material, or category..." aria-label="Search decor items">
           </div>
 
           <button class="filter-drawer-toggle" id="filterDrawerToggle">
@@ -185,7 +185,7 @@
 
           <div class="flex align-center gap-sm">
             <p style="margin:0; font-size:0.88rem; color:var(--color-text-muted);">
-              Showing <strong id="decorItemCount" style="color:var(--color-dark)">12</strong> items
+              Showing <strong id="decorItemCount" style="color:var(--color-dark)">18</strong> items
             </p>
             
             <div class="view-mode-group" id="viewModeGroup">
@@ -198,14 +198,6 @@
                 Editorial
               </button>
             </div>
-
-            <select class="form-control" id="decorSortSelect" style="width: auto; padding: 0.45rem 0.85rem; font-size:0.85rem;">
-              <option value="Featured">Sort: Featured</option>
-              <option value="Price: Low to High">Price: Low to High</option>
-              <option value="Price: High to Low">Price: High to Low</option>
-              <option value="Best Rated">Best Rated</option>
-              <option value="Newest Arrivals">Newest Arrivals</option>
-            </select>
           </div>
         </div>
         <!-- EXPANDABLE GLASSMORPHISM FILTER DRAWER -->
@@ -214,20 +206,19 @@
             <div>
               <h4 style="margin-bottom:0.75rem; font-family:var(--font-display);">Material Accent</h4>
               <div class="filter-swatches">
-                <span class="filter-swatch decor-material-swatch" data-material="Brass" style="background:#C5A059;" title="Brass & Gold"></span>
-                <span class="filter-swatch decor-material-swatch" data-material="Marble" style="background:#E5E2DC;" title="Travertine & Marble"></span>
-                <span class="filter-swatch decor-material-swatch" data-material="Ceramic" style="background:#9E9689;" title="Ceramic & Stoneware"></span>
-                <span class="filter-swatch decor-material-swatch" data-material="Alabaster" style="background:#FAF8F5;" title="Alabaster Stone"></span>
-                <span class="filter-swatch decor-material-swatch" data-material="Glass" style="background:#B4C4C4;" title="Hand-blown Glass"></span>
-                <span class="filter-swatch decor-material-swatch" data-material="Linen" style="background:#D8C4B6;" title="Cashmere & Linen"></span>
+                <span class="filter-swatch decor-material-swatch" data-material="Ceramic" style="background:#E5E2DC;" title="Ceramic"></span>
+                <span class="filter-swatch decor-material-swatch" data-material="Polyresin" style="background:#9E9689;" title="Polyresin"></span>
+                <span class="filter-swatch decor-material-swatch" data-material="Iron" style="background:#333;" title="Iron & Metal"></span>
+                <span class="filter-swatch decor-material-swatch" data-material="Stoneware" style="background:#D8C4B6;" title="Stoneware"></span>
+                <span class="filter-swatch decor-material-swatch" data-material="Canvas" style="background:#C5A059;" title="Canvas Art"></span>
               </div>
             </div>
 
             <div>
               <h4 style="margin-bottom:0.75rem; font-family:var(--font-display);">Price Range</h4>
-              <input type="range" id="decorPriceRange" min="100" max="1000" step="50" value="1000" style="width:100%; accent-color:var(--color-primary); margin-bottom:0.4rem;">
+              <input type="range" id="decorPriceRange" min="500" max="35000" step="500" value="35000" style="width:100%; accent-color:var(--color-primary); margin-bottom:0.4rem;">
               <div class="flex justify-between" style="font-size:0.85rem; color:var(--color-text-muted);">
-                <span>$100</span><span id="decorPriceValue" style="font-weight:700; color:var(--color-dark);">$1000</span>
+                <span>₹500</span><span id="decorPriceValue" style="font-weight:700; color:var(--color-dark);">₹35,000</span>
               </div>
             </div>
 
