@@ -323,8 +323,8 @@ p {
   width: 100%;
   position: relative;
   overflow: hidden;
-  aspect-ratio: 16/10;
-  max-height: 250px;
+  aspect-ratio: 4/3;
+  max-height: 280px;
 }
 
 .card-img img {
@@ -2380,8 +2380,8 @@ input[type="time"]::-webkit-calendar-picker-indicator:hover {
 .product-card .card-img {
   display: block;
   width: 100%;
-  aspect-ratio: 16/10;
-  max-height: 240px;
+  aspect-ratio: 4/3;
+  max-height: 280px;
   overflow: hidden;
 }
 
@@ -2587,7 +2587,7 @@ input[type="time"]::-webkit-calendar-picker-indicator:hover {
 
 /* ============ BLOG CARD ============ */
 .blog-card .card-img {
-  aspect-ratio: 16/10;
+  aspect-ratio: 4/3;
 }
 
 .blog-meta {
@@ -4605,7 +4605,7 @@ input[type="time"]::-webkit-calendar-picker-indicator:hover {
 .cat-card-img {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--color-secondary-light);
 }
@@ -4703,7 +4703,7 @@ input[type="time"]::-webkit-calendar-picker-indicator:hover {
 
 .offering-card-img {
   position: relative;
-  aspect-ratio: 16 / 11;
+  aspect-ratio: 4 / 3;
 }
 
 .offering-badge {

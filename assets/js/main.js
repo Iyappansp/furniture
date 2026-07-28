@@ -274,6 +274,9 @@
     const saved = localStorage.getItem("vw-theme");
     if (saved === "dark") root.setAttribute("data-theme", "dark");
 
+    if (window._themeListenerAttached) return;
+    window._themeListenerAttached = true;
+
     document.addEventListener("click", (e) => {
       const btn = e.target.closest(".theme-toggle");
       if (!btn) return;
