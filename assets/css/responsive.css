@@ -75,7 +75,7 @@
 /* ---- Desktop Small (1024px–1200px) Refinements ---- */
 @media (min-width: 1024px) and (max-width: 1200px) {
   .container { padding: 0 2rem; }
-  .logo img { width: 150px; height: 60px; }
+  .logo img { width: 190px; height: 75px; }
   .main-nav { gap: 0.8rem; }
   .main-nav a { font-size: 0.85rem; }
   .header-actions { gap: 0.6rem; }

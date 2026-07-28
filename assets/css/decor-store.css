@@ -224,6 +224,7 @@
 .spotlight-title {
   font-family: var(--font-display);
   font-size: 1.9rem;
+  color: #FFFFFF !important;
   margin-bottom: 0.75rem;
   line-height: 1.25;
 }
