@@ -333,6 +333,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     padding: 0.9rem 1.5rem !important;
     width: 100% !important;
     justify-content: center !important;
+    color: #111111 !important;
+    font-weight: 600 !important;
   }
 }
 

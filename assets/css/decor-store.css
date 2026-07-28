@@ -190,7 +190,7 @@
 
 /* --- Featured Collection Spotlight Card --- */
 .decor-spotlight-banner {
-  background: linear-gradient(135deg, rgba(28, 28, 28, 0.95), rgba(45, 40, 35, 0.9)), url('assets/images/decor/decor_hero.png');
+  background: linear-gradient(135deg, rgba(28, 28, 28, 0.95), rgba(45, 40, 35, 0.9)), url('../images/decor/decor_hero_collage.png');
   background-size: cover;
   background-position: center;
   border-radius: var(--radius-lg);

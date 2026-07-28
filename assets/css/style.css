@@ -1033,7 +1033,7 @@ p {
 
 .footer-newsletter button {
   background: var(--color-primary);
-  color: #fff;
+  color: #111111;
   border: none;
   width: 38px;
   height: 38px;
@@ -1041,7 +1041,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background var(--t-fast);
+  transition: all var(--t-fast);
   cursor: pointer;
   flex-shrink: 0;
 }
@@ -1052,10 +1052,13 @@ p {
   display: block;
   stroke: currentColor;
   fill: none;
+  stroke-width: 2.5px;
 }
 
 .footer-newsletter button:hover {
-  background: var(--color-primary-light);
+  background: #FFFFFF;
+  color: #111111;
+  transform: translateY(-1px);
 }
 
 .footer-bottom {
