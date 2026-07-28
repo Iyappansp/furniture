@@ -23,14 +23,19 @@
   };
 
   const NAV_LINKS = [
-    { href: "index.html", label: "Home" },
-    { href: "home-2.html", label: "Home 2" },
+    {
+      label: "Home",
+      children: [
+        { href: "index.html", label: "Home 1" },
+        { href: "home-2.html", label: "Home 2" }
+      ]
+    },
     { href: "about.html", label: "About" },
     { href: "shop.html", label: "Shop" },
+    { href: "decor-store.html", label: "Decor Store" },
     { href: "services.html", label: "Services" },
     { href: "gallery.html", label: "Gallery" },
-        { href: "blog.html", label: "Blog" },
-
+    { href: "blog.html", label: "Blog" },
     { href: "contact.html", label: "Contact" }
   ];
 
@@ -144,6 +149,7 @@
           <h4>Shop</h4>
           <ul>
             <li><a href="shop.html">All Products</a></li>
+            <li><a href="decor-store.html">Decor Store</a></li>
             <li><a href="room-collections.html">Room Collections</a></li>
             <li><a href="home-2.html">Living Room</a></li>
             <li><a href="home-2.html">Bedroom</a></li>
@@ -317,9 +323,13 @@
   function initPreloader() {
     const pre = document.querySelector(".preloader");
     if (!pre) return;
-    window.addEventListener("load", () => {
-      setTimeout(() => pre.classList.add("hidden"), 300);
-    });
+    const hidePreloader = () => setTimeout(() => pre.classList.add("hidden"), 200);
+    if (document.readyState === "complete") {
+      hidePreloader();
+    } else {
+      window.addEventListener("load", hidePreloader);
+      setTimeout(hidePreloader, 600); // Fail-safe timer
+    }
   }
 
   /* ---------- Custom cursor (desktop only) ---------- */
@@ -363,12 +373,41 @@
     });
   }
 
-  /* ---------- Magnetic buttons ---------- */
-  function initMagnetic() {
-    return;
+  function initCategoryCards() {
+    const cards = document.querySelectorAll("[data-category-trigger]");
+    if (!cards.length) return;
+
+    cards.forEach((card) => {
+      const handleTrigger = (e) => {
+        if (e.type === "keydown" && e.key !== "Enter" && e.key !== " ") return;
+        if (e.type === "keydown") e.preventDefault();
+
+        const cat = card.getAttribute("data-category-trigger");
+
+        cards.forEach((c) => c.classList.remove("active"));
+        card.classList.add("active");
+
+        const roomCheckboxes = document.querySelectorAll('input[type="checkbox"][data-room]');
+        if (roomCheckboxes.length) {
+          roomCheckboxes.forEach((cb) => {
+            cb.checked = (cb.getAttribute("data-room") === cat);
+          });
+        }
+
+        const target = document.getElementById("shop-catalog");
+        if (target) {
+          const navHeight = 90;
+          const targetPos = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+          window.scrollTo({ top: targetPos, behavior: "smooth" });
+        }
+      };
+
+      card.addEventListener("click", handleTrigger);
+      card.addEventListener("keydown", handleTrigger);
+    });
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
+  function startApp() {
     injectHeaderFooter();
     initHeaderScroll();
     initTheme();
@@ -376,7 +415,12 @@
     initNewsletter();
     initBackToTop();
     initPreloader();
-    // initCursor();
-    // initMagnetic();
-  });
+    initCategoryCards();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", startApp);
+  } else {
+    startApp();
+  }
 })();
