@@ -129,8 +129,8 @@
     },
     {
       id: "decor-9",
-      title: "Alpine Polyresin Bird Water Fountain ",
-      category: "Fountains & Sculptures",
+      title: "Alpine Luxury Round Marble Top Coffee Table",
+      category: "Vases & Ceramics",
       price: 799,
       originalPrice: 999,
       rating: 4.7,
@@ -139,12 +139,12 @@
       badge: "20% OFF",
       badgeClass: "badge-discount",
       image: "assets/images/decor/alpine_bird_fountain.png",
-      dimensions: "13cm x 12.5cm x 18.5cm",
-      description: "Compact tabletop water fountain featuring hand-painted songbirds resting beside cascading river rocks with quiet pump."
+      dimensions: "90cm x 90cm x 45cm",
+      description: "Luxury round white marble coffee table featuring solid natural quarried marble top with brushed brass gold frame."
     },
     {
       id: "decor-10",
-      title: "Noor Polyresin Buddha Figurine with T-Light",
+      title: "Noor Sculptural Bouclé Accent Armchair",
       category: "Figurines",
       price: 4999,
       originalPrice: null,
@@ -154,8 +154,8 @@
       badge: "FREE SHIPPING",
       badgeClass: "badge-shipping",
       image: "assets/images/decor/noor_buddha_tlight.png",
-      dimensions: "10\"W x 8\"D x 14\"H",
-      description: "Serene meditating Buddha statue with built-in lotus tea light candle holder crafted in aged bronze patinated polyresin."
+      dimensions: "32\"W x 34\"D x 30\"H",
+      description: "Contemporary curved lounge armchair upholstered in tactile cream bouclé fabric with solid oak inner frame."
     },
     {
       id: "decor-11",
@@ -174,7 +174,7 @@
     },
     {
       id: "decor-12",
-      title: "Brighton Stoneware Reindeer Figurine",
+      title: "Brighton Mid-Century Wooden Credenza",
       category: "Figurines",
       price: 2499,
       originalPrice: null,
@@ -184,8 +184,8 @@
       badge: "",
       badgeClass: "",
       image: "assets/images/decor/brighton_reindeer.png",
-      dimensions: "8\"W x 4\"D x 14\"H",
-      description: "Nordic styled stoneware reindeer figurine with metallic antler highlights, creating a festive luxury statement."
+      dimensions: "60\"W x 18\"D x 30\"H",
+      description: "Handcrafted solid teak wood credenza console sideboard with slatted doors and brushed metal hardware."
     },
     {
       id: "decor-13",
@@ -204,7 +204,7 @@
     },
     {
       id: "decor-14",
-      title: "Alpine Polyresin Ganesha Fountain - 25x39cm",
+      title: "Alpine Cognac Leather Sectional Sofa",
       category: "Fountains & Sculptures",
       price: 2749,
       originalPrice: 5499,
@@ -214,12 +214,12 @@
       badge: "50% OFF",
       badgeClass: "badge-discount",
       image: "assets/images/decor/alpine_ganesha_fountain.png",
-      dimensions: "25cm x 39cm",
-      description: "Divine Lord Ganesha tabletop water fountain with rolling crystal water ball and warm glowing LED backlight."
+      dimensions: "96\"W x 40\"D x 32\"H",
+      description: "Plush modern cognac brown leather sectional sofa crafted from top-grain aniline leather with deep comfortable seating."
     },
     {
       id: "decor-15",
-      title: "Enlighten Polyresin Sitting Buddha Figurine",
+      title: "Enlighten Luxury Upholstered Platform Bed",
       category: "Figurines",
       price: 5999,
       originalPrice: null,
@@ -229,12 +229,12 @@
       badge: "FREE SHIPPING",
       badgeClass: "badge-shipping",
       image: "assets/images/decor/enlighten_sitting_buddha.png",
-      dimensions: "14\"W x 10\"D x 20\"H",
-      description: "Large antique gold sitting Buddha sculpture displaying Dhyana Mudra gesture, designed to infuse tranquility into any home."
+      dimensions: "68\"W x 86\"L x 48\"H",
+      description: "Tailored modern low-profile platform bed frame featuring plush neutral channel-tufted upholstered headboard."
     },
     {
       id: "decor-16",
-      title: "Alpine Carnival Polyresin Meditating Buddha",
+      title: "Alpine Teak Outdoor Lounge Daybed",
       category: "Fountains & Sculptures",
       price: 3999,
       originalPrice: 7999,
@@ -244,12 +244,12 @@
       badge: "50% OFF",
       badgeClass: "badge-discount",
       image: "assets/images/decor/alpine_carnival_fountain.png",
-      dimensions: "26cm x 18cm x 44cm",
-      description: "Tiered rock waterfall fountain featuring meditating Buddha in serene contemplation with color-changing water LED lights."
+      dimensions: "72\"W x 34\"D x 28\"H",
+      description: "Weather-resistant premium teak wood outdoor lounge sofa daybed with plush off-white water-repellent cushions."
     },
     {
       id: "decor-17",
-      title: "Jessica White Metal Contemporary Floor Lamp",
+      title: "Jessica Teak Wood Credenza Cabinet",
       category: "Lighting",
       price: 2999,
       originalPrice: null,
@@ -259,12 +259,12 @@
       badge: "FREE SHIPPING",
       badgeClass: "badge-shipping",
       image: "assets/images/decor/jessica_white_lamp.png",
-      dimensions: "16\"Dia x 60\"H",
-      description: "Modern minimalist white metal floor lamp with clean geometric stand and softly diffused ambient light output."
+      dimensions: "54\"W x 16\"D x 32\"H",
+      description: "Minimalist four-door teak wood storage credenza cabinet showcasing natural wood grain and sleek brass legs."
     },
     {
       id: "decor-18",
-      title: "Brighton Max Ceramic Sitting Rabbit",
+      title: "Brighton Velvet Wingback Upholstered Bed",
       category: "Figurines",
       price: 1299,
       originalPrice: null,
@@ -274,8 +274,8 @@
       badge: "",
       badgeClass: "",
       image: "assets/images/decor/brighton_rabbit.png",
-      dimensions: "7\"W x 5\"D x 12\"H",
-      description: "Smooth glazed ceramic sitting rabbit figurine in minimalist ivory white finish, adding playful sophistication to console tables."
+      dimensions: "66\"W x 84\"L x 52\"H",
+      description: "Elegant ivory velvet upholstered wingback bed frame with deep cushioned support and solid timber legs."
     }
   ];
 

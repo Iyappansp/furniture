@@ -50,14 +50,27 @@
 [data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator,
 [data-theme="dark"] input[type="time"]::-webkit-calendar-picker-indicator,
 [data-theme="dark"] input[type="datetime-local"]::-webkit-calendar-picker-indicator {
-  filter: invert(0.9) brightness(1.2);
+  filter: brightness(0) invert(0.85) sepia(1) saturate(5) hue-rotate(5deg) !important;
+  opacity: 0.95;
   cursor: pointer;
 }
 
 /* Contact info card icon contrast in dark mode */
-[data-theme="dark"] .contact-grid div[style*="background:var(--color-secondary-light)"] {
-  background: rgba(197, 160, 89, 0.2) !important;
+[data-theme="dark"] .contact-icon-box {
+  background: rgba(197, 160, 89, 0.22) !important;
   color: var(--color-primary-light) !important;
+  border: 1px solid rgba(197, 160, 89, 0.35) !important;
+}
+
+[data-theme="dark"] .contact-grid div[style*="background:var(--color-secondary-light)"],
+[data-theme="dark"] .contact-grid div[style*="background: var(--color-secondary-light)"] {
+  background: rgba(197, 160, 89, 0.22) !important;
+  color: var(--color-primary-light) !important;
+}
+
+[data-theme="dark"] select.form-control option {
+  background-color: #1F1A14;
+  color: #EDE7DF;
 }
 
 [data-theme="dark"] .social-btn { color: var(--color-text); }
