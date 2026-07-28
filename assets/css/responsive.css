@@ -4,6 +4,9 @@
 
 /* ---- Mobile (up to 767px) ---- */
 @media (max-width: 767px) {
+  .promo-strip { font-size: 0.72rem; }
+  .promo-strip-inner { padding: 0.45rem 2rem 0.45rem 0.5rem; }
+  .promo-strip-close { right: -0.25rem; }
   :root {
     --space-lg: 3.25rem;
     --space-xl: 4.5rem;

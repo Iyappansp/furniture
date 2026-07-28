@@ -59,6 +59,16 @@
     return children.some((c) => isActivePage(c.href, active));
   }
 
+  function buildPromoStrip() {
+    return `
+    <div class="promo-strip" id="promoStrip">
+      <div class="container promo-strip-inner">
+        <p>✨ Free Shipping on Orders Over $500 &nbsp;|&nbsp; <a href="shop.html">Shop New Arrivals →</a></p>
+        <button class="promo-strip-close" id="promoClose" aria-label="Close announcement">&times;</button>
+      </div>
+    </div>`;
+  }
+
   function buildHeader() {
     const active = currentPage();
     const navHTML = NAV_LINKS.map((l) => {
@@ -192,6 +202,19 @@
     if (headerEl) {
       headerEl.className = "site-header";
       headerEl.innerHTML = buildHeader();
+
+      // Inject promo strip above header if not dismissed
+      if (!sessionStorage.getItem("promoStripClosed")) {
+        headerEl.insertAdjacentHTML("beforebegin", buildPromoStrip());
+        const promoClose = document.getElementById("promoClose");
+        if (promoClose) {
+          promoClose.addEventListener("click", function () {
+            const strip = document.getElementById("promoStrip");
+            if (strip) { strip.style.maxHeight = "0"; strip.style.padding = "0"; strip.style.opacity = "0"; setTimeout(() => strip.remove(), 300); }
+            sessionStorage.setItem("promoStripClosed", "1");
+          });
+        }
+      }
     }
     if (footerEl) {
       footerEl.className = "site-footer";
