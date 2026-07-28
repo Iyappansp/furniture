@@ -8,6 +8,7 @@
 [dir="rtl"] .eyebrow { flex-direction: row-reverse; justify-content: flex-end; }
 
 [dir="rtl"] .section-head.center { text-align: center; }
+[dir="rtl"] .section-head.center .eyebrow { justify-content: center; }
 
 [dir="rtl"] .main-nav a::after { left: auto; right: 0; }
 
@@ -16,7 +17,37 @@
 
 [dir="rtl"] .card-img::after { background: linear-gradient(to top, rgba(31,41,55,0.55), transparent 55%); }
 
-[dir="rtl"] .hero-content { margin-right: 0; margin-left: auto; }
+/* ============ RTL HERO SECTION — All Pages ============ */
+[dir="rtl"] .hero-content,
+[dir="rtl"] .hero-split-content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+[dir="rtl"] .hero-content h1,
+[dir="rtl"] .hero-split-content h1 {
+  text-align: center;
+  unicode-bidi: plaintext;
+}
+[dir="rtl"] .hero-content .lead,
+[dir="rtl"] .hero-content p,
+[dir="rtl"] .hero-split-content .lead,
+[dir="rtl"] .hero-split-content p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+[dir="rtl"] .hero-actions,
+[dir="rtl"] .hero-split-content .hero-actions {
+  justify-content: center;
+}
+[dir="rtl"] .hero .eyebrow,
+[dir="rtl"] .hero-split-content .eyebrow {
+  align-self: center;
+  justify-content: center;
+}
 
 [dir="rtl"] .timeline { padding-left: 0; padding-right: 2.2rem; }
 [dir="rtl"] .timeline::before { left: auto; right: 6px; }
@@ -53,3 +84,27 @@
 [dir="rtl"] .blog-meta { flex-direction: row-reverse; }
 [dir="rtl"] .filter-checkbox { flex-direction: row-reverse; }
 [dir="rtl"] .qty-stepper { flex-direction: row-reverse; }
+
+/* ============ RTL FOOTER ============ */
+[dir="rtl"] .footer-col h4 {
+  justify-content: flex-end;
+}
+[dir="rtl"] .footer-newsletter form {
+  flex-direction: row-reverse;
+}
+
+/* ============ RTL GRID SECTIONS ============ */
+[dir="rtl"] .grid-2 p {
+  text-align: right;
+}
+
+/* Password Input RTL fixes */
+[dir="rtl"] .password-field-wrapper .form-control,
+[dir="rtl"] .password-wrapper .form-control {
+  padding-right: 1rem !important;
+  padding-left: 3rem !important;
+}
+[dir="rtl"] .password-toggle-btn {
+  right: auto !important;
+  left: 1rem !important;
+}
