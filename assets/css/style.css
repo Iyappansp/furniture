@@ -2078,13 +2078,14 @@ textarea.form-control {
   display: flex;
   align-items: flex-end;
   padding: 1.25rem;
-  background: linear-gradient(to top, rgba(31, 25, 20, 0.75), transparent 55%);
-  opacity: 0;
+  background: linear-gradient(to top, rgba(15, 12, 10, 0.85) 0%, rgba(15, 12, 10, 0.3) 40%, transparent 70%);
+  opacity: 0.85;
   transition: opacity var(--t-med) var(--ease);
-  color: #fff;
+  color: #ffffff;
   font-family: var(--font-button);
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   z-index: 5;
 }
 
