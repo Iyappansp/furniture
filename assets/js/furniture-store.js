@@ -522,7 +522,7 @@
             <strong>Primary Material:</strong> ${prod.material}<br>
             <strong>Rating:</strong> ⭐ ${prod.rating} (${prod.reviews} verified reviews)
           </div>
-          <div style="display:flex; gap:1rem;">
+          <div class="quick-view-actions" style="display:flex; gap:1rem;">
             <button class="btn btn-primary" onclick="showFurnitureToast('Added ${prod.title} to Cart!')">Add to Cart</button>
             <button class="btn btn-secondary" onclick="openFurnitureAR('${prod.title}', '${prod.image}')">🥽 View in AR</button>
           </div>

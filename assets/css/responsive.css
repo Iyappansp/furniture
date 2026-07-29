@@ -15,8 +15,8 @@
   .hero { min-height: 88vh; }
   .hero-content { padding: 9.5rem 1.25rem 9rem; }
   .hero-split-content { padding: 9rem 1.25rem 5rem; }
-  .hero-actions { flex-direction: column; align-items: stretch; }
-  .hero-actions .btn { width: 100%; }
+  .hero-actions { flex-direction: column; align-items: stretch; gap: 0.75rem; width: 100%; }
+  .hero-actions .btn, .hero-actions a, .hero-actions button { width: 100%; display: flex; justify-content: center; text-align: center; box-sizing: border-box; }
   .hero-marquee { padding: 0.85rem 0; }
   .marquee-content { gap: 1.5rem; padding-right: 1.5rem; }
   .marquee-content span { font-size: 0.75rem; letter-spacing: 0.12em; }
@@ -26,8 +26,59 @@
   .stats-grid { gap: 1.5rem 1rem; }
 
   .cta-band { padding: var(--space-lg) 1.25rem; }
-  .cta-band-actions { flex-direction: column; }
-  .cta-band-actions .btn { width: 100%; }
+  .cta-band-actions { flex-direction: column; width: 100%; gap: 0.75rem; }
+  .cta-band-actions .btn, .cta-band-actions a, .cta-band-actions button { width: 100%; display: flex; justify-content: center; text-align: center; box-sizing: border-box; }
+
+  /* Gallery & Card Story Actions 1-by-1 Button Stacking on Mobile */
+  .story-footer-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+    margin-top: 1rem !important;
+    padding-top: 0.75rem !important;
+    border-top: 1px solid var(--color-border) !important;
+  }
+
+  .story-details-toggle {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    padding: 0.8rem 1rem !important;
+    background: var(--surface-alt) !important;
+    border: 1.5px solid var(--color-border) !important;
+    border-radius: var(--radius-full) !important;
+    color: var(--color-primary-dark) !important;
+    font-size: 0.88rem !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .story-details-toggle:hover,
+  .story-details-toggle:active {
+    background: var(--color-primary) !important;
+    color: #ffffff !important;
+    border-color: var(--color-primary) !important;
+  }
+
+  .story-footer-actions .btn,
+  .story-footer-actions a.btn {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.85rem 1rem !important;
+    font-size: 0.88rem !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    border-radius: var(--radius-full) !important;
+  }
 
   .footer-bottom-links { flex-direction: column; gap: 0.6rem; }
 
@@ -339,6 +390,41 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     justify-content: center !important;
     color: #111111 !important;
     font-weight: 600 !important;
+  }
+
+  /* All Modal, Card & Auth Button Groups 1-by-1 Stacking */
+  .social-login {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.65rem !important;
+  }
+  .social-login .social-btn {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+  }
+  .quick-view-actions,
+  .decor-card-actions,
+  .modal-actions,
+  .quiz-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 0.65rem !important;
+  }
+  .quick-view-actions .btn,
+  .decor-card-actions .btn,
+  .modal-actions .btn,
+  .quiz-actions .btn {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
   }
 }
 

@@ -41,7 +41,7 @@
 
       ]
     },
-   
+
     { href: "services.html", label: "Services" },
     { href: "gallery.html", label: "Gallery" },
     { href: "blog.html", label: "Blog" },

@@ -656,7 +656,7 @@
         <h3 style="font-family:var(--font-display); font-size:1.35rem; margin:0.3rem 0 0.5rem 0;">${item.title}</h3>
         <p style="font-size:0.9rem; color:var(--color-text-muted); line-height:1.6; margin-bottom:1rem;">${item.description}</p>
         <div style="font-size:0.82rem; color:var(--color-text-muted); margin-bottom:1.25rem;"><strong>Dimensions:</strong> ${item.dimensions}</div>
-        <div style="display:flex; gap:0.75rem;">
+        <div class="decor-card-actions" style="display:flex; gap:0.75rem;">
           <button class="btn btn-primary btn-sm btn-add-bag" data-id="${item.id}">+ Add to Bag</button>
           <button class="btn btn-secondary btn-sm btn-quick-view" data-id="${item.id}">Quick Details</button>
         </div>
