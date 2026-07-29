@@ -35,16 +35,13 @@
       label: "Shop",
       children: [
         { href: "furniture-shop.html", label: "Furniture Shop" },
-        { href: "decor-shop.html", label: "Decor Shop" }
+        { href: "decor-shop.html", label: "Decor Shop" },
+        { href: "furniture-store.html", label: "Furniture Store" },
+        { href: "decor-store.html", label: "Decor Store" },
+
       ]
     },
-    {
-      label: "Store",
-      children: [
-        { href: "decor-store.html", label: "1. Decor Store" },
-        { href: "furniture-store.html", label: "2. Furniture Store" }
-      ]
-    },
+   
     { href: "services.html", label: "Services" },
     { href: "gallery.html", label: "Gallery" },
     { href: "blog.html", label: "Blog" },

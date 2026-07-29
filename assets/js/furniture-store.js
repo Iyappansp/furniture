@@ -617,7 +617,6 @@
         <div class="furniture-card-body">
           <span class="furniture-card-category">${prod.category}</span>
           <h3 class="furniture-card-title">${prod.title}</h3>
-          <p class="furniture-card-desc">${prod.description}</p>
           <div class="furniture-card-footer">
             <div class="furniture-card-price">
               ₹${prod.price.toLocaleString()}
