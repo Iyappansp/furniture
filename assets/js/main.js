@@ -31,7 +31,13 @@
       ]
     },
     { href: "about.html", label: "About" },
-    { href: "shop.html", label: "Shop" },
+    {
+      label: "Shop",
+      children: [
+        { href: "furniture-shop.html", label: "Furniture Shop" },
+        { href: "decor-shop.html", label: "Decor Shop" }
+      ]
+    },
     {
       label: "Store",
       children: [
@@ -52,7 +58,7 @@
 
   function isActivePage(linkHref, activePage) {
     if (linkHref === activePage) return true;
-    if (linkHref === "shop.html" && (activePage === "product-detail.html" || activePage === "room-collections.html")) {
+    if ((linkHref === "furniture-shop.html" || linkHref === "decor-shop.html" || linkHref === "shop.html") && (activePage === "product-detail.html" || activePage === "room-collections.html")) {
       return true;
     }
     if (linkHref === "blog.html" && activePage === "blog-post.html") {
@@ -423,6 +429,13 @@
         if (roomCheckboxes.length) {
           roomCheckboxes.forEach((cb) => {
             cb.checked = (cb.getAttribute("data-room") === cat);
+          });
+        }
+
+        const decorCheckboxes = document.querySelectorAll('input[type="checkbox"][data-decor-cat]');
+        if (decorCheckboxes.length) {
+          decorCheckboxes.forEach((cb) => {
+            cb.checked = (cb.getAttribute("data-decor-cat") === cat);
           });
         }
 
