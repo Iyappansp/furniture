@@ -228,7 +228,7 @@
       material: "Walnut",
       badge: "EASTERN EDITION",
       badgeClass: "badge-gift",
-      image: "assets/images/product/chair_office.webp",
+      image: "assets/images/product/eum_tback_chair.png",
       dimensions: "22\"W x 22\"D x 31\"H",
       description: "Sculptural dark wood accent chair featuring T-shaped backrest structure and padded seat."
     },

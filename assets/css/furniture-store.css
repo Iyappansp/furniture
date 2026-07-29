@@ -414,8 +414,7 @@
 .furniture-card-img-wrap {
   position: relative;
   width: 100%;
-  padding-top: 75%;
-  /* 4:3 Aspect Ratio */
+  padding-top: 68%;
   overflow: hidden;
   background: var(--surface-alt);
 }
@@ -465,7 +464,7 @@
 }
 
 .furniture-card-body {
-  padding: 1.25rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex: 1;
