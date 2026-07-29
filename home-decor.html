@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="assets/css/interactions.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/decor-store.css">
+  <link rel="stylesheet" href="assets/css/furniture-store.css">
 </head>
 
 <body>
@@ -54,10 +55,10 @@
       <div class="container">
         <div class="hero-content">
           <div class="decor-hero-badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
             </svg>
-            Home Décor &amp; Accessories Collection
+            <span>Home Décor &amp; Accessories Collection</span>
           </div>
           <h1>Artisanal Home Décor</h1>
           <div class="hero-actions">
@@ -202,10 +203,9 @@
   </main>
 
   <!-- STYLE QUIZ MODAL -->
-  <div class="decor-modal" id="decorStyleQuizModal" role="dialog" aria-modal="true" aria-labelledby="quizModalTitle">
-    <div class="modal-backdrop"></div>
-    <div class="modal-card">
-      <button class="modal-close-btn" id="closeQuizModalBtn" aria-label="Close quiz modal">&times;</button>
+  <div class="decor-modal-backdrop" id="decorStyleQuizModal" role="dialog" aria-modal="true" aria-labelledby="quizModalTitle">
+    <div class="decor-modal-content" style="padding: 2.5rem;">
+      <button class="modal-close-btn" id="closeQuizBtn" aria-label="Close quiz modal">&times;</button>
       
       <div class="quiz-step active" id="quizStep1">
         <span class="eyebrow">✨ Interactive Style Quiz</span>
@@ -229,6 +229,9 @@
             <p>Cascading water fountains, Buddha statues, and tranquil ambient lighting.</p>
           </div>
         </div>
+        <div style="margin-top:1.5rem; text-align:right;">
+          <button class="btn btn-primary" id="quizNext1">Next Step &rarr;</button>
+        </div>
       </div>
 
       <!-- Step 2 -->
@@ -250,6 +253,9 @@
             <span class="quiz-icon">🗿</span>
             <h4>Sculpted Polyresin</h4>
           </div>
+        </div>
+        <div style="margin-top:1.5rem; text-align:right;">
+          <button class="btn btn-primary" id="quizSubmit">See My Matches &rarr;</button>
         </div>
       </div>
 
