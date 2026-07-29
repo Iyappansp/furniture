@@ -449,6 +449,51 @@
     });
   }
 
+  function showGlobalToast(msg) {
+    let toast = document.getElementById("globalShopToast");
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.id = "globalShopToast";
+      toast.style.cssText = "position:fixed; bottom:24px; right:24px; background:#1C1A17; color:#FFFFFF; border:1px solid rgba(197,160,89,0.6); padding:12px 24px; border-radius:30px; box-shadow:0 12px 32px rgba(0,0,0,0.5); z-index:99999; font-size:0.9rem; font-family:var(--font-body); transition:all 0.35s cubic-bezier(0.4, 0, 0.2, 1); opacity:0; transform:translateY(20px); pointer-events:none;";
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = msg;
+    toast.style.opacity = "1";
+    toast.style.transform = "translateY(0)";
+    setTimeout(() => {
+      toast.style.opacity = "0";
+      toast.style.transform = "translateY(20px)";
+    }, 3200);
+  }
+
+  function initAddToCart() {
+    document.addEventListener("click", function (e) {
+      const btn = e.target.closest(".btn-add-cart");
+      if (!btn) return;
+
+      e.preventDefault();
+      const card = btn.closest(".product-card, .card, .furniture-card, .decor-card");
+      let title = "Item";
+      if (card) {
+        const titleEl = card.querySelector("h4, h3, .furniture-card-title, .decor-card-title");
+        if (titleEl) title = titleEl.textContent.trim();
+      }
+
+      if (btn.classList.contains("added")) return;
+
+      const originalHTML = btn.innerHTML;
+      btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>Added!</span>`;
+      btn.classList.add("added");
+
+      showGlobalToast(`✨ Added <strong>"${title}"</strong> to your shopping cart!`);
+
+      setTimeout(() => {
+        btn.innerHTML = originalHTML;
+        btn.classList.remove("added");
+      }, 2200);
+    });
+  }
+
   function startApp() {
     injectHeaderFooter();
     initHeaderScroll();
@@ -458,6 +503,7 @@
     initBackToTop();
     initPreloader();
     initCategoryCards();
+    initAddToCart();
   }
 
   if (document.readyState === "loading") {
