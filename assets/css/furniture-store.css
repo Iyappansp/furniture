@@ -1,0 +1,665 @@
+/* ============================================
+   FURNITURE-STORE.CSS — Luxury Furniture Store Styles
+============================================ */
+
+/* --- Hero Extensions --- */
+.furniture-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-full);
+  color: var(--color-light);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.furniture-hero-badge svg {
+  width: 16px;
+  height: 16px;
+  color: var(--color-primary);
+}
+
+/* --- Furniture Control Bar & Filter Drawer --- */
+.furniture-control-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--surface-card);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.furniture-search-box {
+  position: relative;
+  flex: 1;
+  min-width: 240px;
+}
+
+.furniture-search-box input {
+  width: 100%;
+  padding: 0.65rem 1rem 0.65rem 2.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  background: var(--surface-alt);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  transition: border-color var(--t-fast) var(--ease);
+}
+
+.furniture-search-box input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.furniture-search-box svg {
+  position: absolute;
+  left: 0.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--color-text-muted);
+}
+
+/* --- Collection Showcase Tabs --- */
+.furniture-collection-tabs {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  overflow-x: auto;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.8rem;
+  scrollbar-width: thin;
+}
+
+.furniture-collection-tabs::-webkit-scrollbar {
+  height: 4px;
+}
+
+.furniture-collection-tabs::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+.furniture-collection-tabs .tab-btn {
+  white-space: nowrap;
+  background: var(--surface-card);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--t-fast) ease;
+}
+
+.furniture-collection-tabs .tab-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-dark);
+}
+
+.furniture-collection-tabs .tab-btn.active {
+  background: #1C1A17;
+  color: #FFFFFF;
+  border-color: #1C1A17;
+  box-shadow: var(--shadow-sm);
+}
+
+[data-theme="dark"] .furniture-collection-tabs .tab-btn.active {
+  background: var(--color-primary) !important;
+  color: #111111 !important;
+  border-color: var(--color-primary) !important;
+  font-weight: 700;
+}
+
+/* --- Spotlight Banner --- */
+.furniture-spotlight-banner {
+  background: linear-gradient(135deg, rgba(20, 24, 20, 0.92) 0%, rgba(38, 48, 38, 0.85) 100%),
+    url('../images/home1/hero_living.png') center/cover no-repeat;
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.furniture-spotlight-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(197, 160, 89, 0.25), transparent 70%);
+  pointer-events: none;
+}
+
+.furniture-spotlight-banner .spotlight-badge {
+  display: inline-block;
+  background: rgba(197, 160, 89, 0.25);
+  border: 1px solid rgba(197, 160, 89, 0.5);
+  color: #E2C98A;
+  padding: 0.25rem 0.8rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.furniture-spotlight-banner h2 {
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.furniture-spotlight-banner p {
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.furniture-spotlight-banner .spotlight-quote {
+  font-style: italic;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.7);
+  border-left: 2px solid var(--color-primary);
+  padding-left: 0.8rem;
+}
+
+/* --- Vignette Bundle Card --- */
+.furniture-bundle-card {
+  background: var(--surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 768px) {
+  .furniture-bundle-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.furniture-bundle-img-stack {
+  width: 280px;
+  height: 200px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.furniture-bundle-img-stack img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--t-medium) ease;
+}
+
+.furniture-bundle-card:hover .furniture-bundle-img-stack img {
+  transform: scale(1.05);
+}
+
+.furniture-bundle-info {
+  flex: 1;
+}
+
+.furniture-bundle-items-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.furniture-bundle-item-chip {
+  background: var(--surface-alt);
+  border: 1px solid var(--color-border);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* --- Interactive Lookbook Hotspots --- */
+.lookbook-container {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  margin-bottom: 2rem;
+}
+
+.lookbook-img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  display: block;
+}
+
+.hotspot-marker {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.3);
+  animation: pulse-hotspot 2s infinite;
+  z-index: 10;
+  transition: transform 0.2s ease;
+}
+
+.hotspot-marker:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+@keyframes pulse-hotspot {
+  0% {
+    box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 12px rgba(197, 160, 89, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(197, 160, 89, 0);
+  }
+}
+
+.hotspot-popover {
+  position: absolute;
+  width: 220px;
+  background: var(--surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: var(--shadow-medium);
+  z-index: 20;
+  display: none;
+  transform: translate(-50%, -120%);
+}
+
+.hotspot-popover.active {
+  display: block;
+  animation: fadeIn 0.2s ease;
+}
+
+.popover-close-btn {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--color-text-muted);
+}
+
+.hotspot-popover-img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.5rem;
+}
+
+.hotspot-popover h5 {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.popover-price {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  font-size: 0.9rem;
+}
+
+/* --- Material Swatches & Filter Drawer --- */
+.furniture-material-swatch {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.furniture-material-swatch:hover,
+.furniture-material-swatch.active {
+  transform: scale(1.15);
+  border-color: var(--color-primary);
+}
+
+/* --- Style Tip Cards --- */
+.style-tip-card {
+  background: var(--surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.8rem;
+  position: relative;
+  transition: transform var(--t-fast) ease, box-shadow var(--t-fast) ease;
+}
+
+.style-tip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+.style-tip-num {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  opacity: 0.4;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Product Cards & Editorial Split View --- */
+.furniture-card {
+  background: var(--surface-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--t-fast) ease, box-shadow var(--t-fast) ease;
+}
+
+.furniture-card.revealed {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.furniture-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+.furniture-card-img-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  /* 4:3 Aspect Ratio */
+  overflow: hidden;
+  background: var(--surface-alt);
+}
+
+.furniture-card-img-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--t-medium) ease;
+}
+
+.furniture-card:hover .furniture-card-img-wrap img {
+  transform: scale(1.06);
+}
+
+.card-action-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--color-border);
+  color: #1C1A17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  transition: all var(--t-fast) var(--ease);
+}
+
+.card-action-btn svg {
+  stroke: #1C1A17 !important;
+}
+
+.card-action-btn:hover {
+  background: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: #111111 !important;
+  transform: scale(1.1);
+}
+
+.card-action-btn:hover svg {
+  stroke: #111111 !important;
+}
+
+.furniture-card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.furniture-card-category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primary-dark);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.furniture-card-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--color-dark);
+}
+
+.furniture-card-desc {
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.furniture-card-footer {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--color-border);
+}
+
+.furniture-card-price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+.furniture-card-price .orig-price {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+  margin-left: 0.4rem;
+  font-weight: 400;
+}
+
+/* Editorial Split View Mode */
+#furnitureGridContainer.editorial-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#furnitureGridContainer.editorial-view .furniture-card {
+  flex-direction: row;
+  min-height: 240px;
+}
+
+#furnitureGridContainer.editorial-view .furniture-card-img-wrap {
+  width: 40%;
+  padding-top: 0;
+  min-height: 240px;
+}
+
+@media (max-width: 768px) {
+  #furnitureGridContainer.editorial-view .furniture-card {
+    flex-direction: column;
+  }
+
+  #furnitureGridContainer.editorial-view .furniture-card-img-wrap {
+    width: 100%;
+    padding-top: 75%;
+  }
+}
+
+/* AR & Quick View Modal Styling */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: 1.5rem;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-content {
+  background: var(--surface-card);
+  border-radius: var(--radius-lg);
+  max-width: 780px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: var(--shadow-large);
+  transform: scale(0.92);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--surface-alt);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 10;
+  color: var(--color-dark);
+}
+
+/* Furniture Responsive Fine-tuning */
+@media (max-width: 768px) {
+  .furniture-control-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    padding: 1rem;
+  }
+
+  .furniture-search-box {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .furniture-control-bar .flex.align-center {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .furniture-spotlight-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    padding: 1.75rem 1.25rem;
+  }
+
+  .furniture-spotlight-banner .spotlight-content {
+    max-width: 100%;
+  }
+
+  .furniture-spotlight-banner .spotlight-action {
+    width: 100%;
+  }
+
+  .furniture-spotlight-banner .spotlight-action .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    white-space: normal;
+  }
+
+  .furniture-bundle-card {
+    padding: 1.25rem;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .furniture-bundle-card .flex.align-center.gap-md {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  #addFurnitureBundleBtn {
+    width: 100%;
+    margin-top: 0.25rem;
+  }
+}

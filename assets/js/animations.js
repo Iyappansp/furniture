@@ -10,31 +10,30 @@
     const items = document.querySelectorAll("[data-reveal]");
     if (!items.length) return;
 
-    if (!("IntersectionObserver" in window)) {
-      items.forEach((el) => el.classList.add("revealed"));
-      return;
+    // Immediately reveal all items in initial viewport
+    items.forEach((el) => {
+      el.classList.add("revealed");
+    });
+
+    if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("revealed");
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.01, rootMargin: "100px 0px 100px 0px" }
+      );
+      items.forEach((el) => io.observe(el));
     }
 
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("revealed");
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.05, rootMargin: "50px 0px 50px 0px" }
-    );
-    items.forEach((el) => {
-      // If already in viewport on load, reveal immediately
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        el.classList.add("revealed");
-      } else {
-        io.observe(el);
-      }
-    });
+    // Safety fallback to guarantee visibility
+    setTimeout(() => {
+      document.querySelectorAll("[data-reveal]").forEach((el) => el.classList.add("revealed"));
+    }, 400);
   }
 
   /* ---------- Stat Counters ---------- */

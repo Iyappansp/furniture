@@ -129,8 +129,8 @@
     },
     {
       id: "decor-9",
-      title: "Alpine Luxury Round Marble Top Coffee Table",
-      category: "Vases & Ceramics",
+      title: "Alpine Polyresin Birds & Tiered Water Fountain",
+      category: "Fountains & Sculptures",
       price: 799,
       originalPrice: 999,
       rating: 4.7,
@@ -139,12 +139,12 @@
       badge: "20% OFF",
       badgeClass: "badge-discount",
       image: "assets/images/decor/alpine_bird_fountain.png",
-      dimensions: "90cm x 90cm x 45cm",
-      description: "Luxury round white marble coffee table featuring solid natural quarried marble top with brushed brass gold frame."
+      dimensions: "45cm x 35cm x 65cm",
+      description: "Artisanal polyresin tiered water fountain featuring detailed sculpted songbirds, soft water trickles, and serene stone finish."
     },
     {
       id: "decor-10",
-      title: "Noor Sculptural Bouclé Accent Armchair",
+      title: "Noor Serene Meditating Buddha Tea Light Holder",
       category: "Figurines",
       price: 4999,
       originalPrice: null,
@@ -154,8 +154,8 @@
       badge: "FREE SHIPPING",
       badgeClass: "badge-shipping",
       image: "assets/images/decor/noor_buddha_tlight.png",
-      dimensions: "32\"W x 34\"D x 30\"H",
-      description: "Contemporary curved lounge armchair upholstered in tactile cream bouclé fabric with solid oak inner frame."
+      dimensions: "18\"W x 12\"D x 24\"H",
+      description: "Serene polyresin meditating Buddha statue featuring an integrated tea light candle holder to radiate warmth."
     },
     {
       id: "decor-11",
@@ -174,7 +174,7 @@
     },
     {
       id: "decor-12",
-      title: "Brighton Mid-Century Wooden Credenza",
+      title: "Brighton Ceramic Golden Reindeer Figurine",
       category: "Figurines",
       price: 2499,
       originalPrice: null,
@@ -184,8 +184,8 @@
       badge: "",
       badgeClass: "",
       image: "assets/images/decor/brighton_reindeer.png",
-      dimensions: "60\"W x 18\"D x 30\"H",
-      description: "Handcrafted solid teak wood credenza console sideboard with slatted doors and brushed metal hardware."
+      dimensions: "10\"W x 4\"D x 14\"H",
+      description: "Handcrafted stoneware reindeer sculpture featuring metallic gold accents, ideal for console tables and holiday vignettes."
     },
     {
       id: "decor-13",
@@ -204,7 +204,7 @@
     },
     {
       id: "decor-14",
-      title: "Alpine Cognac Leather Sectional Sofa",
+      title: "Alpine Lord Ganesha Polyresin Water Fountain",
       category: "Fountains & Sculptures",
       price: 2749,
       originalPrice: 5499,
@@ -214,12 +214,12 @@
       badge: "50% OFF",
       badgeClass: "badge-discount",
       image: "assets/images/decor/alpine_ganesha_fountain.png",
-      dimensions: "96\"W x 40\"D x 32\"H",
-      description: "Plush modern cognac brown leather sectional sofa crafted from top-grain aniline leather with deep comfortable seating."
+      dimensions: "30cm x 22cm x 48cm",
+      description: "Divine Lord Ganesha indoor water fountain with warm LED halo illumination and soothing cascading water channels."
     },
     {
       id: "decor-15",
-      title: "Enlighten Luxury Upholstered Platform Bed",
+      title: "Enlighten Polyresin Sitting Buddha Sculpture",
       category: "Figurines",
       price: 5999,
       originalPrice: null,
@@ -229,12 +229,12 @@
       badge: "FREE SHIPPING",
       badgeClass: "badge-shipping",
       image: "assets/images/decor/enlighten_sitting_buddha.png",
-      dimensions: "68\"W x 86\"L x 48\"H",
-      description: "Tailored modern low-profile platform bed frame featuring plush neutral channel-tufted upholstered headboard."
+      dimensions: "14\"W x 10\"D x 20\"H",
+      description: "Hand-painted polyresin sitting Buddha statue crafted with meditative posture to bring peace to entryway consoles."
     },
     {
       id: "decor-16",
-      title: "Alpine Teak Outdoor Lounge Daybed",
+      title: "Alpine Carnival Cascading Polyresin Fountain",
       category: "Fountains & Sculptures",
       price: 3999,
       originalPrice: 7999,
@@ -244,27 +244,27 @@
       badge: "50% OFF",
       badgeClass: "badge-discount",
       image: "assets/images/decor/alpine_carnival_fountain.png",
-      dimensions: "72\"W x 34\"D x 28\"H",
-      description: "Weather-resistant premium teak wood outdoor lounge sofa daybed with plush off-white water-repellent cushions."
+      dimensions: "35cm x 28cm x 55cm",
+      description: "Multi-tiered polyresin indoor water fountain with rhythmic water flow and LED ambient lighting for relaxation."
     },
     {
       id: "decor-17",
-      title: "Jessica Teak Wood Credenza Cabinet",
+      title: "Jessica Minimalist White Ceramic Table Lamp",
       category: "Lighting",
       price: 2999,
       originalPrice: null,
       rating: 4.7,
       reviews: 31,
-      material: "Metal",
+      material: "Ceramic",
       badge: "FREE SHIPPING",
       badgeClass: "badge-shipping",
       image: "assets/images/decor/jessica_white_lamp.png",
-      dimensions: "54\"W x 16\"D x 32\"H",
-      description: "Minimalist four-door teak wood storage credenza cabinet showcasing natural wood grain and sleek brass legs."
+      dimensions: "12\"W x 12\"D x 22\"H",
+      description: "Minimalist white ceramic table lamp with sleek geometry and warm diffused linen lamp shade."
     },
     {
       id: "decor-18",
-      title: "Brighton Velvet Wingback Upholstered Bed",
+      title: "Brighton Ceramic Decorative Rabbit Figurine",
       category: "Figurines",
       price: 1299,
       originalPrice: null,
@@ -274,188 +274,8 @@
       badge: "",
       badgeClass: "",
       image: "assets/images/decor/brighton_rabbit.png",
-      dimensions: "66\"W x 84\"L x 52\"H",
-      description: "Elegant ivory velvet upholstered wingback bed frame with deep cushioned support and solid timber legs."
-    },
-    {
-      id: "ee-sofa-1",
-      title: "Boryo Sofa",
-      category: "Sofas & Seating",
-      price: 10900,
-      originalPrice: null,
-      rating: 5.0,
-      reviews: 38,
-      material: "Wood & Fabric",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/sofa_amara.png",
-      dimensions: "94\"W x 38\"D x 30\"H",
-      description: "Minimalist luxury low timber frame sofa with deep plush white linen cushions and solid wood joinery."
-    },
-    {
-      id: "ee-sofa-2",
-      title: "Billow Sofa (1 Seat)",
-      category: "Sofas & Seating",
-      price: 5950,
-      originalPrice: null,
-      rating: 4.9,
-      reviews: 24,
-      material: "Bouclé & Wood",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/chair_lounge.png",
-      dimensions: "36\"W x 36\"D x 30\"H",
-      description: "Sculptural rounded single-seat lounge chair upholstered in tactile cream bouclé with dark wood spherical legs."
-    },
-    {
-      id: "ee-sofa-3",
-      title: "Billow Sofa",
-      category: "Sofas & Seating",
-      price: 14950,
-      originalPrice: null,
-      rating: 5.0,
-      reviews: 47,
-      material: "Bouclé & Wood",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/sofa_amara_detail1.png",
-      dimensions: "128\"W x 42\"D x 30\"H",
-      description: "Curved organic modular sectional sofa crafted in tactile bouclé with subtle dark wood support feet."
-    },
-    {
-      id: "ee-sofa-4",
-      title: "Nubi Sofa",
-      category: "Sofas & Seating",
-      price: 7800,
-      originalPrice: 8500,
-      rating: 4.8,
-      reviews: 31,
-      material: "Linen & Timber",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-discount",
-      image: "assets/images/product/sofa_amara_detail2.png",
-      dimensions: "88\"W x 38\"D x 32\"H",
-      description: "Modern tailored white linen sofa with relaxed skirted base and plush loose back pillow cushioning."
-    },
-    {
-      id: "ee-chair-1",
-      title: "Line Dining Chair",
-      category: "Chairs & Seating",
-      price: 1050,
-      originalPrice: null,
-      rating: 4.9,
-      reviews: 56,
-      material: "Solid Timber",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/chair_woven.webp",
-      dimensions: "20\"W x 21\"D x 32\"H",
-      description: "Architectural solid timber dining chair with black upholstered cushion seat and precision joinery."
-    },
-    {
-      id: "ee-chair-2",
-      title: "Noom Bench",
-      category: "Chairs & Seating",
-      price: 2800,
-      originalPrice: null,
-      rating: 4.8,
-      reviews: 29,
-      material: "Solid Timber & Fabric",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/bench_outdoor.webp",
-      dimensions: "64\"W x 18\"D x 18\"H",
-      description: "Minimalist upholstered dining bench with rounded solid timber cylinder legs and cushioned top."
-    },
-    {
-      id: "ee-chair-3",
-      title: "Eum Chair",
-      category: "Chairs & Seating",
-      price: 1250,
-      originalPrice: null,
-      rating: 4.9,
-      reviews: 43,
-      material: "Solid Timber",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/chair_office.webp",
-      dimensions: "22\"W x 22\"D x 31\"H",
-      description: "Sculptural dark wood accent chair featuring T-shaped backrest structure and padded seat."
-    },
-    {
-      id: "ee-chair-4",
-      title: "Peak Dining Chair",
-      category: "Chairs & Seating",
-      price: 1050,
-      originalPrice: null,
-      rating: 4.7,
-      reviews: 35,
-      material: "Solid Timber",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/stool_counter.png",
-      dimensions: "20\"W x 21\"D x 32\"H",
-      description: "Contemporary dark stained timber dining chair with angular backrest profile and cushioned seat."
-    },
-    {
-      id: "ee-bed-1",
-      title: "Desk Bed",
-      category: "Beds & Daybeds",
-      price: 10850,
-      originalPrice: null,
-      rating: 5.0,
-      reviews: 19,
-      material: "Solid Walnut & Fabric",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/bed_linen.png",
-      dimensions: "78\"W x 90\"L x 46\"H",
-      description: "Luxury platform bed featuring an integrated solid wood headboard with side shelf wing extensions."
-    },
-    {
-      id: "ee-bed-2",
-      title: "Folding Screen Bed",
-      category: "Beds & Daybeds",
-      price: 9650,
-      originalPrice: null,
-      rating: 4.9,
-      reviews: 27,
-      material: "Linen & Timber",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/shop/shop_cat_bedroom.png",
-      dimensions: "80\"W x 88\"L x 50\"H",
-      description: "Tailored minimalist upholstered bed with tall folding wing panel headboard in natural beige linen."
-    },
-    {
-      id: "ee-bed-3",
-      title: "WA-TOP Daybed",
-      category: "Beds & Daybeds",
-      price: 6550,
-      originalPrice: null,
-      rating: 4.8,
-      reviews: 22,
-      material: "Timber & Brass",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/nightstand_oak.png",
-      dimensions: "76\"W x 34\"D x 28\"H",
-      description: "Sleek daybed featuring white mattress cushion, cylindrical head bolster pillow, and brass frame accents."
-    },
-    {
-      id: "ee-bed-4",
-      title: "Boryo Daybed",
-      category: "Beds & Daybeds",
-      price: 6250,
-      originalPrice: null,
-      rating: 4.9,
-      reviews: 33,
-      material: "Solid Timber & Fabric",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/sideboard_oakridge.png",
-      dimensions: "74\"W x 34\"D x 26\"H",
-      description: "Minimalist low platform daybed with white cushion top and cylindrical head bolster roll."
+      dimensions: "8\"W x 5\"D x 11\"H",
+      description: "Elegant matte white ceramic bunny rabbit figurine with soft smooth glaze for modern mantel accents."
     }
   ];
 
@@ -467,59 +287,47 @@
       desc: "Architectural objects, alabaster lighting, and textured ceramics engineered to bring museum-grade elegance to everyday surfaces.",
       quote: "“Decor is not filling space; it is sculpture interacting with light.” — VerdantWood Design Studio"
     },
-    "Sofas & Seating": {
-      tag: "Eastern Edition Sofas",
-      title: "Sculptural & Low-Profile Sofas",
-      desc: "Tailored bouclé armchairs, organic curved modular sofas, and low timber frame seating designed for zen living spaces.",
-      quote: "“Form and comfort in perfect architectural balance.” — Eastern Edition Collection"
+    "Lighting": {
+      tag: "Ambient Luminescence",
+      title: "Handcrafted Lamps & Pendants",
+      desc: "Warm ceramic table lamps, industrial floor tripods, and alabaster desk illumination designed to cast soothing glow.",
+      quote: "“Lighting shapes ambient emotion in every sanctuary room.”"
     },
-    "Chairs & Seating": {
-      tag: "Minimalist Dining & Benches",
-      title: "Hand-carved Seating & Benches",
-      desc: "Precision solid timber dining chairs, sculpted T-back accent seats, and minimalist upholstered benches.",
-      quote: "“Understated elegance crafted from solid sustainable hardwoods.”"
-    },
-    "Beds & Daybeds": {
-      tag: "Zen Sleep Systems",
-      title: "Luxury Platform Beds & Daybeds",
-      desc: "Architectural folding screen bedframes, integrated desk beds, and brass-accented lounger daybeds.",
-      quote: "“Peaceful sanctuaries built around natural textures and solid timber joinery.”"
-    },
-    "Sculptures": {
-      tag: "Architectural Metalwork",
-      title: "Liquid Brass & Sculpted Forms",
-      desc: "Individually cast liquid brass forms resting on solid Nero Marquina marble pedestals.",
-      quote: "“Bold forms that command presence on coffee tables and entryway consoles.”"
+    "Planters": {
+      tag: "Botanical Sculptures",
+      title: "Floor & Tabletop Planters",
+      desc: "Metal tripod planters and embossed ceramic pots crafted to display luxury indoor greenery.",
+      quote: "“Bring organic texture and natural oxygen into curated living rooms.”"
     },
     "Vases & Ceramics": {
-      tag: "Tactile Stoneware",
-      title: "Organic Mineral Clay Vessels",
-      desc: "Coarsely textured stoneware crafted by Danish master ceramicists using natural minerals.",
-      quote: "“Raw matte exteriors paired with waterproof interior glazes for wild botanicals.”"
+      tag: "Artisanal Stoneware",
+      title: "Hand-Glazed Ceramic Vessels",
+      desc: "Intricately carved floral vases and raw stoneware vessels built for botanical arrangements.",
+      quote: "“Artistic clay vessels interacting with light and florals.”"
     },
-    "Lighting": {
-      tag: "Luminous Alabaster",
-      title: "Ambient Stone & Glass Illumination",
-      desc: "Spanish alabaster cylinders emitting a soft translucent warmth with dimmable LED filaments.",
-      quote: "“Transforming evening light into a serene, meditative experience.”"
+    "Wall Art": {
+      tag: "Gallery Masterpieces",
+      title: "Canvas Paintings & Wall Sculptures",
+      desc: "Museum-quality textured gold leaf canvas paintings in solid timber floating frames.",
+      quote: "“Transform plain walls into inspiring gallery accent focal points.”"
     },
-    "Mirrors": {
-      tag: "Reflections & Depth",
-      title: "Gilded Leaf Floating Glass",
-      desc: "Hand-hammered gold leaf brass profiles holding distortion-free floating bevel mirror glass.",
-      quote: "“Doubling natural light while anchoring dining walls.”"
+    "Fountains & Sculptures": {
+      tag: "Zen Hydro-Architecture",
+      title: "Indoor Water Fountains & Waterfalls",
+      desc: "LED-backlit polyresin water fountains with serene meditating Buddha figures and gentle cascades.",
+      quote: "“Soothe senses with ambient trickling hydro-acoustics.”"
     },
-    "Textiles": {
+    "Figurines": {
+      tag: "Sacred Statuettes",
+      title: "Artisanal Sculpted Statues & Figurines",
+      desc: "Detailed polyresin cow-and-calf figurines, sitting Buddha statuettes, and tea light sculptures.",
+      quote: "“Spiritual harmony embodied in hand-detailed sculptural accents.”"
+    },
+    "Rugs & Throws": {
       tag: "Tactile Soft Goods",
-      title: "Mongolian Cashmere & Silk",
-      desc: "Ultra-soft un-dyed Mongolian cashmere blended with silk fringe and textured bouclé.",
-      quote: "“Tactile warmth that transforms tailored sofas into inviting retreats.”"
-    },
-    "Travertine & Marble": {
-      tag: "Natural Stone Carvings",
-      title: "Italian Silver Travertine Objects",
-      desc: "Honed from solid blocks of Italian Silver Travertine featuring unique natural vein striations.",
-      quote: "“Timeless mineral elegance that outlasts generations.”"
+      title: "Hand-Woven Wool Rugs & Throws",
+      desc: "Organic un-dyed wool rugs, plush linen cushion covers, and cashmere sofa throws.",
+      quote: "“Layer tactile soft goods for deep sensory warmth.”"
     }
   };
 
@@ -799,7 +607,7 @@
     const isWished = wishlist.has(item.id);
     const hasDiscount = item.originalPrice && item.originalPrice > item.price;
     return `
-    <div class="decor-card revealed" data-reveal="fade" data-id="${item.id}">
+    <div class="decor-card revealed" style="opacity:1 !important; transform:none !important;" data-id="${item.id}">
       <div class="decor-card-img-wrap">
         <img src="${item.image}" alt="${item.title}" loading="lazy">
         ${item.badge ? `<span class="decor-badge ${item.badgeClass || ''}">${item.badge}</span>` : ""}
@@ -832,7 +640,7 @@
     const isWished = wishlist.has(item.id);
     const hasDiscount = item.originalPrice && item.originalPrice > item.price;
     return `
-    <div class="editorial-card revealed" data-reveal="fade" data-id="${item.id}">
+    <div class="editorial-card revealed" style="opacity:1 !important; transform:none !important;" data-id="${item.id}">
       <div class="editorial-img-wrap">
         <img src="${item.image}" alt="${item.title}" loading="lazy">
         ${item.badge ? `<span class="decor-badge ${item.badgeClass || ''}">${item.badge}</span>` : ""}

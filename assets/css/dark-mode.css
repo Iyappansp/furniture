@@ -96,3 +96,118 @@
 [data-theme="dark"] .section-dark {
   background: #0E0C09;
 }
+
+/* Store Tabs & Active Pill Dark Mode Fixes */
+[data-theme="dark"] .furniture-collection-tabs .tab-btn {
+  background: #251F19;
+  border-color: #3D342A;
+  color: #C2B7A7;
+}
+
+[data-theme="dark"] .furniture-collection-tabs .tab-btn:hover {
+  border-color: var(--color-primary);
+  color: #FFF;
+}
+
+[data-theme="dark"] .furniture-collection-tabs .tab-btn.active {
+  background: var(--color-primary) !important;
+  color: #111111 !important;
+  border-color: var(--color-primary) !important;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(197, 160, 89, 0.35);
+}
+
+[data-theme="dark"] .tab-btn.active {
+  color: var(--color-primary);
+}
+
+/* Filter Drawer & Controls in Dark Mode */
+[data-theme="dark"] .filter-drawer-panel {
+  background: rgba(31, 26, 20, 0.95);
+  border-color: var(--color-border);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .filter-drawer-panel h4 {
+  color: #FFF !important;
+}
+
+[data-theme="dark"] .filter-checkbox {
+  color: #EDE7DF !important;
+}
+
+[data-theme="dark"] .filter-checkbox input[type="checkbox"] {
+  accent-color: var(--color-primary);
+}
+
+[data-theme="dark"] .decor-control-bar,
+[data-theme="dark"] .furniture-control-bar {
+  background: var(--surface-card);
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .decor-search-box input,
+[data-theme="dark"] .furniture-search-box input {
+  background: var(--surface-alt);
+  color: #EDE7DF;
+  border-color: var(--color-border);
+}
+
+[data-theme="dark"] .view-btn {
+  background: var(--surface-alt);
+  border-color: var(--color-border);
+  color: #A69C8F;
+}
+
+[data-theme="dark"] .view-btn.active {
+  background: var(--color-primary);
+  color: #111111;
+  border-color: var(--color-primary);
+}
+
+/* Card titles and price text contrast in Dark Mode */
+[data-theme="dark"] .furniture-card-title,
+[data-theme="dark"] .decor-card-title {
+  color: #FFF !important;
+}
+
+[data-theme="dark"] .furniture-card-price,
+[data-theme="dark"] .decor-price {
+  color: var(--color-primary-light) !important;
+}
+
+[data-theme="dark"] .filter-drawer-toggle {
+  background: var(--surface-alt);
+  border-color: var(--color-border);
+  color: #EDE7DF;
+}
+
+/* Card Action Buttons (Quick View Eye Icon & AR Icon) in Dark Mode */
+[data-theme="dark"] .card-action-btn,
+[data-theme="dark"] .overlay-btn,
+[data-theme="dark"] .wishlist-heart-btn {
+  background: rgba(28, 24, 20, 0.88) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(197, 160, 89, 0.4) !important;
+  color: #EDE7DF !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .card-action-btn svg,
+[data-theme="dark"] .overlay-btn svg {
+  stroke: #EDE7DF !important;
+}
+
+[data-theme="dark"] .card-action-btn:hover,
+[data-theme="dark"] .overlay-btn:hover {
+  background: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: #111111 !important;
+}
+
+[data-theme="dark"] .card-action-btn:hover svg,
+[data-theme="dark"] .overlay-btn:hover svg {
+  stroke: #111111 !important;
+}
+

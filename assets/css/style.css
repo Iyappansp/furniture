@@ -673,6 +673,15 @@ p {
   z-index: 50;
 }
 
+.nav-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  right: 0;
+  height: 1.5rem;
+}
+
 .nav-dropdown:hover .nav-dropdown-menu {
   opacity: 1;
   visibility: visible;

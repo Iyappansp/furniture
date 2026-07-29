@@ -36,6 +36,10 @@
   .container { padding: 0 1.25rem; }
   .section { padding: var(--space-lg) 0; }
   .grid[style*="gap:3rem"], .grid[style*="gap: 3rem"] { gap: 1.75rem !important; }
+  .grid-2, .grid-3, .grid-4, .products-grid, #decorGridContainer.grid, #furnitureGridContainer.grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
 }
 
 /* ---- Shop layout responsive stacking ---- */

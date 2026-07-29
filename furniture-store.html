@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxury Furniture Store | Bespoke Living, Dining & Bedroom | VerdantWood & Co.</title>
+  <meta name="description"
+    content="Explore VerdantWood & Co.'s luxury furniture store. Discover curved velvet sofas, solid oak dining tables, Italian leather lounge chairs, and marble credenzas.">
+  <meta name="keywords"
+    content="furniture store, luxury sofas, solid oak dining tables, leather accent chairs, bouclé beds, marble credenzas, bespoke furniture showroom">
+  <link rel="canonical" href="https://www.verdantwoodco.com/furniture-store.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Luxury Furniture Store | VerdantWood & Co.">
+  <meta property="og:description"
+    content="Elevate your living space with bespoke architectural sofas, handcrafted solid wood tables, and ergonomic leather seating.">
+  <meta property="og:image" content="assets/images/home1/hero_living.png">
+  <meta property="og:url" content="https://www.verdantwoodco.com/furniture-store.html">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Luxury Furniture Store | VerdantWood & Co.">
+  <meta name="twitter:description" content="Artisanal furniture and luxury spatial statement pieces.">
+  <meta name="twitter:image" content="assets/images/home1/hero_living.png">
+
+  <link rel="icon" type="image/png" href="assets/fav.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/interactions.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/furniture-store.css">
+</head>
+
+<body>
+
+  <div class="preloader">
+    <div class="preloader-logo">VerdantWood</div>
+  </div>
+
+  <header id="main-header"></header>
+
+  <main>
+
+    <!-- FURNITURE HERO -->
+    <section class="hero" style="min-height: 52vh;">
+      <div class="hero-bg">
+        <img src="assets/images/home1/hero_living.png"
+          alt="Curated luxury furniture room composition featuring velvet sofas, oak tables, and leather chairs">
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="furniture-hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3M3 11v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6M3 11a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2" />
+            </svg>
+            Bespoke Furniture Showroom
+          </div>
+          <h1>Sculptural Living &amp; Sanctuary Furniture</h1>
+          <div class="hero-actions">
+            <a href="#furnitureShowcaseSection" class="btn btn-primary" data-magnetic>Explore Furniture Catalog
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" width="18" height="18">
+                <path d="M5 12h14M13 6l6 6-6 6"></path>
+              </svg>
+            </a>
+            <button id="openStyleQuizBtn" class="btn btn-ghost" data-magnetic>
+              ✨ Spatial Style Finder
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE LOOKBOOK WITH HOTSPOTS -->
+    <section class="section" style="padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-head center" data-reveal="fade">
+          <span class="eyebrow" style="justify-content:center">Interactive Spatial Lookbook</span>
+          <h2>The Art of Furniture Arrangement</h2>
+          <p>Tap the glowing accents to explore styled furniture pieces in our living sanctuary suite.</p>
+        </div>
+
+        <div class="lookbook-container" data-reveal="scale">
+          <img src="assets/images/home1/hero_living.png" alt="Styled living room sanctuary with modern furniture"
+            class="lookbook-img">
+
+          <!-- Hotspot 1: Curved Velvet Sofa -->
+          <div class="hotspot-marker" style="top: 64%; left: 45%;" data-popover="popoverSofa"
+            title="Curved Velvet Sofa"></div>
+          <div class="hotspot-popover" id="popoverSofa" style="top: 64%; left: 45%;">
+            <button class="popover-close-btn" aria-label="Close popover">&times;</button>
+            <img src="assets/images/product/sofa_velvet.png" alt="Nordik Boulevard Curved Velvet Sofa"
+              class="hotspot-popover-img">
+            <h5>Nordik Boulevard Velvet Sofa</h5>
+            <div class="popover-price">₹89,999</div>
+          </div>
+
+          <!-- Hotspot 2: Oak Coffee Table -->
+          <div class="hotspot-marker" style="top: 75%; left: 30%;" data-popover="popoverCoffeeTable"
+            title="Oak Coffee Table"></div>
+          <div class="hotspot-popover" id="popoverCoffeeTable" style="top: 75%; left: 30%;">
+            <button class="popover-close-btn" aria-label="Close popover">&times;</button>
+            <img src="assets/images/product/coffee_table_halden.png" alt="Halden Solid Oak Coffee Table"
+              class="hotspot-popover-img">
+            <h5>Halden Solid Oak Coffee Table</h5>
+            <div class="popover-price">₹34,500</div>
+          </div>
+
+          <!-- Hotspot 3: Leather Lounge Chair -->
+          <div class="hotspot-marker" style="top: 52%; left: 78%;" data-popover="popoverChair"
+            title="Leather Lounge Chair"></div>
+          <div class="hotspot-popover" id="popoverChair" style="top: 52%; left: 78%;">
+            <button class="popover-close-btn" aria-label="Close popover">&times;</button>
+            <img src="assets/images/product/chair_lounge.png" alt="Koto Minimalist Leather Chair"
+              class="hotspot-popover-img">
+            <h5>Koto Leather Lounge Chair</h5>
+            <div class="popover-price">₹42,000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BESPOKE FURNITURE SHOWCASE SECTION -->
+    <section class="section" id="furnitureShowcaseSection">
+      <div class="container">
+
+        <!-- FURNITURE COLLECTION SHOWCASE TABS -->
+        <div class="furniture-collection-tabs" id="furnitureCollectionTabs" data-reveal="fade">
+          <button class="tab-btn active" data-category="All Furniture">All Furniture</button>
+          <button class="tab-btn" data-category="Sofas & Sectionals">Sofas &amp; Sectionals</button>
+          <button class="tab-btn" data-category="Accent Chairs">Accent Chairs</button>
+          <button class="tab-btn" data-category="Dining Tables & Chairs">Dining Tables &amp; Chairs</button>
+          <button class="tab-btn" data-category="Beds & Headboards">Beds &amp; Headboards</button>
+          <button class="tab-btn" data-category="Storage & Consoles">Storage &amp; Consoles</button>
+          <button class="tab-btn" data-category="Coffee & Side Tables">Coffee &amp; Side Tables</button>
+        </div>
+
+        <!-- SPOTLIGHT BANNER -->
+        <div class="furniture-spotlight-banner" id="furnitureSpotlightBanner" data-reveal="scale">
+          <div class="spotlight-content">
+            <span class="spotlight-badge">Architectural Craftsmanship</span>
+            <h2 class="spotlight-title">Solid Wood &amp; Bespoke Upholstery</h2>
+            <p class="spotlight-desc">Kiln-dried hardwood frames, full-grain Italian leathers, and precision joinery
+              built to anchor generational homes.</p>
+            <div class="spotlight-quote">“Furniture is the architecture of human comfort.” — VerdantWood Design Studio
+            </div>
+          </div>
+          <div class="spotlight-action" style="z-index:2">
+            <a href="contact.html" class="btn btn-primary">Schedule Showroom Visit</a>
+          </div>
+        </div>
+
+        <!-- FURNITURE SUITE VIGNETTE BUNDLE CARD -->
+        <div class="furniture-bundle-card" data-reveal="fade">
+          <div class="furniture-bundle-img-stack">
+            <img src="assets/images/home1/hero_living.png" alt="Nordik Living Suite Bundle">
+          </div>
+          <div class="furniture-bundle-info">
+            <span
+              style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--color-primary-dark); font-weight:700;">Curated
+              Spatial Suite</span>
+            <h3>The Nordik Living Suite Bundle</h3>
+            <p style="color:var(--color-text-muted); font-size:0.92rem; line-height:1.5;">
+              Save 20% when purchasing this coordinated 3-piece living room furniture suite.
+            </p>
+            <div class="furniture-bundle-items-list">
+              <span class="furniture-bundle-item-chip">🛋️ Nordik Curved Velvet Sofa (₹89,999)</span>
+              <span class="furniture-bundle-item-chip">🪑 Koto Leather Lounge Chair (₹42,000)</span>
+              <span class="furniture-bundle-item-chip">🪵 Halden Solid Oak Coffee Table (₹34,500)</span>
+            </div>
+            <div class="flex align-center gap-md" style="flex-wrap:wrap;">
+              <div>
+                <span
+                  style="text-decoration:line-through; color:var(--color-text-muted); font-size:0.9rem; margin-right:0.4rem;">₹1,66,499</span>
+                <span style="font-size:1.35rem; font-weight:700; color:var(--color-dark);">₹1,33,199</span>
+              </div>
+              <button class="btn btn-primary" id="addFurnitureBundleBtn">+ Add Complete Living Suite to Bag</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONTROL BAR & FILTER DRAWER TOGGLE -->
+        <!-- <div class="furniture-control-bar" data-reveal="fade">
+          <div class="furniture-search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="M21 21l-4.35-4.35"></path>
+            </svg>
+            <input type="text" id="furnitureSearchInput"
+              placeholder="Search furniture by name, material, or category..." aria-label="Search furniture items">
+          </div>
+
+          <button class="filter-drawer-toggle" id="filterDrawerToggle">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+            </svg>
+            <span class="drawer-status">Filters &amp; Options ▼</span>
+          </button>
+
+          <div class="flex align-center gap-sm">
+            <p style="margin:0; font-size:0.88rem; color:var(--color-text-muted);">
+              Showing <strong id="furnitureItemCount" style="color:var(--color-dark)">18</strong> pieces
+            </p>
+
+            <div class="view-mode-group" id="viewModeGroup">
+              <button class="view-btn active" data-view="grid" title="Grid View">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>
+                Grid
+              </button>
+              <button class="view-btn" data-view="editorial" title="Editorial Split View">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="8" y1="6" x2="21" y2="6" />
+                  <line x1="8" y1="12" x2="21" y2="12" />
+                  <line x1="8" y1="18" x2="21" y2="18" />
+                  <line x1="3" y1="6" x2="3.01" y2="6" />
+                  <line x1="3" y1="12" x2="3.01" y2="12" />
+                  <line x1="3" y1="18" x2="3.01" y2="18" />
+                </svg>
+                Editorial
+              </button>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- EXPANDABLE GLASSMORPHISM FILTER DRAWER -->
+        <!-- <div class="filter-drawer-panel" id="filterDrawerPanel">
+          <div class="drawer-grid">
+            <div class="drawer-col">
+              <h4 style="margin-bottom:0.75rem; font-family:var(--font-display);">Material Finish</h4>
+              <div class="filter-swatches">
+                <span class="filter-swatch furniture-material-swatch" data-material="Solid Oak"
+                  style="background:#C4A482;" title="Solid Oak"></span>
+                <span class="filter-swatch furniture-material-swatch" data-material="Italian Leather"
+                  style="background:#8B4513;" title="Italian Leather"></span>
+                <span class="filter-swatch furniture-material-swatch" data-material="Velvet" style="background:#355E3B;"
+                  title="Velvet"></span>
+                <span class="filter-swatch furniture-material-swatch" data-material="Marble" style="background:#E5E4E2;"
+                  title="Marble"></span>
+                <span class="filter-swatch furniture-material-swatch" data-material="Walnut" style="background:#5C4033;"
+                  title="Walnut"></span>
+              </div>
+            </div>
+
+            <div class="drawer-col">
+              <h4 style="margin-bottom:0.75rem; font-family:var(--font-display);">Price Range</h4>
+              <input type="range" id="furniturePriceRange" min="10000" max="250000" step="5000" value="250000"
+                style="width:100%; accent-color:var(--color-primary); margin-bottom:0.6rem;">
+              <div class="flex justify-between" style="font-size:0.85rem; color:var(--color-text-muted);">
+                <span>₹10,000</span><span id="furniturePriceValue"
+                  style="font-weight:700; color:var(--color-primary-light);">₹2,50,000</span>
+              </div>
+            </div>
+
+            <div class="drawer-col">
+              <h4 style="margin-bottom:0.75rem; font-family:var(--font-display);">Showroom Status</h4>
+              <label class="filter-checkbox"><input type="checkbox" checked> In Showroom Display</label>
+              <label class="filter-checkbox"><input type="checkbox"> FSC-Certified Solid Wood</label>
+            </div>
+
+            <div class="drawer-col" style="display:flex; align-items:flex-end; justify-content:flex-end;">
+              <button class="btn btn-secondary btn-block" id="furnitureResetDrawer" style="width:100%;">Reset Filters</button>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- MULTI-VIEW FURNITURE SHOWCASE CONTAINER -->
+        <div id="furnitureGridContainer" class="grid grid-3 stagger">
+          <!-- Dynamically populated by assets/js/furniture-store.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FURNITURE STYLING ADVICE SECTION -->
+    <section class="section alt-bg">
+      <div class="container">
+        <div class="section-head center" data-reveal="fade">
+          <span class="eyebrow" style="justify-content:center">Interior Architect Principles</span>
+          <h2>3 Rules for Arranging Modern Furniture</h2>
+          <p>Master the balance of spatial proportion, circulation flow, and focal anchoring in open living areas.</p>
+        </div>
+
+        <div class="grid grid-3 stagger">
+          <div class="style-tip-card" data-reveal>
+            <div class="style-tip-num">01</div>
+            <h3 style="font-family:var(--font-display); font-size:1.3rem; margin-bottom:0.6rem;">Circulation &amp;
+              Traffic Paths</h3>
+            <p style="color:var(--color-text-muted); font-size:0.92rem; line-height:1.6;">
+              Maintain at least 30 inches of walk-through clearance around seating groups and 18 inches between coffee
+              tables and sofas.
+            </p>
+          </div>
+
+          <div class="style-tip-card" data-reveal>
+            <div class="style-tip-num">02</div>
+            <h3 style="font-family:var(--font-display); font-size:1.3rem; margin-bottom:0.6rem;">Material Anchoring</h3>
+            <p style="color:var(--color-text-muted); font-size:0.92rem; line-height:1.6;">
+              Balance low-slung soft upholstery with raised slim-legged accent chairs and solid hardwood credenzas to
+              maintain optical lightness.
+            </p>
+          </div>
+
+          <div class="style-tip-card" data-reveal>
+            <div class="style-tip-num">03</div>
+            <h3 style="font-family:var(--font-display); font-size:1.3rem; margin-bottom:0.6rem;">Proportional Scale</h3>
+            <p style="color:var(--color-text-muted); font-size:0.92rem; line-height:1.6;">
+              Match coffee table lengths to approximately two-thirds of your primary sofa length for optimal geometric
+              balance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA BAND -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band" data-reveal="scale">
+          <img src="assets/images/home1/hero_living.png" alt="Showroom furniture suite ready for consultation">
+          <div class="cta-band-inner">
+            <h2>Need Personal Spatial Layout Advice?</h2>
+            <p>Our senior interior architects provide 3D room floorplan renders and customized furniture placement
+              consultations.</p>
+            <div class="cta-band-actions">
+              <a href="contact.html" class="btn btn-primary" data-magnetic>Book Spatial Consultation</a>
+              <a href="room-collections.html" class="btn btn-ghost" data-magnetic>View Room Collections</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="main-footer"></footer>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal-overlay" id="quickViewModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div id="quickViewModalBody"></div>
+    </div>
+  </div>
+
+  <!-- AR SPATIAL PREVIEW MODAL -->
+  <div class="modal-overlay" id="arPreviewModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div id="arPreviewBody"></div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/furniture-store.js"></script>
+</body>
+
+</html>

@@ -32,7 +32,13 @@
     },
     { href: "about.html", label: "About" },
     { href: "shop.html", label: "Shop" },
-    { href: "decor-store.html", label: "Decor Store" },
+    {
+      label: "Store",
+      children: [
+        { href: "decor-store.html", label: "1. Decor Store" },
+        { href: "furniture-store.html", label: "2. Furniture Store" }
+      ]
+    },
     { href: "services.html", label: "Services" },
     { href: "gallery.html", label: "Gallery" },
     { href: "blog.html", label: "Blog" },
@@ -160,10 +166,10 @@
           <ul>
             <li><a href="shop.html">All Products</a></li>
             <li><a href="decor-store.html">Decor Store</a></li>
+            <li><a href="furniture-store.html">Furniture Store</a></li>
             <li><a href="room-collections.html">Room Collections</a></li>
             <li><a href="home-2.html">Living Room</a></li>
             <li><a href="home-2.html">Bedroom</a></li>
-            <li><a href="home-2.html">Dining Room</a></li>
           </ul>
         </div>
         <div class="footer-col">
