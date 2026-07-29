@@ -144,7 +144,7 @@
     },
     {
       id: "decor-10",
-      title: "Noor Serene Meditating Buddha Tea Light Holder",
+      title: "Noor Serene Meditating Buddha Tea Light",
       category: "Figurines",
       price: 4999,
       originalPrice: null,
