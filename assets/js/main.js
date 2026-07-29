@@ -34,10 +34,10 @@
     {
       label: "Shop",
       children: [
-        { href: "furniture-shop.html", label: "Furniture Shop" },
-        { href: "decor-shop.html", label: "Decor Shop" },
-        { href: "furniture-store.html", label: "Furniture Store" },
-        { href: "decor-store.html", label: "Decor Store" },
+        { href: "living-room.html", label: "Living Room Furniture" },
+        { href: "dining-kitchen.html", label: "Dining & Kitchen" },
+        { href: "bedroom.html", label: "Bedroom Furniture" },
+        { href: "home-decor.html", label: "Home Décor" }
 
       ]
     },
@@ -55,7 +55,7 @@
 
   function isActivePage(linkHref, activePage) {
     if (linkHref === activePage) return true;
-    if ((linkHref === "furniture-shop.html" || linkHref === "decor-shop.html" || linkHref === "shop.html") && (activePage === "product-detail.html" || activePage === "room-collections.html")) {
+    if ((linkHref === "living-room.html" || linkHref === "dining-kitchen.html" || linkHref === "bedroom.html" || linkHref === "home-decor.html" || linkHref === "shop.html") && (activePage === "product-detail.html" || activePage === "room-collections.html")) {
       return true;
     }
     if (linkHref === "blog.html" && activePage === "blog-post.html") {
@@ -168,11 +168,11 @@
           <h4>Shop</h4>
           <ul>
             <li><a href="shop.html">All Products</a></li>
-            <li><a href="decor-store.html">Decor Store</a></li>
-            <li><a href="furniture-store.html">Furniture Store</a></li>
+            <li><a href="living-room.html">Living Room</a></li>
+            <li><a href="dining-kitchen.html">Dining & Kitchen</a></li>
+            <li><a href="bedroom.html">Bedroom</a></li>
+            <li><a href="home-decor.html">Home Décor</a></li>
             <li><a href="room-collections.html">Room Collections</a></li>
-            <li><a href="home-2.html">Living Room</a></li>
-            <li><a href="home-2.html">Bedroom</a></li>
           </ul>
         </div>
         <div class="footer-col">

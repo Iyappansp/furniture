@@ -5,87 +5,117 @@
 (function () {
   "use strict";
 
-  // Catalog of Furniture Products
+  // Catalog of Furniture Products - Dedicated Dining & Kitchen Collection
   const FURNITURE_PRODUCTS = [
     {
-      id: "furn-1",
-      title: "Nordik Boulevard Curved Velvet Sofa",
-      category: "Sofas & Sectionals",
+      id: "dk-table-1",
+      title: "Oakridge Handcrafted Solid Oak Dining Table",
+      category: "Dining Tables & Chairs",
       price: 89999,
-      originalPrice: 105000,
-      rating: 4.9,
-      reviews: 58,
-      material: "Velvet",
+      originalPrice: 98000,
+      rating: 5.0,
+      reviews: 44,
+      material: "Solid Oak",
       badge: "FEATURED",
       badgeClass: "badge-gift",
-      image: "assets/images/product/sofa_amara.png",
-      dimensions: "94\"W x 38\"D x 32\"H",
-      description: "Sculptural curved 3-seater sofa wrapped in plush stain-resistant moss velvet with brushed brass inset base. Engineered for architectural living rooms."
+      image: "assets/images/product/dining_table_oakridge.png",
+      dimensions: "84\"W x 38\"D x 30\"H",
+      description: "Handcrafted solid oak dining table featuring eased soft edges, natural oil finish, and sturdy tapered timber legs."
     },
     {
-      id: "furn-2",
-      title: "Halden Sculptural Solid Oak Coffee Table",
-      category: "Coffee & Side Tables",
-      price: 34500,
-      originalPrice: null,
-      rating: 4.8,
-      reviews: 42,
-      material: "Solid Oak",
-      badge: "BESTSELLER",
-      badgeClass: "badge-shipping",
-      image: "assets/images/product/coffee_table_halden.png",
-      dimensions: "48\"W x 28\"D x 16\"H",
-      description: "Organic fluid oval coffee table crafted from kiln-dried solid FSC-certified European oak with matte lacquer finish."
-    },
-    {
-      id: "furn-3",
-      title: "Koto Minimalist Leather Lounge Chair",
-      category: "Accent Chairs",
-      price: 42000,
-      originalPrice: 48000,
-      rating: 4.9,
-      reviews: 64,
-      material: "Italian Leather",
-      badge: "FREE SHIPPING",
-      badgeClass: "badge-shipping",
-      image: "assets/images/product/chair_lounge.png",
-      dimensions: "32\"W x 34\"D x 29\"H",
-      description: "Deep lounge chair with full-grain cognac Italian leather upholstery suspended on an architectural matte black steel frame."
-    },
-    {
-      id: "furn-4",
+      id: "dk-table-2",
       title: "Sora Solid Walnut 8-Seater Dining Table",
       category: "Dining Tables & Chairs",
       price: 115000,
-      originalPrice: null,
+      originalPrice: 130000,
       rating: 5.0,
       reviews: 31,
       material: "Walnut",
       badge: "NEW ARRIVAL",
       badgeClass: "",
-      image: "assets/images/product/table_oakridge.png",
+      image: "assets/images/product/dining_table_walnut.png",
       dimensions: "96\"W x 40\"D x 30\"H",
       description: "Hand-finished American black walnut dining table featuring rounded bullnose edges and flared trestle legs."
     },
     {
-      id: "furn-5",
-      title: "Aura Bouclé Upholstered Platform Bed",
-      category: "Beds & Headboards",
-      price: 98000,
-      originalPrice: 112000,
+      id: "dk-island-1",
+      title: "Verdant Marble Top Kitchen Island",
+      category: "Kitchen Islands",
+      price: 112000,
+      originalPrice: 125000,
       rating: 4.9,
-      reviews: 73,
-      material: "Velvet",
-      badge: "LIMITED EDITION",
-      badgeClass: "badge-discount",
-      image: "assets/images/product/bed_linen.png",
-      dimensions: "King: 84\"W x 90\"L x 46\"H",
-      description: "Low-profile architectural platform bed with cocooning textured cream bouclé headboard and solid oak slat matrix."
+      reviews: 32,
+      material: "Marble",
+      badge: "BESTSELLER",
+      badgeClass: "badge-shipping",
+      image: "assets/images/product/kitchen_island_marble.png",
+      dimensions: "60\"W x 32\"D x 36\"H",
+      description: "Freestanding kitchen island with Carrara marble countertop, slatted oak lower shelf, and brass towel racks."
     },
     {
-      id: "furn-6",
+      id: "dk-island-2",
+      title: "Nordik Timber Prep Kitchen Island",
+      category: "Kitchen Islands",
+      price: 94000,
+      originalPrice: 108000,
+      rating: 4.8,
+      reviews: 26,
+      material: "Solid Oak",
+      badge: "POPULAR",
+      badgeClass: "",
+      image: "assets/images/product/kitchen_island_timber.png",
+      dimensions: "54\"W x 30\"D x 36\"H",
+      description: "Solid European oak prep island with butcher block top, deep storage drawers, and brass utensil hooks."
+    },
+    {
+      id: "dk-stool-1",
+      title: "Artisan Leather & Walnut Bar Stool",
+      category: "Bar Stools",
+      price: 18500,
+      originalPrice: 22000,
+      rating: 4.8,
+      reviews: 51,
+      material: "Italian Leather",
+      badge: "POPULAR",
+      badgeClass: "",
+      image: "assets/images/product/chair_woven.webp",
+      dimensions: "18\"W x 18\"D x 30\"H",
+      description: "Counter-height leather bar stool with solid walnut legs and hand-stitched saddle leather upholstery."
+    },
+    {
+      id: "dk-stool-2",
+      title: "Koto Counter-Height Timber Stool",
+      category: "Bar Stools",
+      price: 15500,
+      originalPrice: null,
+      rating: 4.9,
+      reviews: 39,
+      material: "Solid Oak",
+      badge: "BESTSELLER",
+      badgeClass: "badge-shipping",
+      image: "assets/images/product/stool_counter.png",
+      dimensions: "17\"W x 17\"D x 26\"H",
+      description: "Sculptural solid oak counter stool with contoured seat and integrated footrest."
+    },
+    {
+      id: "dk-sideboard-1",
+      title: "Heritage Walnut 4-Door Sideboard",
+      category: "Sideboards & Buffets",
+      price: 56000,
+      originalPrice: 62000,
+      rating: 4.9,
+      reviews: 29,
+      material: "Walnut",
+      badge: "NEW ARRIVAL",
+      badgeClass: "",
+      image: "assets/images/product/sideboard_walnut_4door.png",
+      dimensions: "68\"W x 19\"D x 32\"H",
+      description: "Architectural dining sideboard crafted from American walnut with fluted doors and soft-close brass hinges."
+    },
+    {
+      id: "dk-sideboard-2",
       title: "Calacatta Gold Marble Sideboard Credenza",
-      category: "Storage & Consoles",
+      category: "Sideboards & Buffets",
       price: 128000,
       originalPrice: 145000,
       rating: 5.0,
@@ -93,121 +123,46 @@
       material: "Marble",
       badge: "EXCLUSIVE",
       badgeClass: "badge-gift",
-      image: "assets/images/product/sideboard_oakridge.png",
+      image: "assets/images/product/sideboard_calacatta_marble.png",
       dimensions: "72\"W x 18\"D x 32\"H",
       description: "Luxury storage credenza featuring a top slab of polished Calacatta gold marble, fluted walnut doors, and soft-close brass hardware."
     },
     {
-      id: "furn-7",
-      title: "Elysian Swivel Accent Chair in Terracotta",
-      category: "Accent Chairs",
-      price: 36000,
-      originalPrice: null,
-      rating: 4.7,
-      reviews: 39,
-      material: "Velvet",
-      badge: "POPULAR",
-      badgeClass: "",
-      image: "assets/images/product/armchair_amara.webp",
-      dimensions: "30\"W x 31\"D x 30\"H",
-      description: "360-degree smooth swivel accent chair wrapped in terracotta performance velvet with deep foam cushioning."
-    },
-    {
-      id: "furn-8",
-      title: "Zenith Travertine Nesting Side Tables",
-      category: "Coffee & Side Tables",
-      price: 28500,
-      originalPrice: 32000,
-      rating: 4.8,
-      reviews: 45,
-      material: "Marble",
-      badge: "HOT DEAL",
-      badgeClass: "badge-discount",
-      image: "assets/images/product/nightstand_oak.png",
-      dimensions: "Large: 20\"Dia x 22\"H | Small: 16\"Dia x 19\"H",
-      description: "Set of 2 nesting side tables boasting honed Roman travertine tops resting on slim bronze pillar legs."
-    },
-    {
-      id: "ee-sofa-1",
-      title: "Boryo Low Timber Frame Linen Sofa",
-      category: "Sofas & Sectionals",
-      price: 68000,
-      originalPrice: null,
-      rating: 5.0,
-      reviews: 38,
-      material: "Solid Oak",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/sofa_amara.png",
-      dimensions: "94\"W x 38\"D x 30\"H",
-      description: "Minimalist luxury low timber frame sofa with deep plush white linen cushions and solid wood joinery."
-    },
-    {
-      id: "ee-sofa-2",
-      title: "Billow Single-Seat Bouclé Lounge Chair",
-      category: "Accent Chairs",
-      price: 35000,
-      originalPrice: null,
-      rating: 4.9,
-      reviews: 24,
-      material: "Velvet",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/chair_lounge.png",
-      dimensions: "36\"W x 36\"D x 30\"H",
-      description: "Sculptural rounded single-seat lounge chair upholstered in tactile cream bouclé with dark wood spherical legs."
-    },
-    {
-      id: "ee-sofa-3",
-      title: "Billow Organic Modular Sectional Sofa",
-      category: "Sofas & Sectionals",
-      price: 145000,
-      originalPrice: null,
-      rating: 5.0,
-      reviews: 47,
-      material: "Velvet",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/sofa_amara_detail1.png",
-      dimensions: "128\"W x 42\"D x 30\"H",
-      description: "Curved organic modular sectional sofa crafted in tactile bouclé with subtle dark wood support feet."
-    },
-    {
-      id: "ee-sofa-4",
-      title: "Nubi Skirted White Linen Sofa",
-      category: "Sofas & Sectionals",
-      price: 78000,
-      originalPrice: 85000,
-      rating: 4.8,
-      reviews: 31,
-      material: "Solid Oak",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-discount",
-      image: "assets/images/product/sofa_amara_detail2.png",
-      dimensions: "88\"W x 38\"D x 32\"H",
-      description: "Modern tailored white linen sofa with relaxed skirted base and plush loose back pillow cushioning."
-    },
-    {
-      id: "ee-chair-1",
-      title: "Line Architectural Solid Timber Dining Chair",
+      id: "dk-chair-1",
+      title: "Kobe Upholstered Dining Armchair",
       category: "Dining Tables & Chairs",
-      price: 16500,
-      originalPrice: null,
+      price: 24500,
+      originalPrice: 28000,
       rating: 4.9,
-      reviews: 56,
-      material: "Solid Oak",
-      badge: "EASTERN EDITION",
+      reviews: 37,
+      material: "Velvet",
+      badge: "EXQUISITE",
       badgeClass: "badge-gift",
-      image: "assets/images/product/chair_woven.webp",
-      dimensions: "20\"W x 21\"D x 32\"H",
-      description: "Architectural solid timber dining chair with black upholstered cushion seat and precision joinery."
+      image: "assets/images/product/armchair_kobe_dining.png",
+      dimensions: "22\"W x 23\"D x 31\"H",
+      description: "Ergonomic dining chair with curved back support, stain-resistant velvet fabric, and matte black steel legs."
     },
+    // {
+    //   id: "dk-chair-2",
+    //   title: "Line Architectural Solid Timber Dining Chair",
+    //   category: "Dining Tables & Chairs",
+    //   price: 16500,
+    //   originalPrice: null,
+    //   rating: 4.9,
+    //   reviews: 56,
+    //   material: "Solid Oak",
+    //   badge: "EASTERN EDITION",
+    //   badgeClass: "badge-gift",
+    //   image: "assets/images/product/chair_woven.webp",
+    //   dimensions: "20\"W x 21\"D x 32\"H",
+    //   description: "Architectural solid timber dining chair with black upholstered cushion seat and precision joinery."
+    // },
     {
-      id: "ee-chair-2",
+      id: "dk-bench-1",
       title: "Noom Upholstered Dining Bench",
       category: "Dining Tables & Chairs",
       price: 28000,
-      originalPrice: null,
+      originalPrice: 32000,
       rating: 4.8,
       reviews: 29,
       material: "Solid Oak",
@@ -218,64 +173,49 @@
       description: "Minimalist upholstered dining bench with rounded solid timber cylinder legs and cushioned top."
     },
     {
-      id: "ee-chair-3",
-      title: "Eum Dark Wood T-Back Accent Chair",
-      category: "Accent Chairs",
+      id: "dk-chair-3",
+      title: "Eum Dark Wood T-Back Dining Chair",
+      category: "Dining Tables & Chairs",
       price: 22500,
       originalPrice: null,
       rating: 4.9,
       reviews: 43,
       material: "Walnut",
-      badge: "EASTERN EDITION",
+      badge: "FEATURED",
       badgeClass: "badge-gift",
       image: "assets/images/product/eum_tback_chair.png",
       dimensions: "22\"W x 22\"D x 31\"H",
-      description: "Sculptural dark wood accent chair featuring T-shaped backrest structure and padded seat."
+      description: "Sculptural dark wood dining chair featuring T-shaped backrest structure and padded cushion seat."
     },
+    // {
+    //   id: "dk-cart-1",
+    //   title: "Nordik Brass & Smoked Glass Bar Cart",
+    //   category: "Storage & Bar Carts",
+    //   price: 32000,
+    //   originalPrice: 36000,
+    //   rating: 5.0,
+    //   reviews: 18,
+    //   material: "Brass",
+    //   badge: "LIMITED",
+    //   badgeClass: "badge-discount",
+    //   image: "assets/images/product/cart_rolling.webp",
+    //   dimensions: "34\"W x 18\"D x 33\"H",
+    //   description: "2-tier mobile entertaining bar cart with brushed solid brass frame, tempered smoked glass shelves, and castor wheels."
+    // },
     {
-      id: "ee-bed-1",
-      title: "Integrated Desk Wing Platform Bed",
-      category: "Beds & Headboards",
-      price: 108500,
-      originalPrice: null,
-      rating: 5.0,
-      reviews: 19,
-      material: "Walnut",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/product/bed_linen.png",
-      dimensions: "78\"W x 90\"L x 46\"H",
-      description: "Luxury platform bed featuring an integrated solid wood headboard with side shelf wing extensions."
-    },
-    {
-      id: "ee-bed-2",
-      title: "Folding Screen Beige Linen Bed",
-      category: "Beds & Headboards",
-      price: 96500,
-      originalPrice: null,
+      id: "dk-cabinet-1",
+      title: "Heritage Tall Pantry Cabinet & Wine Storage",
+      category: "Storage & Bar Carts",
+      price: 85000,
+      originalPrice: 94000,
       rating: 4.9,
-      reviews: 27,
-      material: "Solid Oak",
-      badge: "EASTERN EDITION",
-      badgeClass: "badge-gift",
-      image: "assets/images/shop/shop_cat_bedroom.png",
-      dimensions: "80\"W x 88\"L x 50\"H",
-      description: "Tailored minimalist upholstered bed with tall folding wing panel headboard in natural beige linen."
-    },
-    {
-      id: "ee-bed-3",
-      title: "WA-TOP Brass Accent Lounger Daybed",
-      category: "Beds & Headboards",
-      price: 65500,
-      originalPrice: null,
-      rating: 4.8,
       reviews: 22,
       material: "Solid Oak",
-      badge: "EASTERN EDITION",
+      badge: "LUXURY",
       badgeClass: "badge-gift",
-      image: "assets/images/product/nightstand_oak.png",
-      dimensions: "76\"W x 34\"D x 28\"H",
-      description: "Sleek daybed featuring white mattress cushion, cylindrical head bolster pillow, and brass frame accents."
+      image: "assets/images/product/cabinet_pantry.png",
+      dimensions: "40\"W x 22\"D x 78\"H",
+      description: "Tall kitchen and dining pantry cabinet with integrated wine rack, glass stemware holders, and soft-close oak drawers."
     }
   ];
 
@@ -291,6 +231,7 @@
     initLookbookHotspots();
     initFilterDrawer();
     initCollectionTabs();
+    initCategoryShowcaseCards();
     initSearchAndFilterInputs();
     initViewModeGroup();
     initModals();
@@ -396,6 +337,34 @@
         tab.classList.add("active");
         currentCategory = tab.getAttribute("data-category");
         renderProducts();
+      });
+    });
+  }
+
+  // Category Showcase Cards Click Sync
+  function initCategoryShowcaseCards() {
+    const cards = document.querySelectorAll(".shop-cat-grid .category-showcase-card");
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        cards.forEach((c) => c.classList.remove("active"));
+        card.classList.add("active");
+        const category = card.getAttribute("data-category-trigger");
+        if (category) {
+          currentCategory = category;
+          const tabs = document.querySelectorAll(".furniture-collection-tabs .tab-btn");
+          tabs.forEach((tab) => {
+            if (tab.getAttribute("data-category") === category) {
+              tab.classList.add("active");
+            } else {
+              tab.classList.remove("active");
+            }
+          });
+          renderProducts();
+          const target = document.getElementById("furnitureShowcaseSection");
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        }
       });
     });
   }

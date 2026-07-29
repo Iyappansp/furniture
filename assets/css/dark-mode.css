@@ -211,3 +211,140 @@
   stroke: #111111 !important;
 }
 
+/* Hero Section Dark Mode Image */
+[data-theme="dark"] .hero-arch-container .hero-img-light {
+  display: none !important;
+}
+[data-theme="dark"] .hero-arch-container .hero-img-dark {
+  display: block !important;
+}
+
+/* Hero Luxury Dark Mode Overrides */
+[data-theme="dark"] .hero-luxury,
+body.dark-mode .hero-luxury {
+  background-color: #0d100e;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .hero-luxury-title,
+body.dark-mode .hero-luxury-title,
+[data-theme="dark"] .hero-luxury h1,
+body.dark-mode .hero-luxury h1 {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .hero-title-italic-accent,
+body.dark-mode .hero-title-italic-accent {
+  color: #E5C158 !important;
+}
+
+[data-theme="dark"] .hero-brand-eyebrow,
+body.dark-mode .hero-brand-eyebrow {
+  color: #C5A059 !important;
+}
+
+[data-theme="dark"] .hero-brand-eyebrow .dot-bullet,
+body.dark-mode .hero-brand-eyebrow .dot-bullet {
+  color: #C5A059 !important;
+}
+
+[data-theme="dark"] .hero-highlight-lead p,
+body.dark-mode .hero-highlight-lead p {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+[data-theme="dark"] .btn-glass-pill,
+body.dark-mode .btn-glass-pill {
+  background: rgba(255, 255, 255, 0.05);
+  color: #FFFFFF !important;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+[data-theme="dark"] .btn-glass-pill:hover,
+body.dark-mode .btn-glass-pill:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .hero-stats-bar,
+body.dark-mode .hero-stats-bar {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .stat-icon-wrapper,
+body.dark-mode .stat-icon-wrapper {
+  background: rgba(197, 160, 89, 0.12);
+  border-color: rgba(197, 160, 89, 0.25);
+  color: #C5A059;
+}
+
+[data-theme="dark"] .stat-info-text strong,
+body.dark-mode .stat-info-text strong {
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] .stat-info-text span,
+body.dark-mode .stat-info-text span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="dark"] .hero-arch-container,
+body.dark-mode .hero-arch-container {
+  box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+[data-theme="dark"] .hero-luxury .hero-marquee,
+body.dark-mode .hero-luxury .hero-marquee {
+  background: rgba(18, 22, 20, 0.95);
+  border-top-color: rgba(220, 200, 178, 0.15);
+  border-bottom-color: rgba(220, 200, 178, 0.15);
+}
+
+[data-theme="dark"] .hero-luxury .hero-marquee .marquee-content span,
+body.dark-mode .hero-luxury .hero-marquee .marquee-content span {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+[data-theme="dark"] .hero-luxury .hero-marquee .marquee-content .dot,
+body.dark-mode .hero-luxury .hero-marquee .marquee-content .dot {
+  background-color: #C5A059;
+}
+
+/* Home 2 Hero Decor Split Dark Mode Overrides */
+[data-theme="dark"] .hero-decor-split,
+body.dark-mode .hero-decor-split,
+[data-theme="dark"] .hero-decor-left,
+body.dark-mode .hero-decor-left {
+  background-color: #121614 !important;
+}
+
+[data-theme="dark"] .hero-decor-left h1,
+body.dark-mode .hero-decor-left h1 {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .hero-decor-left p,
+body.dark-mode .hero-decor-left p {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+[data-theme="dark"] .hero-decor-split .hero-marquee,
+body.dark-mode .hero-decor-split .hero-marquee {
+  background-color: #0d100e !important;
+  border-top-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .hero-decor-split .hero-marquee .marquee-content span,
+body.dark-mode .hero-decor-split .hero-marquee .marquee-content span {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .hero-decor-split .hero-marquee .marquee-content .dot,
+body.dark-mode .hero-decor-split .hero-marquee .marquee-content .dot {
+  background-color: #C5A059 !important;
+}
+
+
