@@ -24,7 +24,7 @@
     },
     {
       id: "decor-2",
-      title: "Gardenia Mirage Set of 2 Floor Planters",
+      title: "Gardenia Mirage Set of 2 Floor",
       category: "Planters",
       price: 2999,
       originalPrice: null,
@@ -39,7 +39,7 @@
     },
     {
       id: "decor-3",
-      title: "Splendid Senorita Shizue Ceramic Floral Vase",
+      title: "Splendid Senorita Shizue Ceramic",
       category: "Vases & Ceramics",
       price: 1999,
       originalPrice: null,
@@ -69,7 +69,7 @@
     },
     {
       id: "decor-5",
-      title: "Artistry Regalia Canvas Picture Frame ",
+      title: "Artistry Regalia Canvas Picture ",
       category: "Wall Art",
       price: 3999,
       originalPrice: null,
@@ -84,7 +84,7 @@
     },
     {
       id: "decor-6",
-      title: "Cascade Beige Polyresin Buddha Fountain ",
+      title: "Cascade Beige Buddha Fountain ",
       category: "Fountains & Sculptures",
       price: 25599,
       originalPrice: 31999,
@@ -99,7 +99,7 @@
     },
     {
       id: "decor-7",
-      title: "Dhayana Polyresin Cow and Calf Figurine",
+      title: "Dhayana Polyresin Cow and Calf",
       category: "Figurines",
       price: 1099,
       originalPrice: null,
@@ -114,7 +114,7 @@
     },
     {
       id: "decor-8",
-      title: "Tokyo Iron Floor Lamp with Movable Shade",
+      title: "Tokyo Iron Floor Lamp with Movable",
       category: "Lighting",
       price: 1299,
       originalPrice: null,
@@ -129,7 +129,7 @@
     },
     {
       id: "decor-9",
-      title: "Alpine Polyresin Birds & Tiered Water Fountain",
+      title: "Alpine Polyresin Birds & Tierd chairs",
       category: "Fountains & Sculptures",
       price: 799,
       originalPrice: 999,

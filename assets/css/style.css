@@ -1849,26 +1849,27 @@ body.dark-mode .hero-arch-container img.hero-img-dark {
 }
 
 .btn-decor-shop {
-  background-color: #B46A3D;
+  background: var(--color-primary);
   color: #FFFFFF !important;
+  font-family: var(--font-button);
   font-weight: 600;
-  font-size: 1.05rem;
-  padding: 1rem 2.6rem;
-  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.95rem 2.6rem;
+  border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.35s ease;
+  transition: transform var(--t-fast) var(--ease), box-shadow var(--t-fast) var(--ease), background var(--t-fast) var(--ease), color var(--t-fast) var(--ease);
   border: none;
-  box-shadow: 0 6px 18px rgba(180, 106, 61, 0.28);
+  box-shadow: var(--shadow-card);
   text-decoration: none;
   cursor: pointer;
 }
 
 .btn-decor-shop:hover {
-  background-color: #9C582E;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(180, 106, 61, 0.38);
+  background: var(--color-primary-dark);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lift);
   color: #FFFFFF !important;
 }
 
