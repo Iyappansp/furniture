@@ -254,7 +254,7 @@
 .lookbook-container {
   position: relative;
   border-radius: var(--radius-lg);
-  overflow: hidden;
+  overflow: visible;
   box-shadow: var(--shadow-medium);
   margin-bottom: 2rem;
 }
@@ -265,6 +265,7 @@
   max-height: 520px;
   object-fit: cover;
   display: block;
+  border-radius: var(--radius-lg);
 }
 
 .hotspot-marker {
@@ -272,13 +273,13 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   border: 2px solid var(--color-primary);
   cursor: pointer;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.3);
   animation: pulse-hotspot 2s infinite;
-  z-index: 10;
+  z-index: 20;
   transition: transform 0.2s ease;
 }
 
@@ -300,22 +301,33 @@
   }
 }
 
+@keyframes hotspotFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -105%) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -118%) scale(1);
+  }
+}
+
 .hotspot-popover {
   position: absolute;
-  width: 220px;
+  width: 230px;
   background: var(--surface-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   padding: 1rem;
-  box-shadow: var(--shadow-medium);
-  z-index: 20;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  z-index: 50;
   display: none;
-  transform: translate(-50%, -120%);
+  transform: translate(-50%, -118%);
 }
 
 .hotspot-popover.active {
   display: block;
-  animation: fadeIn 0.2s ease;
+  animation: hotspotFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .popover-close-btn {
